@@ -48,4 +48,18 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Amica.vNext.Http\Amica.vNext.Http\Amica.vNext.Http.csproj">
+      <Project>{D0E09787-FEC9-4A6B-92D4-78DB328E749D}</Project>
+      <Name>Amica.vNext.Http</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

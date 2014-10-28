@@ -1,31 +1,37 @@
 ﻿using System;
+using Newtonsoft.Json;
+using Amica.vNext.Http;
 
 namespace Amica.vNext.Objects
 {
-    public abstract class BaseClass
-    {
+	public abstract class BaseClass
+	{
 		/// <summary>
 		/// Gets or sets the unique Id.
 		/// </summary>
 		/// <value>The unique identifier.</value>
-        public string Id { get; set; }
+		[JsonProperty ("_id")][Remote (Meta.DocumentId)]
+		public string RemoteId { get; set; }
 
 		/// <summary>
 		/// Gets or sets the ETag.
 		/// </summary>
 		/// <value>The ETag.</value>
-        public string ETag { get; set; }
+		[JsonProperty ("_etag")][Remote (Meta.ETag)]
+		public string ETag { get; set; }
 
 		/// <summary>
 		/// Gets or sets the last update date and time.
 		/// </summary>
 		/// <value>The last updated date and time.</value>
-        public DateTime Updated { get; set; }
+		[JsonProperty ("_updated")][Remote (Meta.LastUpdated)]
+		public DateTime Updated { get; set; }
 
 		/// <summary>
 		/// Gets or sets the creation date.
 		/// </summary>
 		/// <value>The creation date.</value>
-        public DateTime Created { get; set; }
-    }
+		[JsonProperty ("_created")][Remote (Meta.DateCreated)]
+		public DateTime Created { get; set; }
+	}
 }
