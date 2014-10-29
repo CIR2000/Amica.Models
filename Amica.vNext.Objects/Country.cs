@@ -11,6 +11,6 @@
         /// Gets or sets the country id.
         /// </summary>
         /// <value>The country id.</value>
-        public string CountryId { get; set; }
+        public int CountryId { get; set; }
     }
 }
