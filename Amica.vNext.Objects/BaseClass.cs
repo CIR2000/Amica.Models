@@ -1,6 +1,6 @@
 ﻿using System;
-using Newtonsoft.Json;
 using Amica.vNext.Http;
+using Newtonsoft.Json;
 
 namespace Amica.vNext.Objects
 {
