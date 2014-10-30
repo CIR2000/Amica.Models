@@ -11,7 +11,7 @@ namespace Amica.vNext.Objects
 		/// </summary>
 		/// <value>The unique identifier.</value>
 		[JsonProperty ("_id")][Remote (Meta.DocumentId)]
-		public string RemoteId { get; set; }
+		public string UniqueId { get; set; }
 
 		/// <summary>
 		/// Gets or sets the ETag.

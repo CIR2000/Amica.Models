@@ -7,10 +7,5 @@
         /// </summary>
         /// <value>The country name.</value>
         public string Name { get; set; }
-        /// <summary>
-        /// Gets or sets the country id.
-        /// </summary>
-        /// <value>The country id.</value>
-        public int CountryId { get; set; }
     }
 }
