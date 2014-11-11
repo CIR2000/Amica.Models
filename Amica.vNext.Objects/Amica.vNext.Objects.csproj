@@ -33,6 +33,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Amica.vNext.Objects.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
     <Compile Include="Company.cs" />
@@ -68,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Amica.vNext.Objects.snk" />
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
