@@ -1,5 +1,5 @@
 ﻿using System;
-using Amica.vNext.Http;
+using Eve;
 using Newtonsoft.Json;
 
 namespace Amica.vNext.Objects

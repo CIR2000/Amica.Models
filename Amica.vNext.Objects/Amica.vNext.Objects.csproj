@@ -79,9 +79,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Amica.vNext.Http\Amica.vNext.Http\Amica.vNext.Http.csproj">
+    <ProjectReference Include="..\..\..\Eve.NET\Eve.Client\Eve.Client.csproj">
       <Project>{d0e09787-fec9-4a6b-92d4-78db328e749d}</Project>
-      <Name>Amica.vNext.Http</Name>
+      <Name>Eve.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\..\Amica.vNext.Compatibility\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\Amica.vNext.Compatibility\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
