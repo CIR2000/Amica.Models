@@ -79,14 +79,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Amica.vNext.Http\Amica.vNext.Http\Amica.vNext.Http.csproj">
-      <Project>{d0e09787-fec9-4a6b-92d4-78db328e749d}</Project>
-      <Name>Amica.vNext.Http</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Amica.vNext.Objects\Amica.vNext.Objects.csproj">
       <Project>{5489E3A4-1031-4568-8B63-A28C64BF7778}</Project>
       <Name>Amica.vNext.Objects</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
