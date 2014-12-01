@@ -41,6 +41,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
+    <Compile Include="CallerAttributes.cs" />
     <Compile Include="Company.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
