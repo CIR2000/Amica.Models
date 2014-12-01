@@ -1,7 +1,8 @@
-﻿using System;
-using System.ComponentModel;
-using Eve;
+﻿using Eve;
 using Newtonsoft.Json;
+using SQLite.Net.Attributes;
+using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace Amica.vNext.Objects 
@@ -17,6 +18,7 @@ namespace Amica.vNext.Objects
 	    /// <value>The unique identifier.</value>
 	    [JsonProperty("_id")]
 	    [Remote(Meta.DocumentId)]
+        [PrimaryKey]
 	    public string UniqueId
 	    {
             set { SetProperty(ref _uniqueId, value); }
@@ -29,6 +31,7 @@ namespace Amica.vNext.Objects
 	    /// <value>The ETag.</value>
 	    [JsonProperty("_etag")]
 	    [Remote(Meta.ETag)]
+        [NotNull]
 	    public string ETag
 	    {
             set { SetProperty(ref _etag, value); }
@@ -41,6 +44,7 @@ namespace Amica.vNext.Objects
 	    /// <value>The last updated date and time.</value>
 	    [JsonProperty("_updated")]
 	    [Remote(Meta.LastUpdated)]
+        [Indexed][NotNull]
 	    public DateTime Updated
 	    {
             set { SetProperty(ref _updated, value); }
@@ -53,6 +57,7 @@ namespace Amica.vNext.Objects
 	    /// <value>The creation date.</value>
 	    [JsonProperty("_created")]
 	    [Remote(Meta.DateCreated)]
+        [Indexed][NotNull]
 	    public DateTime Created
 	    {
             set { SetProperty(ref _created, value); }

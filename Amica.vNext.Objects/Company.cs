@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SQLite.Net.Attributes;
 
 namespace Amica.vNext.Objects
 {
@@ -11,6 +12,7 @@ namespace Amica.vNext.Objects
         /// </summary>
         /// <value>The company name.</value>
         [JsonProperty("n")]
+        [Indexed][Unique]
         public string Name {
             set {SetProperty(ref _name, value); }
             get { return _name; } 
