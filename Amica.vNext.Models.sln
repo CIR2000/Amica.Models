@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amica.vNext.Objects", "Amica.vNext.Objects\Amica.vNext.Objects.csproj", "{5489E3A4-1031-4568-8B63-A28C64BF7778}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amica.vNext.Objects.Tests", "Tests\Amica.vNext.Objects.Tests.csproj", "{8DAE1E43-21D0-492B-80BB-51E30EB119FD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve.NET", "..\..\Eve.NET\Eve.NET\Eve.NET.csproj", "{D0E09787-FEC9-4A6B-92D4-78DB328E749D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amica.vNext.Models", "Amica.vNext.Models\Amica.vNext.Models.csproj", "{5489E3A4-1031-4568-8B63-A28C64BF7778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amica.vNext.Models.Tests", "Tests\Amica.vNext.Models.Tests.csproj", "{8DAE1E43-21D0-492B-80BB-51E30EB119FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,7 +29,7 @@ Global
 		{D0E09787-FEC9-4A6B-92D4-78DB328E749D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Amica.vNext.Objects\Amica.vNext.Objects.csproj
+		StartupItem = ..\..\Eve.NET\Eve.NET\Eve.NET.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
