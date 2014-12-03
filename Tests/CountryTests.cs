@@ -1,13 +1,14 @@
 using NUnit.Framework;
 
-namespace Amica.vNext.Objects.Tests
+namespace Amica.vNext.Models.Tests
 {
-    [TestFixture]
-    public class CountryTests : BaseTestClass
-    {
-        [Test]
-        public void WritablePropertyAssertions() {
-            WritablePropertyAssertions(typeof(Country));
-        } 
-    }
+	[TestFixture]
+	public class CountryTests : BaseTestClass
+	{
+		[Test]
+		public void WritablePropertyAssertions ()
+		{
+			WritablePropertyAssertions (typeof(Country));
+		}
+	}
 }
