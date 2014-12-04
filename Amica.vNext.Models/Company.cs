@@ -3,7 +3,7 @@ using SQLite.Net.Attributes;
 
 namespace Amica.vNext.Models
 {
-	public class Company : BaseClass
+	public class Company : BaseModel
 	{
 		private string _name, _password;
 

@@ -2,7 +2,7 @@
 
 namespace Amica.vNext.Models
 {
-	public class Country : BaseClass
+	public class Country : BaseModel
 	{
 		private string _name;
 

@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Amica.vNext.Models
 {
-	public abstract class BaseClass : INotifyPropertyChanged
+	public abstract class BaseModel : INotifyPropertyChanged
 	{
 		private string _uniqueId, _etag;
 		private DateTime _updated, _created;
