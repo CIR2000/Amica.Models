@@ -12,7 +12,7 @@ namespace Amica.vNext.Models
 		/// </summary>
 		/// <value>The company name.</value>
 		[JsonProperty ("n")]
-		[Indexed][Unique]
+		[Indexed]
 		public string Name {
 			set { SetProperty (ref _name, value); }
 			get { return _name; } 
