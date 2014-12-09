@@ -47,12 +47,6 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Eve.NET\Eve.NET\Eve.NET.csproj">
-      <Project>{D0E09787-FEC9-4A6B-92D4-78DB328E749D}</Project>
-      <Name>Eve.NET</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -68,4 +62,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
   </Target>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Eve.NET\Eve.NET.Net4\Eve.NET.Net4.csproj">
+      <Project>{D405D3C5-DE1C-4DB1-B920-2E7CD7F450AF}</Project>
+      <Name>Eve.NET.Net4</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
