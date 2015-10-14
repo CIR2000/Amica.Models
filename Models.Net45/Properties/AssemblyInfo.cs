@@ -1,20 +1,26 @@
-﻿using System.Resources;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Amica.vNext.Objects")]
+[assembly: AssemblyTitle("Models.Net45")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CIR 2000")]
-[assembly: AssemblyProduct("Amica.vNext.Objects")]
-[assembly: AssemblyCopyright("Copyright © CIR 2000 2014")]
+[assembly: AssemblyProduct("Models.Net45")]
+[assembly: AssemblyCopyright("Copyright © CIR 2000 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: NeutralResourcesLanguage("en")]
+
+// Setting ComVisible to false makes the types in this assembly not visible 
+// to COM components.  If you need to access a type in this assembly from 
+// COM, set the ComVisible attribute to true on that type.
+[assembly: ComVisible(false)]
+
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("703b0fff-6a57-4500-9afd-f27d5c04a0fa")]
 
 // Version information for an assembly consists of the following four values:
 //

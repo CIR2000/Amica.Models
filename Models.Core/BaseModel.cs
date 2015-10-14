@@ -11,6 +11,7 @@ namespace Amica.vNext.Models
 	{
 		private string _uniqueId, _etag;
 		private DateTime _updated, _created;
+		private bool _deleted;
 
 		/// <summary>
 		/// Gets or sets the unique Id.
@@ -58,6 +59,17 @@ namespace Amica.vNext.Models
 		public DateTime Created {
 			set { SetProperty (ref _created, value); }
 			get { return _created; } 
+		}
+
+		/// <summary>
+		/// Gets or set the deleted status.
+		/// </summary>
+		/// <value>The creation date.</value>
+		[JsonProperty ("_deleted")]
+		[Remote (Meta.DateCreated)]
+		public bool Deleted {
+			set { SetProperty (ref _deleted, value); }
+			get { return _deleted; } 
 		}
 
 		#region "INotifyPropertyChanged implementation"
