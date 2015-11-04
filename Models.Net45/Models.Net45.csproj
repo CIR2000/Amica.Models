@@ -44,21 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Models.Core\BaseModel.cs">
-      <Link>BaseModel.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\BaseModelWithCompanyId.cs">
-      <Link>BaseModelWithCompanyId.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\Company.cs">
-      <Link>Company.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\Country.cs">
-      <Link>Country.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\SQLiteAttributes.cs">
-      <Link>SQLiteAttributes.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +55,7 @@
       <Name>Eve.Net45</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\Models.Core\Models.Core.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

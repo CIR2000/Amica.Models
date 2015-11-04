@@ -34,21 +34,6 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Models.Core\BaseModel.cs">
-      <Link>BaseModel.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\BaseModelWithCompanyId.cs">
-      <Link>BaseModelWithCompanyId.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\Company.cs">
-      <Link>Company.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\Country.cs">
-      <Link>Country.cs</Link>
-    </Compile>
-    <Compile Include="..\Models.Core\SQLiteAttributes.cs">
-      <Link>SQLiteAttributes.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,5 +57,6 @@
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\Models.Core\Models.Core.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
