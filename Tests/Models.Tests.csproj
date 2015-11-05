@@ -73,9 +73,9 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Models.Net45\Models.Net45.csproj">
-      <Project>{703b0fff-6a57-4500-9afd-f27d5c04a0fa}</Project>
-      <Name>Models.Net45</Name>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{8f6b901d-717c-4e83-ae2b-df43df19c054}</Project>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
