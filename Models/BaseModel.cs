@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Amica.vNext.Models
 {
-	public abstract class BaseModel : INotifyPropertyChanged
+	public abstract class BaseModel : INotifyPropertyChanged, IDataErrorInfo
 	{
 		private string _uniqueId, _etag;
 		private DateTime _updated, _created;
@@ -95,5 +95,15 @@ namespace Amica.vNext.Models
 		}
 
 		#endregion
+
+	    public string Error
+	    {
+	        get { throw new NotImplementedException(); }
+	    }
+
+	    public string this[string columnName]
+	    {
+	        get { throw new NotImplementedException(); }
+	    }
 	}
 }
