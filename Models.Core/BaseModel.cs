@@ -96,14 +96,8 @@ namespace Amica.vNext.Models
 
 		#endregion
 
-	    public string Error
-	    {
-	        get { throw new NotImplementedException(); }
-	    }
+	    public string Error => null;
 
-	    public string this[string columnName]
-	    {
-	        get { throw new NotImplementedException(); }
-	    }
+	    public string this[string columnName] => null;
 	}
 }
