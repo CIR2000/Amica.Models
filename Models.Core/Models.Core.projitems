@@ -14,6 +14,5 @@
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Country.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IDataErrorInfo.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)RemoteAttribute.cs" />
   </ItemGroup>
 </Project>
