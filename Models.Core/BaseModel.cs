@@ -2,12 +2,10 @@
 using Newtonsoft.Json;
 using SQLite.Net.Attributes;
 using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 
 namespace Amica.vNext.Models
 {
-	public abstract class BaseModel : INotifyPropertyChanged, IDataErrorInfo
+	public abstract class BaseModel : ObservableObject, IDataErrorInfo
 	{
 		private string _uniqueId, _etag;
 		private DateTime _updated, _created;
@@ -71,30 +69,6 @@ namespace Amica.vNext.Models
 			set { SetProperty (ref _deleted, value); }
 			get { return _deleted; } 
 		}
-
-		#region "INotifyPropertyChanged implementation"
-
-		public event PropertyChangedEventHandler PropertyChanged;
-
-		// ReSharper disable once UnusedMethodReturnValue.Local
-		protected bool SetProperty<T> (ref T storage, T value, [CallerMemberName] string propertyName = null)
-		{
-			if (Equals (storage, value))
-				return false;
-
-			storage = value;
-			OnPropertyChanged (propertyName);
-			return true;
-		}
-
-		protected virtual void OnPropertyChanged (string propertyName)
-		{
-			var handler = PropertyChanged;
-			if (handler != null)
-				handler (this, new PropertyChangedEventArgs (propertyName));
-		}
-
-		#endregion
 
 	    public string Error => null;
 
