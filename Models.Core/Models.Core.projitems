@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BaseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModelWithCompanyId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Country.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IDataErrorInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ObservableObject.cs" />
