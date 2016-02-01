@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve", "..\..\Eve.NET\Eve\Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve.Net4", "..\..\Eve.NET\Eve.Net4\Eve.Net4.csproj", "{C5DEAD7A-1511-4516-9334-420CE21D3DC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{3D938F2D-0FFF-4EFB-9EFD-F578AD3AEF00}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\..\Eve.NET\Eve.Core\Eve.Core.projitems*{c5dead7a-1511-4516-9334-420ce21d3dc8}*SharedItemsImports = 4
@@ -48,6 +50,10 @@ Global
 		{C5DEAD7A-1511-4516-9334-420CE21D3DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5DEAD7A-1511-4516-9334-420CE21D3DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5DEAD7A-1511-4516-9334-420CE21D3DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D938F2D-0FFF-4EFB-9EFD-F578AD3AEF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D938F2D-0FFF-4EFB-9EFD-F578AD3AEF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D938F2D-0FFF-4EFB-9EFD-F578AD3AEF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D938F2D-0FFF-4EFB-9EFD-F578AD3AEF00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

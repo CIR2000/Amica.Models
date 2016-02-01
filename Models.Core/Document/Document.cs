@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace Amica.vNext.Models
@@ -10,6 +11,13 @@ namespace Amica.vNext.Models
 	    private decimal _total;
 	    private DocumentType _type;
 
+	    private  ContactMinimal _contact = new ContactMinimal();
+		private  List<DocumentItem> _items = new List<DocumentItem>();
+
+		public Document()
+        {
+
+        }
 		/// <summary>
 		/// Gets or sets the document date.
 		/// </summary>
@@ -18,6 +26,15 @@ namespace Amica.vNext.Models
 		public DateTime Date {
 			set { SetProperty (ref _date, value); }
 			get { return _date; }
+		}
+
+		/// <summary>
+		/// Gets or sets the document contact.
+		/// </summary>
+		/// <value>The document contact.</value>
+		public ContactMinimal Contact {
+			set { SetProperty (ref _contact, value); }
+			get { return _contact; }
 		}
 
 		/// <summary>
@@ -39,13 +56,12 @@ namespace Amica.vNext.Models
 			set { SetProperty (ref _type, value); }
 			get { return _type; }
 		}
+		public List<DocumentItem> Items
+        {
+			set { SetProperty (ref _items, value); }
+			get { return _items; }
 
-	    private Lazy<string> _test;
-	    public string Test
-	    {
-            get { return _test?.Value; }
-			set { if (value != null) _test = new Lazy<string>(value); }
-	    }
+        }
 	}
 
 	// TODO complete english translation 
