@@ -19,6 +19,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Country.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Document.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\Invoice.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IDataErrorInfo.cs" />
   </ItemGroup>
 </Project>

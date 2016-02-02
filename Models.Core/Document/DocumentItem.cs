@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace Amica.vNext.Models
+namespace Amica.vNext.Models.Documents
 {
     public class DocumentItem : ObservableObject
     {

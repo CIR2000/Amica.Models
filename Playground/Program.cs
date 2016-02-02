@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Amica.vNext.Models;
+using Amica.vNext.Models.Documents;
 using Newtonsoft.Json;
 
 namespace Playground
@@ -12,11 +13,15 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            var d = new Document();
-            d.Contact.Name = "contact name";
-            d.Contact.Vat = "vat";
+            var d = new Invoice
+            {
+                Contact =
+                {
+                    Name = "contact name",
+                    Vat = "vat"
+                }
+            };
             d.Items.Add(new DocumentItem {Sku = "sku", Description = "description"});
-            d.Date = DateTime.Now;
 
             string output = JsonConvert.SerializeObject(d);
             Console.Write(output);
