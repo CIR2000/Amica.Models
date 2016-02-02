@@ -11,14 +11,12 @@ namespace Amica.vNext.Models
 		/// Gets or sets the company name.
 		/// </summary>
 		/// <value>The company name.</value>
-		[JsonProperty ("n")]
 		[Indexed]
 		public string Name {
 			set { SetProperty (ref _name, value); }
 			get { return _name; } 
 		}
 
-		[JsonProperty ("p")]
 		public string Password {
 			set { SetProperty (ref _password, value); }
 			get { return _password; }

@@ -10,7 +10,6 @@ namespace Amica.vNext.Models
 		/// Gets or sets the country name.
 		/// </summary>
 		/// <value>The country name.</value>
-		[JsonProperty ("n")]
 		public string Name {
 			set { SetProperty (ref _name, value); }
 			get { return _name; }

@@ -22,7 +22,6 @@ namespace Amica.vNext.Models
 		/// Gets or sets the document date.
 		/// </summary>
 		/// <value>The document date.</value>
-		[JsonProperty ("d")]
 		public DateTime Date {
 			set { SetProperty (ref _date, value); }
 			get { return _date; }
@@ -41,7 +40,6 @@ namespace Amica.vNext.Models
 		/// Gets or sets the total amount.
 		/// </summary>
 		/// <value>The total amount.</value>
-		[JsonProperty ("t")]
 		public decimal Total {
 			set { SetProperty (ref _total, value); }
 			get { return _total; }
@@ -51,7 +49,6 @@ namespace Amica.vNext.Models
 		/// Gets or sets the document type.
 		/// </summary>
 		/// <value>The total amount.</value>
-		[JsonProperty ("ty")]
 		public DocumentType Type {
 			set { SetProperty (ref _type, value); }
 			get { return _type; }

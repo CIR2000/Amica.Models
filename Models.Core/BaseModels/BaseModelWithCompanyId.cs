@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SQLite.Net.Attributes;
 
 namespace Amica.vNext.Models
 {
@@ -10,9 +11,8 @@ namespace Amica.vNext.Models
 		/// Gets or sets the company Id.
 		/// </summary>
 		/// <value>The company identifier.</value>
-		[JsonProperty ("c")]
-        //[Remote (Meta.DocumentId)]
-        //[PrimaryKey]
+		[JsonProperty ("company_id")]
+		[Indexed][NotNull]
 		public string CompanyId {
 			set { SetProperty (ref _companyId, value); }
 			get { return _companyId; }
