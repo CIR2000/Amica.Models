@@ -5,12 +5,21 @@ namespace Amica.vNext.Models
 {
     public class ContactMinimal : ObservableObject, IContactMinimal
     {
-
-
+        private string _id;
         private string _name;
         private string _address;
         private string _vat;
 
+        /// <summary>
+        /// Gets or sets the unique id.
+        /// </summary>
+        /// <value>The unique id.</value>
+		[JsonProperty("contact_id")]
+        public string UniqueId
+        {
+            set { SetProperty(ref _id, value); }
+            get { return _id; }
+        }
         /// <summary>
         /// Gets or sets the contact name.
         /// </summary>
