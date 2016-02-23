@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Newtonsoft.Json;
 
 namespace Amica.vNext.Models
@@ -9,6 +10,16 @@ namespace Amica.vNext.Models
         private string _name;
         private string _address;
         private string _vat;
+
+		public ContactMinimal() : base() { }
+        public ContactMinimal(IContactMinimal contact) : base()
+        {
+            UniqueId = contact.UniqueId;
+
+            PropertyInfo[] properties = typeof(IContactMinimal).GetProperties();
+            foreach (var property in properties)
+                property.SetValue(this, property.GetValue(contact, null), null);
+        }
 
         /// <summary>
         /// Gets or sets the unique id.
