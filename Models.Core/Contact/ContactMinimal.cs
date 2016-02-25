@@ -1,24 +1,24 @@
-﻿using System;
-using System.Reflection;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace Amica.vNext.Models
 {
-    public class ContactMinimal : ObservableObject, IContactMinimal
+    public class ContactMinimal : Address, IContactMinimal
     {
         private string _id;
         private string _name;
-        private string _address;
         private string _vat;
 
-		public ContactMinimal() : base() { }
-        public ContactMinimal(IContactMinimal contact) : base()
+		public ContactMinimal()
+		{ }
+        public ContactMinimal(Contact contact)
         {
             UniqueId = contact.UniqueId;
 
-            PropertyInfo[] properties = typeof(IContactMinimal).GetProperties();
+            Name = contact.Name;
+            Vat = contact.Vat;
+            var properties = typeof(IAddress).GetProperties();
             foreach (var property in properties)
-                property.SetValue(this, property.GetValue(contact, null), null);
+                property.SetValue(this, property.GetValue(contact.Address, null), null);
         }
 
         /// <summary>
@@ -39,16 +39,6 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _name, value); }
             get { return _name; }
-        }
-
-        /// <summary>
-        /// Gets or sets the address.
-        /// </summary>
-        /// <value>The contact address</value>
-        public string Address
-        {
-            set { SetProperty(ref _address, value); }
-            get { return _address; }
         }
 
         /// <summary>
