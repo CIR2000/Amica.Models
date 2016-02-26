@@ -7,8 +7,8 @@ namespace Amica.vNext.Models
         private string _street;
         private string _town;
         private string _postalCode;
-        private string _state;
-        private string _province;
+        private string _country;
+        private string _stateOrProvince;
         public string Street
         {
             get { return _street; }
@@ -25,15 +25,15 @@ namespace Amica.vNext.Models
             get { return _postalCode; }
             set { SetProperty(ref _postalCode, value); }
         }
-        public string State
+        public string Country
         {
-            get { return _state; }
-            set { SetProperty(ref _state, value); }
+            get { return _country; }
+            set { SetProperty(ref _country, value); }
         }
-        public string Province
+        public string StateOrProvince
         {
-            get { return _province; }
-            set { SetProperty(ref _province, value); }
+            get { return _stateOrProvince; }
+            set { SetProperty(ref _stateOrProvince, value); }
         }
     }
 }

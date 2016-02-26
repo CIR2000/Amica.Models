@@ -5,7 +5,7 @@
 		string Street { get; set; }
 		string Town { get; set; }
 		string PostalCode { get; set; }
-		string Province{ get; set; }
-		string State { get; set; }
+		string StateOrProvince{ get; set; }
+		string Country { get; set; }
     }
 }

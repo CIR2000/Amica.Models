@@ -20,7 +20,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddress.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactMinimal.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Country.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Document.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentType.cs" />
