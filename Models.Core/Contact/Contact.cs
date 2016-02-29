@@ -1,9 +1,12 @@
-﻿namespace Amica.vNext.Models
+﻿using Newtonsoft.Json;
+
+namespace Amica.vNext.Models
 {
     public class Contact : BaseModelWithCompanyId
     {
         private string _name;
         private string _vat;
+        private string _marketArea;
 
         private AddressEx _address = new AddressEx();
 
@@ -25,6 +28,17 @@
         {
             set { SetProperty(ref _vat, value); }
             get { return _vat; }
+        }
+
+        /// <summary>
+        /// Gets or sets the geographic market area.
+        /// </summary>
+        /// <value>The geographic market area.</value>
+		[JsonProperty("market_area")]
+        public string MarketArea
+        {
+            set { SetProperty(ref _marketArea, value); }
+            get { return _marketArea; }
         }
 
         /// <summary>
