@@ -9,6 +9,8 @@ namespace Amica.vNext.Models
         private string _marketArea;
 
         private AddressEx _address = new AddressEx();
+        private Currency _currency = new Currency();
+        private ContactIs _is = new ContactIs();
 
         /// <summary>
         /// Gets or sets the contact name.
@@ -39,6 +41,26 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _marketArea, value); }
             get { return _marketArea; }
+        }
+
+        /// <summary>
+        /// Gets or sets the contact currency.
+        /// </summary>
+        /// <value>The contact currency.</value>
+        public Currency Currency
+        {
+            set { SetProperty(ref _currency, value); }
+            get { return _currency; }
+        }
+
+        /// <summary>
+        /// Gets or sets the contact status.
+        /// </summary>
+        /// <value>The contact status.</value>
+        public ContactIs Is
+        {
+            set { SetProperty(ref _is, value); }
+            get { return _is; }
         }
 
         /// <summary>
