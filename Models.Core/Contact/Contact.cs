@@ -13,6 +13,7 @@ namespace Amica.vNext.Models
         private AddressEx _address = new AddressEx();
         private Currency _currency = new Currency();
         private ContactIs _is = new ContactIs();
+        private Bank _bank = new Bank();
 
         /// <summary>
         /// Gets or sets the contact name.
@@ -95,6 +96,16 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _address, value); }
             get { return _address; }
+        }
+
+        /// <summary>
+        /// Gets or sets the bank.
+        /// </summary>
+        /// <value>The bank</value>
+        public Bank Bank
+        {
+            set { SetProperty(ref _bank, value); }
+            get { return _bank; }
         }
     }
 }
