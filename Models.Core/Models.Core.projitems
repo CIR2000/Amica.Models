@@ -17,7 +17,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contact\AddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactMinimal.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactIs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddress.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactMinimal.cs" />
