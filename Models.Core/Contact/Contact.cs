@@ -7,6 +7,7 @@ namespace Amica.vNext.Models
         private string _name;
         private string _vat;
         private string _marketArea;
+        private string _idCode;
 
         private AddressEx _address = new AddressEx();
         private Currency _currency = new Currency();
@@ -20,6 +21,17 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _name, value); }
             get { return _name; }
+        }
+
+        /// <summary>
+        /// Gets or sets the contact ID.
+        /// </summary>
+        /// <value>The contact ID.</value>
+		[JsonProperty("id_code")]
+        public string IdCode
+        {
+            set { SetProperty(ref _idCode, value); }
+            get { return _idCode; }
         }
 
         /// <summary>
