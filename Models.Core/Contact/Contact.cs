@@ -8,6 +8,7 @@ namespace Amica.vNext.Models
         private string _vat;
         private string _marketArea;
         private string _idCode;
+        private string _taxIdCode;
 
         private AddressEx _address = new AddressEx();
         private Currency _currency = new Currency();
@@ -32,6 +33,17 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _idCode, value); }
             get { return _idCode; }
+        }
+
+        /// <summary>
+        /// Gets or sets the wax Identification Code.
+        /// </summary>
+        /// <value>The Tax Identification Code.</value>
+		[JsonProperty("tax_id_code")]
+        public string TaxIdCode
+        {
+            set { SetProperty(ref _taxIdCode, value); }
+            get { return _taxIdCode; }
         }
 
         /// <summary>
