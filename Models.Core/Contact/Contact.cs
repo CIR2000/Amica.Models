@@ -9,6 +9,7 @@ namespace Amica.vNext.Models
         private string _marketArea;
         private string _idCode;
         private string _taxIdCode;
+        private string _paIndex;
 
         private AddressEx _address = new AddressEx();
         private Currency _currency = new Currency();
@@ -47,6 +48,16 @@ namespace Amica.vNext.Models
             get { return _taxIdCode; }
         }
 
+        /// <summary>
+        /// Gets or sets the wax Public Administration Index number.
+        /// </summary>
+        /// <value>The Public Administration index number.</value>
+		[JsonProperty("pa_index")]
+        public string PublicAdministrationIndex
+        {
+            set { SetProperty(ref _paIndex, value); }
+            get { return _paIndex; }
+        }
         /// <summary>
         /// Gets or sets the VAT number.
         /// </summary>
