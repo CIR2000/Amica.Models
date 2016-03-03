@@ -30,6 +30,7 @@ namespace Amica.vNext.Models
             get { return _country; }
             set { SetProperty(ref _country, value); }
         }
+		[JsonProperty("state_or_province")]
         public string StateOrProvince
         {
             get { return _stateOrProvince; }

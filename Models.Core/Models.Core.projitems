@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactMinimal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\OtherAddress.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Currency.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Document.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentItem.cs" />

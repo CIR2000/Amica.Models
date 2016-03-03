@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Amica.vNext.Models
 {
@@ -15,6 +16,8 @@ namespace Amica.vNext.Models
         private Currency _currency = new Currency();
         private ContactIs _is = new ContactIs();
         private Bank _bank = new Bank();
+
+        private List<OtherAddress> _otherAddresses = new List<OtherAddress>();
 
         /// <summary>
         /// Gets or sets the contact name.
@@ -117,6 +120,17 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _bank, value); }
             get { return _bank; }
+        }
+
+        /// <summary>
+        /// Gets or sets the secondary addresses.
+        /// </summary>
+        /// <value>The secondary addresses</value>
+		[JsonProperty("other_addresses")]
+        public List<OtherAddress> OtherAddresses
+        {
+            set { SetProperty(ref _otherAddresses, value); }
+            get { return _otherAddresses; }
         }
     }
 }
