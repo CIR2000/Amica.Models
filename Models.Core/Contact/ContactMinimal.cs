@@ -1,4 +1,7 @@
 ﻿using Newtonsoft.Json;
+#if NET45
+using System.Reflection;
+#endif
 
 namespace Amica.vNext.Models
 {
@@ -16,7 +19,13 @@ namespace Amica.vNext.Models
 
             Name = contact.Name;
             Vat = contact.Vat;
+
+			#if NET45
+            var properties = typeof(IAddress).GetType().GetRuntimeProperties();
+			#else
             var properties = typeof(IAddress).GetProperties();
+			#endif
+
             foreach (var property in properties)
                 property.SetValue(this, property.GetValue(contact.Address, null), null);
         }
