@@ -9,7 +9,7 @@ namespace Amica.vNext.Models
         private string _vat;
         private string _marketArea;
         private string _idCode;
-        private string _taxIdCode;
+        private string _taxIdNumber;
         private string _paIndex;
 
         private AddressEx _address = new AddressEx();
@@ -17,7 +17,7 @@ namespace Amica.vNext.Models
         private ContactIs _is = new ContactIs();
         private Bank _bank = new Bank();
 
-        private List<OtherAddress> _otherAddresses = new List<OtherAddress>();
+        private List<AddressExWithName> _otherAddresses = new List<AddressExWithName>();
 
         /// <summary>
         /// Gets or sets the contact name.
@@ -44,11 +44,11 @@ namespace Amica.vNext.Models
         /// Gets or sets the wax Identification Code.
         /// </summary>
         /// <value>The Tax Identification Code.</value>
-		[JsonProperty("tax_id_code")]
-        public string TaxIdCode
+		[JsonProperty("tax_id_number")]
+        public string TaxIdentificationNumber
         {
-            set { SetProperty(ref _taxIdCode, value); }
-            get { return _taxIdCode; }
+            set { SetProperty(ref _taxIdNumber, value); }
+            get { return _taxIdNumber; }
         }
 
         /// <summary>
@@ -127,7 +127,7 @@ namespace Amica.vNext.Models
         /// </summary>
         /// <value>The secondary addresses</value>
 		[JsonProperty("other_addresses")]
-        public List<OtherAddress> OtherAddresses
+        public List<AddressExWithName> OtherAddresses
         {
             set { SetProperty(ref _otherAddresses, value); }
             get { return _otherAddresses; }
