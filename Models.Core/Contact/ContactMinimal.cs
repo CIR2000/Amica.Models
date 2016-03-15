@@ -10,6 +10,7 @@ namespace Amica.vNext.Models
         private string _id;
         private string _name;
         private string _vatIdNumber;
+        private string _taxIdNumber;
 
 		public ContactMinimal()
 		{ }
@@ -59,6 +60,17 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _vatIdNumber, value); }
             get { return _vatIdNumber; }
+        }
+
+        /// <summary>
+        /// Gets or sets the Tax Id number.
+        /// </summary>
+        /// <value>The Tax Identification number.</value>
+		[JsonProperty("tax_id_number")]
+        public string TaxIdentificationNumber
+        {
+            set { SetProperty(ref _taxIdNumber, value); }
+            get { return _taxIdNumber; }
         }
     }
 }
