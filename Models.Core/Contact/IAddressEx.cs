@@ -7,5 +7,6 @@
 		string Fax { get; set; }
 		string Mail { get; set; }
 		string PecMail { get; set; }
+		string WebSite { get; set; }
     }
 }

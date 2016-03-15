@@ -9,6 +9,7 @@ namespace Amica.vNext.Models
         private string _fax;
         private string _mail;
         private string _pecMail;
+        private string _webSite;
         public string Phone
         {
             get { return _phone; }
@@ -34,6 +35,12 @@ namespace Amica.vNext.Models
         {
             get { return _pecMail; }
             set { SetProperty(ref _pecMail, value); }
+        }
+		[JsonProperty("web_site")]
+        public string WebSite
+        {
+            get { return _webSite; }
+            set { SetProperty(ref _webSite, value); }
         }
     }
 }
