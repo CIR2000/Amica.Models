@@ -6,7 +6,7 @@ namespace Amica.vNext.Models
     public class Contact : BaseModelWithCompanyId
     {
         private string _name;
-        private string _vat;
+        private string _vatIdNumber;
         private string _marketArea;
         private string _idCode;
         private string _taxIdNumber;
@@ -65,10 +65,11 @@ namespace Amica.vNext.Models
         /// Gets or sets the VAT number.
         /// </summary>
         /// <value>The VAT number.</value>
-        public string Vat
+		[JsonProperty("vat_id_number")]
+        public string VatIdentificationNumber
         {
-            set { SetProperty(ref _vat, value); }
-            get { return _vat; }
+            set { SetProperty(ref _vatIdNumber, value); }
+            get { return _vatIdNumber; }
         }
 
         /// <summary>

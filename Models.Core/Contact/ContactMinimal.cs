@@ -9,7 +9,7 @@ namespace Amica.vNext.Models
     {
         private string _id;
         private string _name;
-        private string _vat;
+        private string _vatIdNumber;
 
 		public ContactMinimal()
 		{ }
@@ -18,7 +18,7 @@ namespace Amica.vNext.Models
             UniqueId = contact.UniqueId;
 
             Name = contact.Name;
-            Vat = contact.Vat;
+            VatIdentificationNumber = contact.VatIdentificationNumber;
 
 			#if NET45
             var properties = typeof(IAddress).GetType().GetRuntimeProperties();
@@ -54,10 +54,11 @@ namespace Amica.vNext.Models
         /// Gets or sets the VAT number.
         /// </summary>
         /// <value>The VAT number.</value>
-        public string Vat
+		[JsonProperty("vat_id_number")]
+        public string VatIdentificationNumber
         {
-            set { SetProperty(ref _vat, value); }
-            get { return _vat; }
+            set { SetProperty(ref _vatIdNumber, value); }
+            get { return _vatIdNumber; }
         }
     }
 }

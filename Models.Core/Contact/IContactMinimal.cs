@@ -3,7 +3,7 @@
     public interface IContactMinimal : IAddress, IUniqueId
     {
         string Name { get; set; }
-        string Vat { get; set; }
+        string VatIdentificationNumber { get; set; }
     }
 
     public interface IUniqueId
