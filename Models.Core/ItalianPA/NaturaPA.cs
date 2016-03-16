@@ -5,7 +5,7 @@
         private string _code;
         private string _description;
 
-        public string Name
+        public string Code
         {
             set { SetProperty(ref _code, value); }
             get { return _code; }
