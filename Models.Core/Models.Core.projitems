@@ -13,6 +13,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModelWithCompanyId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\ObservableObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\NaturaPA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PACollections.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\Address.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\AddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\Contact.cs" />

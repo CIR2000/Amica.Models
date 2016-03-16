@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
 namespace Amica.vNext.Models.Documents
 {
-	public class Document : BaseModelWithCompanyId
+    public class Document : BaseModelWithCompanyId
 	{
 
 		private DateTime _date;
