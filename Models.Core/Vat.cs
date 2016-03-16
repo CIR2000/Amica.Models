@@ -10,6 +10,7 @@ namespace Amica.vNext.Models
         private double _rate;
         private double _nonDeductible;
         private bool _isIntraCommunity;
+        private bool _isSplitPayment;
         private NaturaPA _naturaPA;
 
         /// <summary>
@@ -61,6 +62,17 @@ namespace Amica.vNext.Models
         {
             set { SetProperty(ref _isIntraCommunity, value); }
             get { return _isIntraCommunity; }
+        }
+
+        /// <summary>
+        /// Gets or sets split payment flag.
+        /// </summary>
+        /// <value>The split payment flag.</value>
+		[JsonProperty("is_split_payment")]
+        public bool IsSplitPayment
+        {
+            set { SetProperty(ref _isSplitPayment, value); }
+            get { return _isSplitPayment; }
         }
 
         /// <summary>
