@@ -11,7 +11,7 @@ namespace Amica.vNext.Models
         private double _nonDeductible;
         private bool _isIntraCommunity;
         private bool _isSplitPayment;
-        private NaturaPA _naturaPA;
+        private NaturaPA _naturaPA = new NaturaPA();
 
         /// <summary>
         /// Gets or sets the VAT name.
@@ -58,7 +58,7 @@ namespace Amica.vNext.Models
         /// </summary>
         /// <value>The intra-community flag.</value>
 		[JsonProperty("is_intra")]
-        public bool IsIntraComminity
+        public bool IsIntraCommunity
         {
             set { SetProperty(ref _isIntraCommunity, value); }
             get { return _isIntraCommunity; }

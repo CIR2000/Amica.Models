@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Amica.vNext.Models;
 
 namespace Amica.vNext.Models.ItalianPA
 {
-    public class PACollections
+    public static class PACollections
     {
         public static readonly ReadOnlyCollection<NaturaPA> NaturaPA = new ReadOnlyCollection<NaturaPA>(
 			new List<NaturaPA>
