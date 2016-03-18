@@ -13,6 +13,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModelWithCompanyId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\ObservableObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\ModalitaPagamentoPA.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\BasePA.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\NaturaPA.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PACollections.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vat.cs" />
