@@ -17,6 +17,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\BasePA.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\NaturaPA.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PACollections.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReadOnlyDictionary.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vat.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\Address.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\AddressEx.cs" />
