@@ -6,7 +6,7 @@ namespace Amica.vNext.Models
     public class PaymentOption : BaseModelWithCompanyId
     {
         private string _name;
-        private bool _IsRiBa;
+        private bool _IsBankReceipt;
         private ModalitaPagamentoPA _modalitaPagamentoPA = new ModalitaPagamentoPA();
 
         /// <summary>
@@ -23,11 +23,11 @@ namespace Amica.vNext.Models
         /// Gets or sets wether this is a RiBa method.
         /// </summary>
         /// <value>The wether this is a RiBa method.</value>
-		[JsonProperty("is_riba")]
-        public bool IsRiBa
+		[JsonProperty("is_bank_receipt")]
+        public bool IsBankReceipt
         {
-            set { SetProperty(ref _IsRiBa, value); }
-            get { return _IsRiBa; }
+            set { SetProperty(ref _IsBankReceipt, value); }
+            get { return _IsBankReceipt; }
         }
 
 		[JsonProperty("pagamento_pa")]
