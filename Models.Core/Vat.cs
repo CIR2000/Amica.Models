@@ -3,7 +3,7 @@ using Amica.vNext.Models.ItalianPA;
 
 namespace Amica.vNext.Models
 {
-    public class Vat : BaseModelWithCompanyId
+    public class Vat : BaseModelWithCompanyId, IUniqueId
     {
         private string _name;
         private string _code;
