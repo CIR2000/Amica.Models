@@ -1,6 +1,6 @@
 ﻿namespace Amica.vNext.Models
 {
-    public class Charge : BaseModelWithCompanyId
+    public class Fee : BaseModelWithCompanyId
     {
         private string _name;
         private decimal _amount;
