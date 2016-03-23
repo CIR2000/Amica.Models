@@ -1,5 +1,9 @@
 ﻿using Newtonsoft.Json;
 using SQLite.Net.Attributes;
+using System.Linq;
+#if NET45
+using System.Reflection;
+#endif
 
 namespace Amica.vNext.Models
 {
@@ -15,12 +19,21 @@ namespace Amica.vNext.Models
 		[Indexed][NotNull]
 		public  string CompanyId {
 			set {
+#if NET45
+                var props = GetType().GetTypeInfo().DeclaredProperties;
+#else
                 var props = GetType().GetProperties(
 					System.Reflection.BindingFlags.DeclaredOnly | 
 					System.Reflection.BindingFlags.Instance | 
 					System.Reflection.BindingFlags.Public);
+#endif
 				foreach (var prop in props) {
+#if NET45
+
+					if (prop.PropertyType.GetTypeInfo().BaseType == typeof(BaseModelWithCompanyId)) {
+#else
 					if (prop.PropertyType.BaseType == typeof(BaseModelWithCompanyId)) {
+#endif
                         ((BaseModelWithCompanyId)prop.GetValue(this, null)).CompanyId = value;
                     }
                 }
