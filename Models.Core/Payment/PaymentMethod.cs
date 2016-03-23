@@ -3,7 +3,7 @@ using Amica.vNext.Models.ItalianPA;
 
 namespace Amica.vNext.Models
 {
-    public class PaymentOption : BaseModelWithCompanyId
+    public class PaymentMethod : BaseModelWithCompanyId
     {
         private string _name;
         private bool _IsBankReceipt;

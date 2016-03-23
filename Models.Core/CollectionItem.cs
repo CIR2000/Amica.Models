@@ -1,6 +1,6 @@
-﻿namespace Amica.vNext.Models.ItalianPA
+﻿namespace Amica.vNext.Models
 {
-    public class BasePA : ObservableObject
+    public class CollectionItem : ObservableObject
     {
         private string _code;
         private string _description;
