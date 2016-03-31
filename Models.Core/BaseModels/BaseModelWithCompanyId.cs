@@ -34,7 +34,10 @@ namespace Amica.vNext.Models
 #else
 					if (prop.PropertyType.BaseType == typeof(BaseModelWithCompanyId)) {
 #endif
-                        ((BaseModelWithCompanyId)prop.GetValue(this, null)).CompanyId = value;
+
+                        var obj = ((BaseModelWithCompanyId)prop.GetValue(this, null));
+						if (obj != null)
+							obj.CompanyId = value;
                     }
                 }
                 SetProperty (ref _companyId, value);

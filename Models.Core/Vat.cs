@@ -11,7 +11,7 @@ namespace Amica.vNext.Models
         private double _nonDeductible;
         private bool _isIntraCommunity;
         private bool _isSplitPayment;
-        private NaturaPA _naturaPA = new NaturaPA();
+        private NaturaPA _naturaPA;
 
         /// <summary>
         /// Gets or sets the VAT name.

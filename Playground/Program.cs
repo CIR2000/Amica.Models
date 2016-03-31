@@ -18,7 +18,6 @@ namespace Playground
                 Contact =
                 {
                     Name = "contact name",
-                    Vat = "vat"
                 }
             };
             d.Items.Add(new DocumentItem {Sku = "sku", Description = "description"});

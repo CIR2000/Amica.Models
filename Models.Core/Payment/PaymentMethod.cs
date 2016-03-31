@@ -3,11 +3,11 @@ using Amica.vNext.Models.ItalianPA;
 
 namespace Amica.vNext.Models
 {
-    public class PaymentMethod : BaseModelWithCompanyId
+    public class PaymentMethod : BaseModelWithCompanyId, IUniqueId
     {
         private string _name;
         private bool _IsBankReceipt;
-        private ModalitaPagamentoPA _modalitaPagamentoPA = new ModalitaPagamentoPA();
+        private ModalitaPagamentoPA _modalitaPagamentoPA;
 
         /// <summary>
         /// Gets or sets the name.

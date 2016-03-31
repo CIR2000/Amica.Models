@@ -1,10 +1,10 @@
 ﻿namespace Amica.vNext.Models
 {
-    public class Fee : BaseModelWithCompanyId
+    public class Fee : BaseModelWithCompanyId, IUniqueId
     {
         private string _name;
         private decimal _amount;
-        private Vat _vat = new Vat();
+        private Vat _vat;
 
         /// <summary>
         /// Gets or sets the name.
