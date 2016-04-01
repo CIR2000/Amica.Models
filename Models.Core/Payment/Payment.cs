@@ -32,8 +32,8 @@ namespace Amica.vNext.Models
             ForceEndOfMonth = true;
             FirstPaymentDateAdditionalDays = 30;
             InstallmentsEveryNumberOfDays = 30;
-			FirstPaymentDate= PaymentOptions.FirstPaymentDates[1];
-			FirstPaymentOption = PaymentOptions.FirstPaymentOptions[1];
+			FirstPaymentDate= (FirstPaymentDate)PaymentOptions.FirstPaymentDates[1];
+			FirstPaymentOption = (FirstPaymentOption)PaymentOptions.FirstPaymentOptions[1];
         }
 
         public string Name

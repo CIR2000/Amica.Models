@@ -12,7 +12,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModelWithCompanyId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\ObservableObject.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)CollectionItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CollectionItemOfInt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CollectionItemOfString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\ModalitaPagamentoPA.cs" />

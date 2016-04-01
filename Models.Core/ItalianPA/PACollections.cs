@@ -4,9 +4,9 @@ namespace Amica.vNext.Models.ItalianPA
 {
     public static class PACollections
     {
-        public static ReadOnlyDictionary<string, object> NaturaPA = 
-			new ReadOnlyDictionary<string, object>(
-                new Dictionary<string, object>
+        public static ReadOnlyDictionary<string, CollectionItemOfString> NaturaPA = 
+			new ReadOnlyDictionary<string, CollectionItemOfString>(
+                new Dictionary<string, CollectionItemOfString>
                 {
                     { "N1", new NaturaPA {Code = "N1", Description="escluse ex art. 15" }},
                     { "N2", new NaturaPA {Code = "N2", Description="non soggette" }},
@@ -17,9 +17,9 @@ namespace Amica.vNext.Models.ItalianPA
 
                 });
 
-        public static readonly ReadOnlyDictionary<string, object> ModalitaPagamentoPA = 
-			new ReadOnlyDictionary<string, object>(
-                new Dictionary<string, object>
+        public static readonly ReadOnlyDictionary<string, CollectionItemOfString> ModalitaPagamentoPA = 
+			new ReadOnlyDictionary<string, CollectionItemOfString>(
+                new Dictionary<string, CollectionItemOfString>
                 {
                     { "MP01", new ModalitaPagamentoPA {Code="MP01", Description="contanti" } },
                     { "MP02", new ModalitaPagamentoPA {Code="MP02", Description="assegno" } },

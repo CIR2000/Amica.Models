@@ -1,6 +1,6 @@
 ﻿namespace Amica.vNext.Models
 {
-    public class CollectionItem : ObservableObject
+    public class CollectionItemOfString : ObservableObject
     {
         private string _code;
         private string _description;
