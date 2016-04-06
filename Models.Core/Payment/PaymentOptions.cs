@@ -10,19 +10,19 @@ namespace Amica.vNext.Models
 			new ReadOnlyDictionary<int, CollectionItemOfInt>(
 				new Dictionary<int, CollectionItemOfInt>
 				{
-					{ 1, new FirstPaymentOption { Code = 1, Description = "Normale" }},
-					{ 2, new FirstPaymentOption { Code = 2, Description =  "Con IVA" }},
-					{ 3, new FirstPaymentOption { Code = 3, Description = "Solo IVA" }},
-					{ 4, new FirstPaymentOption { Code = 4, Description = "Con spese" }},
+                    { 1, new FirstPaymentOption { Code = 1, Description = Properties.Payment.Normal }},
+					{ 2, new FirstPaymentOption { Code = 2, Description =  Properties.Payment.VatIncluded }},
+					{ 3, new FirstPaymentOption { Code = 3, Description = Properties.Payment.VatOnly }},
+					{ 4, new FirstPaymentOption { Code = 4, Description = Properties.Payment.FeesIncluded }},
 				});
 
         public static readonly ReadOnlyDictionary<int, CollectionItemOfInt> FirstPaymentDates = 
 			new ReadOnlyDictionary<int,  CollectionItemOfInt>(
                 new Dictionary<int,  CollectionItemOfInt>
                 {
-					{ 1, new FirstPaymentDate { Code = 1, Description = "Data documento" }},
-					{ 2, new FirstPaymentDate { Code = 2, Description = "Fine mese" }},
-					{ 3, new FirstPaymentDate { Code = 3, Description = "Data indicata" }},
+					{ 1, new FirstPaymentDate { Code = 1, Description = Properties.Payment.AtDocumentDate }},
+					{ 2, new FirstPaymentDate { Code = 2, Description = Properties.Payment.AtEndOfMonth }},
+					{ 3, new FirstPaymentDate { Code = 3, Description = Properties.Payment.AtExplicitDate }},
                 });
 
     }

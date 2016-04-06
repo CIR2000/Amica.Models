@@ -8,40 +8,39 @@ namespace Amica.vNext.Models.ItalianPA
 			new ReadOnlyDictionary<string, CollectionItemOfString>(
                 new Dictionary<string, CollectionItemOfString>
                 {
-                    { "N1", new NaturaPA {Code = "N1", Description="escluse ex art. 15" }},
-                    { "N2", new NaturaPA {Code = "N2", Description="non soggette" }},
-                    { "N3", new NaturaPA {Code = "N3", Description="non imponibili" }},
-                    { "N4", new NaturaPA {Code = "N4", Description="esenti" }},
-                    { "N5", new NaturaPA {Code = "N5", Description="regime del margine" }},
-                    { "N6", new NaturaPA {Code = "N6", Description="inversione contabile (reverse charge)" }},
-
-                });
+                    { "N1", new NaturaPA {Code = "N1", Description= Properties.ItalianPA.N1 }},
+                    { "N2", new NaturaPA {Code = "N2", Description= Properties.ItalianPA.N2 }},
+                    { "N3", new NaturaPA {Code = "N3", Description= Properties.ItalianPA.N3 }},
+                    { "N4", new NaturaPA {Code = "N4", Description= Properties.ItalianPA.N4 }},
+                    { "N5", new NaturaPA {Code = "N5", Description= Properties.ItalianPA.N5 }},
+                    { "N6", new NaturaPA {Code = "N6", Description= Properties.ItalianPA.N6 }},
+				});
 
         public static readonly ReadOnlyDictionary<string, CollectionItemOfString> ModalitaPagamentoPA = 
 			new ReadOnlyDictionary<string, CollectionItemOfString>(
                 new Dictionary<string, CollectionItemOfString>
                 {
-                    { "MP01", new ModalitaPagamentoPA {Code="MP01", Description="contanti" } },
-                    { "MP02", new ModalitaPagamentoPA {Code="MP02", Description="assegno" } },
-                    { "MP03", new ModalitaPagamentoPA {Code="MP03", Description="assegno circolare" } },
-                    { "MP04", new ModalitaPagamentoPA {Code="MP04", Description="contanti presso Tesoreria" } },
-                    { "MP05", new ModalitaPagamentoPA {Code="MP05", Description="bonifico" } },
-                    { "MP06", new ModalitaPagamentoPA {Code="MP06", Description="vaglia cambiario" } },
-                    { "MP07", new ModalitaPagamentoPA {Code="MP07", Description="bollettino bancario" } },
-                    { "MP08", new ModalitaPagamentoPA {Code="MP08", Description="carta di pagamento" } },
-                    { "MP09", new ModalitaPagamentoPA {Code="MP09", Description="RID" } },
-                    { "MP10", new ModalitaPagamentoPA {Code="MP10", Description="RID utenze" } },
-                    { "MP11", new ModalitaPagamentoPA {Code="MP11", Description="RID veloce" } },
-                    { "MP12", new ModalitaPagamentoPA {Code="MP12", Description="RIBA" } },
-                    { "MP13",new ModalitaPagamentoPA {Code="MP13", Description="MAV" } },
-                    { "MP14",new ModalitaPagamentoPA {Code="MP14", Description="quietanza erario" } },
-                    { "MP15",new ModalitaPagamentoPA {Code="MP15", Description="giroconto su conti di contabilità speciale" } },
-                    { "MP16",new ModalitaPagamentoPA {Code="MP16", Description="domiciliazione bancaria" } },
-                    { "MP17",new ModalitaPagamentoPA {Code="MP17", Description="domicialiazione postale" } },
-                    { "MP18",new ModalitaPagamentoPA {Code="MP18", Description="bollettino di c/c postale" } },
-                    { "MP19",new ModalitaPagamentoPA {Code="MP19", Description="SEPA Direct Debit" } },
-                    { "MP20",new ModalitaPagamentoPA {Code="MP20", Description="SEPA Direct Debit CORE" } },
-                    { "MP21",new ModalitaPagamentoPA {Code="MP21", Description="SEPA Direct Debit B2B" } },
+                    { "MP01", new ModalitaPagamentoPA {Code="MP01", Description= Properties.ItalianPA.MP01 } },
+                    { "MP02", new ModalitaPagamentoPA {Code="MP02", Description= Properties.ItalianPA.MP02 } },
+                    { "MP03", new ModalitaPagamentoPA {Code="MP03", Description= Properties.ItalianPA.MP03 } },
+                    { "MP04", new ModalitaPagamentoPA {Code="MP04", Description= Properties.ItalianPA.MP04 } },
+                    { "MP05", new ModalitaPagamentoPA {Code="MP05", Description= Properties.ItalianPA.MP05 } },
+                    { "MP06", new ModalitaPagamentoPA {Code="MP06", Description= Properties.ItalianPA.MP06 } },
+                    { "MP07", new ModalitaPagamentoPA {Code="MP07", Description= Properties.ItalianPA.MP07 } },
+                    { "MP08", new ModalitaPagamentoPA {Code="MP08", Description= Properties.ItalianPA.MP08 } },
+                    { "MP09", new ModalitaPagamentoPA {Code="MP09", Description= Properties.ItalianPA.MP09 } },
+                    { "MP10", new ModalitaPagamentoPA {Code="MP10", Description= Properties.ItalianPA.MP10 } },
+                    { "MP11", new ModalitaPagamentoPA {Code="MP11", Description= Properties.ItalianPA.MP11 } },
+                    { "MP12", new ModalitaPagamentoPA {Code="MP12", Description= Properties.ItalianPA.MP12 } },
+                    { "MP13",new ModalitaPagamentoPA {Code="MP13", Description= Properties.ItalianPA.MP13 } },
+                    { "MP14",new ModalitaPagamentoPA {Code="MP14", Description= Properties.ItalianPA.MP14 } },
+                    { "MP15",new ModalitaPagamentoPA {Code="MP15", Description= Properties.ItalianPA.MP15} },
+                    { "MP16",new ModalitaPagamentoPA {Code="MP16", Description= Properties.ItalianPA.MP16 } },
+                    { "MP17",new ModalitaPagamentoPA {Code="MP17", Description= Properties.ItalianPA.MP17 } },
+                    { "MP18",new ModalitaPagamentoPA {Code="MP18", Description= Properties.ItalianPA.MP18 } },
+                    { "MP19",new ModalitaPagamentoPA {Code="MP19", Description= Properties.ItalianPA.MP19 } },
+                    { "MP20",new ModalitaPagamentoPA {Code="MP20", Description= Properties.ItalianPA.MP20 } },
+                    { "MP21",new ModalitaPagamentoPA {Code="MP21", Description= Properties.ItalianPA.MP21 } },
             });
 
     }

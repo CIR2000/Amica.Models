@@ -13,17 +13,18 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            var d = new Invoice
-            {
-                Contact =
-                {
-                    Name = "contact name",
-                }
-            };
-            d.Items.Add(new DocumentItem {Sku = "sku", Description = "description"});
+            var v = Amica.vNext.Models.ItalianPA.PACollections.NaturaPA;
+            //var d = new Invoice
+            //{
+            //    Contact =
+            //    {
+            //        Name = "contact name",
+            //    }
+            //};
+            //d.Items.Add(new DocumentItem {Sku = "sku", Description = "description"});
 
-            string output = JsonConvert.SerializeObject(d);
-            Console.Write(output);
+            //string output = JsonConvert.SerializeObject(d);
+            Console.Write(v.Count);
 
         }
     }

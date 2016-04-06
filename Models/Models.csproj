@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{38931933-1E9D-4DF3-BDDE-75E81E3234F4}</ProjectGuid>
+    <ProjectGuid>{5A48FA69-73DE-47FD-A391-289F6F76C434}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Amica.vNext.Models</RootNamespace>
@@ -35,6 +35,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Payment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Payment.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\ItalianPA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItalianPA.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -54,6 +64,16 @@
       <Project>{dd88d007-ad10-470d-9c89-aa8ee39857d0}</Project>
       <Name>Eve</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Payment.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Payment.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ItalianPA.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ItalianPA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="..\Models.Core\Models.Core.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
