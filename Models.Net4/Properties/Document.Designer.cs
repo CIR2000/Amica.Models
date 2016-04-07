@@ -79,11 +79,38 @@ namespace Amica.vNext.Models.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bozza.
+        /// </summary>
+        internal static string Draft {
+            get {
+                return ResourceManager.GetString("Draft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fattura differita.
         /// </summary>
         internal static string Invoice {
             get {
                 return ResourceManager.GetString("Invoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fatturato.
+        /// </summary>
+        internal static string InvoicedDeliveryNote {
+            get {
+                return ResourceManager.GetString("InvoicedDeliveryNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emesso.
+        /// </summary>
+        internal static string Issued {
+            get {
+                return ResourceManager.GetString("Issued", resourceCulture);
             }
         }
         

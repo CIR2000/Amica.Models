@@ -8,7 +8,8 @@ namespace Amica.vNext.Models.Documents
 
 		private DateTime _date;
 	    private decimal _total;
-	    private DocumentType _type;
+	    private Type _type;
+        private Status _status;
 
 	    private  ContactMinimal _contact = new ContactMinimal();
 		private  List<DocumentItem> _items = new List<DocumentItem>();
@@ -16,6 +17,7 @@ namespace Amica.vNext.Models.Documents
 		public Document()
 		{
 		    Date = DateTime.Now;
+			Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
 
 		}
 		/// <summary>
@@ -25,6 +27,15 @@ namespace Amica.vNext.Models.Documents
 		public DateTime Date {
 			set { SetProperty (ref _date, value); }
 			get { return _date; }
+		}
+
+		/// <summary>
+		/// Gets or sets the document status.
+		/// </summary>
+		/// <value>The document status.</value>
+		public Status Status {
+			set { SetProperty (ref _status, value); }
+			get { return _status; }
 		}
 
 		/// <summary>
@@ -49,7 +60,7 @@ namespace Amica.vNext.Models.Documents
 		/// Gets or sets the document type.
 		/// </summary>
 		/// <value>The total amount.</value>
-		public DocumentType Type {
+		public Type Type {
 			set { SetProperty (ref _type, value); }
 			get { return _type; }
 		}

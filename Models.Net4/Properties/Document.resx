@@ -123,8 +123,17 @@
   <data name="DepositInvoice" xml:space="preserve">
     <value>Fattura di acconto</value>
   </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Bozza</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Fattura differita</value>
+  </data>
+  <data name="InvoicedDeliveryNote" xml:space="preserve">
+    <value>Fatturato</value>
+  </data>
+  <data name="Issued" xml:space="preserve">
+    <value>Emesso</value>
   </data>
   <data name="ProFormaInvoice" xml:space="preserve">
     <value>Fattura pro-forma</value>
