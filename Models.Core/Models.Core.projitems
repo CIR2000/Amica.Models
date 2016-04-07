@@ -15,6 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)CollectionItemOfInt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CollectionItemOfString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\ModalitaPagamentoPA.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\NaturaPA.cs" />
