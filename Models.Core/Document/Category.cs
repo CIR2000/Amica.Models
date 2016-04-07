@@ -1,11 +1,11 @@
-﻿namespace Amica.vNext.Models
+﻿namespace Amica.vNext.Models.Documents
 {
-    public class FirstPaymentOption : ObservableObject
+    public class Category : ObservableObject
     {
-        private PaymentOption _code;
+        private DocumentCategory _code;
         private string _description;
 
-        public PaymentOption Code
+        public DocumentCategory Code
         {
             set { SetProperty(ref _code, value); }
             get { return _code; }

@@ -1,11 +1,11 @@
-﻿namespace Amica.vNext.Models
+﻿namespace Amica.vNext.Models.ItalianPA
 {
-    public class CollectionItemOfInt : ObservableObject
+    public class PAItem : ObservableObject
     {
-        private int _code;
+        private string _code;
         private string _description;
 
-        public int Code
+        public string Code
         {
             set { SetProperty(ref _code, value); }
             get { return _code; }

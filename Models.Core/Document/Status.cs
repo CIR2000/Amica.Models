@@ -1,11 +1,11 @@
-﻿namespace Amica.vNext.Models
+﻿namespace Amica.vNext.Models.Documents
 {
-    public class CollectionItemOfString : ObservableObject
+    public class Status : ObservableObject
     {
-        private string _code;
+        private DocumentStatus _code;
         private string _description;
 
-        public string Code
+        public DocumentStatus Code
         {
             set { SetProperty(ref _code, value); }
             get { return _code; }

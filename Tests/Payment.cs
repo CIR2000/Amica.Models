@@ -14,8 +14,8 @@ namespace Amica.vNext.Models.Tests
 		public void DefaultValues ()
 		{
             var p = new Models.Payment();
-            Assert.That(p.FirstPaymentOption, Is.EqualTo(PaymentOptions.FirstPaymentOptions[1]));
-            Assert.That(p.FirstPaymentDate, Is.EqualTo(PaymentOptions.FirstPaymentDates[1]));
+            Assert.That(p.FirstPaymentOption, Is.EqualTo(PaymentHelpers.FirstPaymentOptions[PaymentOption.Normal]));
+            Assert.That(p.FirstPaymentDate, Is.EqualTo(PaymentHelpers.FirstPaymentDates[PaymentDate.DocumentDate]));
             Assert.That(p.FirstPaymentDateAdditionalDays, Is.EqualTo(30));
             Assert.That(p.Installments, Is.EqualTo(1));
             Assert.That(p.InstallmentsEveryNumberOfDays, Is.EqualTo(30));

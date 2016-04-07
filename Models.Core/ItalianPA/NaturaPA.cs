@@ -1,6 +1,6 @@
 ﻿namespace Amica.vNext.Models.ItalianPA
 {
-    public class NaturaPA : CollectionItemOfString
+    public class NaturaPA : PAItem
     {
     }
 }

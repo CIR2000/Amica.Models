@@ -8,7 +8,7 @@ namespace Amica.vNext.Models.Documents
     {
         public Invoice() : base()
         {
-            Type = DocumentHelpers.Types[DocumentType.Invoice];
+            Category = DocumentHelpers.Categories[DocumentCategory.Invoice];
         }
     }
 }

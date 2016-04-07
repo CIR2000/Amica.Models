@@ -8,7 +8,7 @@ namespace Amica.vNext.Models.Documents
 
 		private DateTime _date;
 	    private decimal _total;
-	    private Type _type;
+	    private Category _category;
         private Status _status;
 
 	    private  ContactMinimal _contact = new ContactMinimal();
@@ -60,9 +60,9 @@ namespace Amica.vNext.Models.Documents
 		/// Gets or sets the document type.
 		/// </summary>
 		/// <value>The total amount.</value>
-		public Type Type {
-			set { SetProperty (ref _type, value); }
-			get { return _type; }
+		public Category Category {
+			set { SetProperty (ref _category, value); }
+			get { return _category; }
 		}
 		public List<DocumentItem> Items
         {

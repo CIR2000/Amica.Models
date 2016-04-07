@@ -2,11 +2,11 @@
 
 namespace Amica.vNext.Models.ItalianPA
 {
-    public static class PACollections
+    public static class PAHelpers
     {
-        public static ReadOnlyDictionary<string, CollectionItemOfString> NaturaPA = 
-			new ReadOnlyDictionary<string, CollectionItemOfString>(
-                new Dictionary<string, CollectionItemOfString>
+        public static ReadOnlyDictionary<string, NaturaPA> NaturaPA = 
+			new ReadOnlyDictionary<string, NaturaPA>(
+                new Dictionary<string, NaturaPA>
                 {
                     { "N1", new NaturaPA {Code = "N1", Description= Properties.ItalianPA.N1 }},
                     { "N2", new NaturaPA {Code = "N2", Description= Properties.ItalianPA.N2 }},
@@ -16,9 +16,9 @@ namespace Amica.vNext.Models.ItalianPA
                     { "N6", new NaturaPA {Code = "N6", Description= Properties.ItalianPA.N6 }},
 				});
 
-        public static readonly ReadOnlyDictionary<string, CollectionItemOfString> ModalitaPagamentoPA = 
-			new ReadOnlyDictionary<string, CollectionItemOfString>(
-                new Dictionary<string, CollectionItemOfString>
+        public static readonly ReadOnlyDictionary<string, ModalitaPagamentoPA> ModalitaPagamentoPA = 
+			new ReadOnlyDictionary<string, ModalitaPagamentoPA>(
+                new Dictionary<string, ModalitaPagamentoPA>
                 {
                     { "MP01", new ModalitaPagamentoPA {Code="MP01", Description= Properties.ItalianPA.MP01 } },
                     { "MP02", new ModalitaPagamentoPA {Code="MP02", Description= Properties.ItalianPA.MP02 } },
@@ -42,6 +42,5 @@ namespace Amica.vNext.Models.ItalianPA
                     { "MP20",new ModalitaPagamentoPA {Code="MP20", Description= Properties.ItalianPA.MP20 } },
                     { "MP21",new ModalitaPagamentoPA {Code="MP21", Description= Properties.ItalianPA.MP21 } },
             });
-
     }
 }
