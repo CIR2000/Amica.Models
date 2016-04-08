@@ -17,7 +17,7 @@ namespace Amica.vNext.Models
         private ContactIs _is = new ContactIs();
         private Bank _bank = new Bank();
 
-        private List<DeliveryAddress> _otherAddresses = new List<DeliveryAddress>();
+        private List<ShippingAddress> _otherAddresses = new List<ShippingAddress>();
 
         /// <summary>
         /// Gets or sets the contact name.
@@ -128,7 +128,7 @@ namespace Amica.vNext.Models
         /// </summary>
         /// <value>The secondary addresses</value>
 		[JsonProperty("other_addresses")]
-        public List<DeliveryAddress> OtherAddresses
+        public List<ShippingAddress> OtherAddresses
         {
             set { SetProperty(ref _otherAddresses, value); }
             get { return _otherAddresses; }

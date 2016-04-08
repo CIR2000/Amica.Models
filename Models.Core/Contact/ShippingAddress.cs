@@ -1,6 +1,6 @@
 ﻿namespace Amica.vNext.Models
 {
-    public class DeliveryAddress : AddressEx
+    public class ShippingAddress : AddressEx
     {
         private string _name;
 

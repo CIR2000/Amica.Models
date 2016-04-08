@@ -1,6 +1,6 @@
 ﻿namespace Amica.vNext.Models
 {
-    class ContactDetailsEx : ContactDetails, IContactDetailsEx
+    public class ContactDetailsEx : ContactDetails, IContactDetailsEx
     {
         private string _uniqueId;
         private string _name;

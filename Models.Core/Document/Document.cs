@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Amica.vNext.Models.Documents
 {
@@ -7,18 +8,22 @@ namespace Amica.vNext.Models.Documents
 	{
 
 		private DateTime _date;
+        private string _reason;
 	    private decimal _total;
-	    private Category _category;
+
+
+        private DocumentNumber _number;
         private Status _status;
+	    private Category _category;
+        private Currency _currency;
+        private Payment _payment;
+        private BillingAddress _billTo;
+        private ShippingAddress _shipTo;
         private ContactDetailsEx _agent;
         private ContactDetailsEx _courier;
-        private Payment _payment;
-        private string _reason;
+        private WithholdingTax _witholdingTax;
+        private SocialSecurity _socialSecurity;
 
-
-
-        private BillingAddress _billingAddress;
-        private DeliveryAddress _deliveryAddress;
 		private  List<DocumentItem> _items = new List<DocumentItem>();
 
 		public Document()
@@ -26,50 +31,81 @@ namespace Amica.vNext.Models.Documents
 		    Date = DateTime.Now;
 			Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
 		}
-		/// <summary>
-		/// Gets or sets the document date.
-		/// </summary>
-		/// <value>The document date.</value>
+
 		public DateTime Date {
 			set { SetProperty (ref _date, value); }
 			get { return _date; }
 		}
 
-		/// <summary>
-		/// Gets or sets the document status.
-		/// </summary>
-		/// <value>The document status.</value>
+		public string Reason {
+			set { SetProperty (ref _reason, value); }
+			get { return _reason; }
+		}
+
+		public DocumentNumber Number {
+			set { SetProperty (ref _number, value); }
+			get { return Number; }
+		}
 		public Status Status {
 			set { SetProperty (ref _status, value); }
 			get { return _status; }
 		}
 
-		/// <summary>
-		/// Gets or sets the document contact.
-		/// </summary>
-		/// <value>The document contact.</value>
-		public BillingAddress Contact {
-			set { SetProperty (ref _billingAddress, value); }
-			get { return _billingAddress; }
+		public Category Category {
+			set { SetProperty (ref _category, value); }
+			get { return _category; }
 		}
 
-		/// <summary>
-		/// Gets or sets the total amount.
-		/// </summary>
-		/// <value>The total amount.</value>
+		public Currency Currency {
+			set { SetProperty (ref _currency, value); }
+			get { return _currency; }
+		}
+
+		public Payment Payment {
+			set { SetProperty (ref _payment, value); }
+			get { return _payment; }
+		}
+
+
+		[JsonProperty("bill_to")]
+		public BillingAddress BillTo {
+			set { SetProperty (ref _billTo, value); }
+			get { return _billTo; }
+		}
+
+		[JsonProperty("ship_to")]
+		public ShippingAddress ShipTo {
+			set { SetProperty (ref _shipTo, value); }
+			get { return _shipTo; }
+		}
+
+		public ContactDetailsEx Agent {
+			set { SetProperty (ref _agent, value); }
+			get { return _agent; }
+		}
+
+		public ContactDetailsEx Courier {
+			set { SetProperty (ref _courier, value); }
+			get { return _courier; }
+		}
+
+		[JsonProperty("witholding_tax")]
+		public WithholdingTax WitholdingTax {
+			set { SetProperty (ref _witholdingTax, value); }
+			get { return _witholdingTax; }
+		}
+
+		[JsonProperty("social_security")]
+		public SocialSecurity SocialSecurity {
+			set { SetProperty (ref _socialSecurity, value); }
+			get { return _socialSecurity; }
+		}
+
 		public decimal Total {
 			set { SetProperty (ref _total, value); }
 			get { return _total; }
 		}
 
-		/// <summary>
-		/// Gets or sets the document type.
-		/// </summary>
-		/// <value>The total amount.</value>
-		public Category Category {
-			set { SetProperty (ref _category, value); }
-			get { return _category; }
-		}
 		public List<DocumentItem> Items
         {
 			set { SetProperty (ref _items, value); }
