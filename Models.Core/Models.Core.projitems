@@ -13,6 +13,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModelWithCompanyId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\ObservableObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Company.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactDetails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactDetailsEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Category.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentCategory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentHelpers.cs" />
@@ -26,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PAHelpers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Fee.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PAItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IUniqueId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\FirstPaymentDate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\FirstPaymentOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\Payment.cs" />
@@ -41,7 +45,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactMinimal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactIs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddress.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactMinimal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bank.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\AddressExWithName.cs" />

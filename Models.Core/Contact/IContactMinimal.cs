@@ -6,9 +6,4 @@
         string VatIdentificationNumber { get; set; }
         string TaxIdentificationNumber { get; set; }
     }
-
-    public interface IUniqueId
-    {
-        string UniqueId { get; set; }
-    }
 }
