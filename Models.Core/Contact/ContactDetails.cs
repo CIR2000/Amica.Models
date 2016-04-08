@@ -5,8 +5,6 @@ namespace Amica.vNext.Models
 {
     public class ContactDetails : ObservableObject, IContactDetails
     {
-        private string _uniqueId;
-        private string _name;
         private string _phone;
         private string _mobile;
         private string _fax;
