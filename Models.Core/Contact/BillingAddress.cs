@@ -5,16 +5,16 @@ using System.Reflection;
 
 namespace Amica.vNext.Models
 {
-    public class ContactMinimal : Address, IContactMinimal
+    public class BillingAddress : Address, IBillingAddress
     {
         private string _id;
         private string _name;
         private string _vatIdNumber;
         private string _taxIdNumber;
 
-		public ContactMinimal()
+		public BillingAddress()
 		{ }
-        public ContactMinimal(Contact contact)
+        public BillingAddress(Contact contact)
         {
             UniqueId = contact.UniqueId;
 

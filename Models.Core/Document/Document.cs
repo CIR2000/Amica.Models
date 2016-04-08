@@ -10,15 +10,21 @@ namespace Amica.vNext.Models.Documents
 	    private decimal _total;
 	    private Category _category;
         private Status _status;
+        private ContactDetailsEx _agent;
+        private ContactDetailsEx _courier;
+        private Payment _payment;
+        private string _reason;
 
-	    private  ContactMinimal _contact = new ContactMinimal();
+
+
+        private BillingAddress _billingAddress;
+        private DeliveryAddress _deliveryAddress;
 		private  List<DocumentItem> _items = new List<DocumentItem>();
 
 		public Document()
 		{
 		    Date = DateTime.Now;
 			Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
-
 		}
 		/// <summary>
 		/// Gets or sets the document date.
@@ -42,9 +48,9 @@ namespace Amica.vNext.Models.Documents
 		/// Gets or sets the document contact.
 		/// </summary>
 		/// <value>The document contact.</value>
-		public ContactMinimal Contact {
-			set { SetProperty (ref _contact, value); }
-			get { return _contact; }
+		public BillingAddress Contact {
+			set { SetProperty (ref _billingAddress, value); }
+			get { return _billingAddress; }
 		}
 
 		/// <summary>

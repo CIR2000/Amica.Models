@@ -43,12 +43,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contact\Address.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\AddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\Contact.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactMinimal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\BillingAddress.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactIs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IAddress.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactMinimal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\IBillingAddress.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Bank.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Contact\AddressExWithName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact\DeliveryAddress.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Currency.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Document.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentItem.cs" />

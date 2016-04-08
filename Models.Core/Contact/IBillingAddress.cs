@@ -1,6 +1,6 @@
 ﻿namespace Amica.vNext.Models
 {
-    public interface IContactMinimal : IAddress, IUniqueId
+    public interface IBillingAddress : IAddress, IUniqueId
     {
         string Name { get; set; }
         string VatIdentificationNumber { get; set; }
