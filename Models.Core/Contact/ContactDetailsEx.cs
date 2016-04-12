@@ -1,9 +1,13 @@
-﻿namespace Amica.vNext.Models
+﻿using Newtonsoft.Json;
+
+namespace Amica.vNext.Models
 {
     public class ContactDetailsEx : ContactDetails, IContactDetailsEx
     {
         private string _uniqueId;
         private string _name;
+
+		[JsonProperty("contact_id")]
         public string UniqueId
         {
             get { return _uniqueId; }

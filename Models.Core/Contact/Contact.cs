@@ -12,10 +12,10 @@ namespace Amica.vNext.Models
         private string _taxIdNumber;
         private string _paIndex;
 
-        private AddressEx _address = new AddressEx();
-        private Currency _currency = new Currency();
+        private AddressEx _address;
+        private Currency _currency;
         private ContactIs _is = new ContactIs();
-        private Bank _bank = new Bank();
+        private Bank _bank;
 
         private List<ShippingAddress> _otherAddresses = new List<ShippingAddress>();
 
