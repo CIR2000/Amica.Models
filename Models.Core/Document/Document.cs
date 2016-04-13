@@ -21,7 +21,7 @@ namespace Amica.vNext.Models.Documents
         //private ShippingAddress _shipTo;
         //private ContactDetailsEx _agent;
         //private ContactDetailsEx _courier;
-        //private WithholdingTax _witholdingTax;
+        private WithholdingTax _witholdingTax;
         //private SocialSecurity _socialSecurity;
 
         //private  List<DocumentItem> _items = new List<DocumentItem>();
@@ -92,16 +92,18 @@ namespace Amica.vNext.Models.Documents
         //	get { return _courier; }
         //}
 
-        //[JsonProperty("witholding_tax")]
-        //public WithholdingTax WitholdingTax {
-        //	set { SetProperty (ref _witholdingTax, value); }
-        //	get { return _witholdingTax; }
-        //}
+        [JsonProperty("witholding_tax")]
+        public WithholdingTax WitholdingTax
+        {
+            set { SetProperty(ref _witholdingTax, value); }
+            get { return _witholdingTax; }
+        }
 
         //[JsonProperty("social_security")]
-        //public SocialSecurity SocialSecurity {
-        //	set { SetProperty (ref _socialSecurity, value); }
-        //	get { return _socialSecurity; }
+        //public SocialSecurity SocialSecurity
+        //{
+        //    set { SetProperty(ref _socialSecurity, value); }
+        //    get { return _socialSecurity; }
         //}
 
         //public decimal Total {
