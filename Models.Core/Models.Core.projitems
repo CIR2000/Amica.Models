@@ -35,6 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Fee.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PAItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUniqueId.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObjectFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\FirstPaymentDate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\FirstPaymentOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\Payment.cs" />

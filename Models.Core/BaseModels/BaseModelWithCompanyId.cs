@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace Amica.vNext.Models
 {
-	public class BaseModelWithCompanyId : BaseModel
+	public abstract class BaseModelWithCompanyId : BaseModel
 	{
 		private string _companyId;
 
