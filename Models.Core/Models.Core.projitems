@@ -29,13 +29,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Document\Status.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\WitholdingTax.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\DefaultFactories.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\Factory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\ModalitaPagamentoPA.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\NaturaPA.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PAHelpers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Fee.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ItalianPA\PAItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUniqueId.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ObjectFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\FirstPaymentDate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\FirstPaymentOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Payment\Payment.cs" />
