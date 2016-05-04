@@ -17,13 +17,11 @@ namespace Amica.vNext.Models
         }
 		public  static T Create(Type derivedType)
 		{
-			DefaultFactories.Bootstrap();
-
 			Func<T> constructor = null;
 			if (_dict.TryGetValue(derivedType, out constructor))
 				return constructor();
 
-			throw new ArgumentException("No type registered for this type");
+			throw new ArgumentException($"No type registered for type {typeof(T).Name}");
 		}
 
 
