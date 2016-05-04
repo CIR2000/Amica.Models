@@ -13,8 +13,13 @@ namespace Amica.vNext.Models
         {
             if (_bootstrapped) return;
 
+            Factory<Vat>.Register(() => new Vat());
+            Factory<Company>.Register(() => new Company());
+            Factory<Contact>.Register(() => new Contact());
+            Factory<Fee>.Register(() => new Fee());
+            Factory<Payment>.Register(() => new Payment());
+            Factory<PaymentMethod>.Register(() => new PaymentMethod());
             Factory<Document>.Register(typeof(Invoice), () => new Invoice());
-            Factory<Vat>.Register(typeof(Vat), () => new Vat());
 
             _bootstrapped = true;
         }

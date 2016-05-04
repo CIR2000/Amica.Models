@@ -10,11 +10,6 @@ namespace Amica.vNext.Models
 		static readonly Dictionary<Type, Func<T>> _dict 
 			 = new Dictionary<Type, Func<T>>();
 
-		public static T Create()
-        {
-			// Assume there type T has been registered.
-            return Create(typeof(T));
-        }
 		public  static T Create(Type derivedType)
 		{
 			Func<T> constructor = null;
@@ -24,10 +19,19 @@ namespace Amica.vNext.Models
 			throw new ArgumentException($"No type registered for type {typeof(T).Name}");
 		}
 
+		public static T Create()
+        {
+			// Assume there type T has been registered.
+            return Create(typeof(T));
+        }
 
-		public static void Register(Type derviedType, Func<T> ctor)
+		public static void Register(Type derivedType, Func<T> ctor)
 		{
-			_dict.Add(derviedType, ctor);
+			_dict.Add(derivedType, ctor);
 		}
+		public static void Register(Func<T> ctor)
+        {
+            Register(typeof(T), ctor);
+        }
 	}
 }
