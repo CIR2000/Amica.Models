@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Amica.vNext.Models.Documents;
+using Amica.vNext.Models.ItalianPA;
 
 namespace Amica.vNext.Models
 {
@@ -20,6 +21,13 @@ namespace Amica.vNext.Models
             Factory<Payment>.Register(() => new Payment());
             Factory<PaymentMethod>.Register(() => new PaymentMethod());
             Factory<Document>.Register(typeof(Invoice), () => new Invoice());
+            Factory<NaturaPA>.Register(() => new NaturaPA());
+            Factory<ModalitaPagamentoPA>.Register(() => new ModalitaPagamentoPA());
+            Factory<Currency>.Register(() => new Currency());
+            Factory<AddressEx>.Register(() => new AddressEx());
+            Factory<Bank>.Register(() => new Bank());
+            Factory<ShippingAddress>.Register(() => new ShippingAddress());
+            Factory<WithholdingTax>.Register(() => new WithholdingTax());
 
             _bootstrapped = true;
         }
