@@ -2,10 +2,10 @@
 {
     public class DocumentNumber : ObservableObject
     {
-		private string _numeric;
+		private int _numeric;
         private string _string;
 
-		public string Numeric {
+		public int Numeric {
 			set { SetProperty (ref _numeric, value); }
 			get { return _numeric; }
 		}
@@ -15,6 +15,6 @@
 			get { return _string; }
 		}
 
-        public string Complete => (String == null) ? Numeric : $"{Numeric}/{String}";
+        public string Complete => (String == null) ? Numeric.ToString() : $"{Numeric}/{String}";
     }
 }

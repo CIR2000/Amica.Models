@@ -25,5 +25,6 @@ namespace Amica.vNext.Models.Documents
 					{ DocumentStatus.InvoicedDelieryNote, new Status { Code = DocumentStatus.InvoicedDelieryNote, Description =  Properties.Document.InvoicedDeliveryNote }},
 					{ DocumentStatus.Issued, new Status { Code = DocumentStatus.Issued, Description = Properties.Document.Issued }},
 				});
+
    }
 }

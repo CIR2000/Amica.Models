@@ -12,7 +12,7 @@ namespace Amica.vNext.Models.Documents
         //private decimal _total;
 
 
-        //private DocumentNumber _number;
+        private DocumentNumber _number;
         private Status _status;
         private Category _category;
         private Currency _currency;
@@ -43,10 +43,12 @@ namespace Amica.vNext.Models.Documents
             get { return _reason; }
         }
 
-        //public DocumentNumber Number {
-        //	set { SetProperty (ref _number, value); }
-        //	get { return Number; }
-        //}
+        public DocumentNumber Number
+        {
+            set { SetProperty(ref _number, value); }
+            get { return _number; }
+        }
+
         public Status Status
         {
             set { SetProperty(ref _status, value); }
