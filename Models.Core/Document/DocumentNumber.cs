@@ -2,10 +2,10 @@
 {
     public class DocumentNumber : ObservableObject
     {
-		private int _numeric;
+		private long _numeric;
         private string _string;
 
-		public int Numeric {
+		public long Numeric {
 			set { SetProperty (ref _numeric, value); }
 			get { return _numeric; }
 		}
