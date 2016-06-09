@@ -16,13 +16,13 @@ namespace Amica.vNext.Models.Documents
         private Status _status;
         private Category _category;
         private Currency _currency;
-        ////private Payment _payment;
-        //private BillingAddress _billTo;
-        //private ShippingAddress _shipTo;
-        //private ContactDetailsEx _agent;
-        //private ContactDetailsEx _courier;
+        private Payment _payment;
+        private BillingAddress _billTo;
+        private ShippingAddress _shipTo;
+        private ContactDetailsEx _agent;
+        private ContactDetailsEx _courier;
         private WithholdingTax _witholdingTax;
-        //private SocialSecurity _socialSecurity;
+        private SocialSecurity _socialSecurity;
 
         //private  List<DocumentItem> _items = new List<DocumentItem>();
 
@@ -66,33 +66,37 @@ namespace Amica.vNext.Models.Documents
             get { return _currency; }
         }
 
-        //public Payment Payment {
-        //	set { SetProperty (ref _payment, value); }
-        //	get { return _payment; }
-        //}
+        public Payment Payment
+        {
+            set { SetProperty(ref _payment, value); }
+            get { return _payment; }
+        }
 
+        [JsonProperty("bill_to")]
+        public BillingAddress BillTo
+        {
+            set { SetProperty(ref _billTo, value); }
+            get { return _billTo; }
+        }
 
-        //[JsonProperty("bill_to")]
-        //public BillingAddress BillTo {
-        //	set { SetProperty (ref _billTo, value); }
-        //	get { return _billTo; }
-        //}
+        [JsonProperty("ship_to")]
+        public ShippingAddress ShipTo
+        {
+            set { SetProperty(ref _shipTo, value); }
+            get { return _shipTo; }
+        }
 
-        //[JsonProperty("ship_to")]
-        //public ShippingAddress ShipTo {
-        //	set { SetProperty (ref _shipTo, value); }
-        //	get { return _shipTo; }
-        //}
+        public ContactDetailsEx Agent
+        {
+            set { SetProperty(ref _agent, value); }
+            get { return _agent; }
+        }
 
-        //public ContactDetailsEx Agent {
-        //	set { SetProperty (ref _agent, value); }
-        //	get { return _agent; }
-        //}
-
-        //public ContactDetailsEx Courier {
-        //	set { SetProperty (ref _courier, value); }
-        //	get { return _courier; }
-        //}
+        public ContactDetailsEx Courier
+        {
+            set { SetProperty(ref _courier, value); }
+            get { return _courier; }
+        }
 
         [JsonProperty("witholding_tax")]
         public WithholdingTax WitholdingTax
@@ -101,12 +105,12 @@ namespace Amica.vNext.Models.Documents
             get { return _witholdingTax; }
         }
 
-        //[JsonProperty("social_security")]
-        //public SocialSecurity SocialSecurity
-        //{
-        //    set { SetProperty(ref _socialSecurity, value); }
-        //    get { return _socialSecurity; }
-        //}
+        [JsonProperty("social_security")]
+        public SocialSecurity SocialSecurity
+        {
+            set { SetProperty(ref _socialSecurity, value); }
+            get { return _socialSecurity; }
+        }
 
         //public decimal Total {
         //	set { SetProperty (ref _total, value); }
