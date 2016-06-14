@@ -21,16 +21,17 @@ namespace Amica.vNext.Models.Documents
         private ShippingAddress _shipTo;
         private ContactDetailsEx _agent;
         private ContactDetailsEx _courier;
-        private WithholdingTax _witholdingTax;
-        private SocialSecurity _socialSecurity;
+        private WithholdingTax _withholdingTax;
+        private List<SocialSecurity> _socialSecurity;
 
         //private  List<DocumentItem> _items = new List<DocumentItem>();
 
         public Document()
 		{
 		    Date = DateTime.Now;
-			//Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
-		}
+            SocialSecurity = new List<SocialSecurity>();
+            //Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
+        }
 
 		public DateTime Date {
 			set { SetProperty (ref _date, value); }
@@ -98,15 +99,15 @@ namespace Amica.vNext.Models.Documents
             get { return _courier; }
         }
 
-        [JsonProperty("witholding_tax")]
-        public WithholdingTax WitholdingTax
+        [JsonProperty("withholding_tax")]
+        public WithholdingTax WithholdingTax
         {
-            set { SetProperty(ref _witholdingTax, value); }
-            get { return _witholdingTax; }
+            set { SetProperty(ref _withholdingTax, value); }
+            get { return _withholdingTax; }
         }
 
         [JsonProperty("social_security")]
-        public SocialSecurity SocialSecurity
+        public List<SocialSecurity> SocialSecurity
         {
             set { SetProperty(ref _socialSecurity, value); }
             get { return _socialSecurity; }

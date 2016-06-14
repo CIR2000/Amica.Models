@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{38931933-1E9D-4DF3-BDDE-75E81E3234F4}</ProjectGuid>
+    <ProjectGuid>{5A48FA69-73DE-47FD-A391-289F6F76C434}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Amica.vNext.Models</RootNamespace>
@@ -50,6 +50,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Document.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\SocialSecurity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SocialSecurity.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -82,6 +87,10 @@
     <EmbeddedResource Include="Properties\Document.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Document.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\SocialSecurity.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SocialSecurity.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="..\Models.Core\Models.Core.projitems" Label="Shared" />

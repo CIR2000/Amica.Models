@@ -29,6 +29,7 @@ namespace Amica.vNext.Models
             Factory<Bank>.Register(() => new Bank());
             Factory<ShippingAddress>.Register(() => new ShippingAddress());
             Factory<WithholdingTax>.Register(() => new WithholdingTax());
+            Factory<SocialSecurity>.Register(() => new SocialSecurity());
 
             _bootstrapped = true;
         }

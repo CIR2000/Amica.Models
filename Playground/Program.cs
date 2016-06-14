@@ -14,7 +14,7 @@ namespace Playground
         static void Main(string[] args)
         {
             //var v = Amica.vNext.Models.ItalianPA.PAHelpers.NaturaPA;
-            var i = ObjectFactory.CreateDocument(DocumentCategory.Invoice);
+            //var i = ObjectFactory.CreateDocument(DocumentCategory.Invoice);
 
             //var d = new Invoice();
             //var d = new Invoice
@@ -27,7 +27,7 @@ namespace Playground
             //d.Items.Add(new DocumentItem {Sku = "sku", Description = "description"});
 
             //string output = JsonConvert.SerializeObject(d);
-            Console.WriteLine(i.Category.Description);
+            //Console.WriteLine(i.Category.Description);
 
         }
     }

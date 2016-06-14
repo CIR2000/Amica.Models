@@ -26,6 +26,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentNumber.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurityCategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurityCategoryType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Status.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\WitholdingTax.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods.cs" />

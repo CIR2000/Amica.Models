@@ -97,6 +97,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Document.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\SocialSecurity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SocialSecurity.resx</DependentUpon>
+    </Compile>
     <Compile Include="SQLiteAttributes.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +127,10 @@
     <EmbeddedResource Include="Properties\Document.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Document.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\SocialSecurity.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SocialSecurity.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="..\Models.Core\Models.Core.projitems" Label="Shared" />

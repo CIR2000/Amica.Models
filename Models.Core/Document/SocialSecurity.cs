@@ -2,15 +2,12 @@
 {
     public class SocialSecurity : ObservableObject
     {
-		private string _name;
         private double _rate;
         private decimal _amount;
+        private decimal _taxable;
+        private SocialSecurityCategory _category;
         private Vat _vat;
-
-		public string Name {
-			set { SetProperty (ref _name, value); }
-			get { return _name; }
-		}
+        private bool _withholding;
 
 		public double Rate {
 			set { SetProperty (ref _rate, value); }
@@ -20,9 +17,25 @@
 			set { SetProperty (ref _amount, value); }
 			get { return _amount; }
 		}
+		public decimal Taxable {
+			set { SetProperty (ref _taxable, value); }
+			get { return _taxable; }
+		}
+		/// <summary>
+        /// Wether the social security is subject to withholding
+        /// </summary>
+		public bool Withholding {
+			set { SetProperty (ref _withholding, value); }
+			get { return _withholding; }
+		}
+		public SocialSecurityCategory Category {
+			set { SetProperty (ref _category, value); }
+			get { return _category; }
+		}
 		public Vat Vat {
 			set { SetProperty (ref _vat, value); }
 			get { return _vat; }
 		}
+
     }
 }
