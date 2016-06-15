@@ -55,5 +55,14 @@ namespace Amica.vNext.Models.Documents
                     { SocialSecurityCategoryType.TC22, new SocialSecurityCategory { Category = SocialSecurityCategoryType.TC22, Description = Properties.SocialSecurity.TC22} },
 
 				});
+
+		public static readonly ReadOnlyDictionary<DocumentTransportMode, TransportMode> TransportModes = 
+			new ReadOnlyDictionary<DocumentTransportMode, TransportMode>(
+				new Dictionary<DocumentTransportMode, TransportMode>
+				{
+                    { DocumentTransportMode.Sender, new TransportMode { Code = DocumentTransportMode.Sender, Description = Properties.TransportMode.Sender }},
+                    { DocumentTransportMode.Recipient, new TransportMode { Code = DocumentTransportMode.Recipient, Description = Properties.TransportMode.Recipient }},
+                    { DocumentTransportMode.Courier, new TransportMode { Code = DocumentTransportMode.Courier, Description = Properties.TransportMode.Courier }},
+				});
    }
 }
