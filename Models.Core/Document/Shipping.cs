@@ -13,6 +13,7 @@ namespace Amica.vNext.Models.Documents
         private DateTime _dateTime;
         private ContactDetailsEx _courier;
         private TransportMode _transportMode;
-
+        private Driver _driver;
+        private ShippingTerm _shippingTerms;
     }
 }

@@ -50,6 +50,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Document.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\ShippingTerms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShippingTerms.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\TransportMode.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,6 +97,10 @@
     <EmbeddedResource Include="Properties\Document.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Document.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ShippingTerms.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ShippingTerms.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\TransportMode.resx">
       <Generator>ResXFileCodeGenerator</Generator>

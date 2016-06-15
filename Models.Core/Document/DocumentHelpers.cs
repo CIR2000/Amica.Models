@@ -64,5 +64,13 @@ namespace Amica.vNext.Models.Documents
                     { DocumentTransportMode.Recipient, new TransportMode { Code = DocumentTransportMode.Recipient, Description = Properties.TransportMode.Recipient }},
                     { DocumentTransportMode.Courier, new TransportMode { Code = DocumentTransportMode.Courier, Description = Properties.TransportMode.Courier }},
 				});
+
+		public static readonly ReadOnlyDictionary<DocumentShippingTerm, ShippingTerm> TransportTerms = 
+			new ReadOnlyDictionary<DocumentShippingTerm, ShippingTerm>(
+				new Dictionary<DocumentShippingTerm, ShippingTerm>
+				{
+                    { DocumentShippingTerm.DeliveredDutyPaid, new ShippingTerm { Code = DocumentShippingTerm.DeliveredDutyPaid, Description = Properties.ShippingTerms.DeliveredDutyPaid }},
+                    { DocumentShippingTerm.ExWorks, new ShippingTerm { Code = DocumentShippingTerm.ExWorks, Description = Properties.ShippingTerms.ExWorks }},
+				});
    }
 }
