@@ -20,6 +20,7 @@ namespace Amica.vNext.Models
 
             Name = contact.Name;
             VatIdentificationNumber = contact.VatIdentificationNumber;
+            TaxIdentificationNumber = contact.TaxIdentificationNumber;
 
 			#if NET45
             var properties = typeof(IAddress).GetType().GetRuntimeProperties();
