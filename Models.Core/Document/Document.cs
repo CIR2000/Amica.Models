@@ -9,6 +9,7 @@ namespace Amica.vNext.Models.Documents
 
 		private DateTime _date;
         private string _reason;
+        private DateTime _expirationDate;
         //private decimal _total;
 
 
@@ -43,6 +44,13 @@ namespace Amica.vNext.Models.Documents
         {
             set { SetProperty(ref _reason, value); }
             get { return _reason; }
+        }
+
+		[JsonProperty("expiration_date")]
+        public DateTime ExpirationDate
+        {
+            set { SetProperty(ref _expirationDate, value); }
+            get { return _expirationDate; }
         }
 
         public DocumentNumber Number
