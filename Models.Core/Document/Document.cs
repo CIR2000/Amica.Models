@@ -11,7 +11,7 @@ namespace Amica.vNext.Models.Documents
         private string _reason;
         private DateTime _expirationDate;
         private DateTime _baseDateForPayments;
-        //private decimal _total;
+        private decimal _rebate;
 
 
         private DocumentNumber _number;
@@ -144,10 +144,11 @@ namespace Amica.vNext.Models.Documents
             get { return _bank; }
         }
 
-        //public decimal Total {
-        //	set { SetProperty (ref _total, value); }
-        //	get { return _total; }
-        //}
+        public decimal Rebate
+        {
+            set { SetProperty(ref _rebate, value); }
+            get { return _rebate; }
+        }
 
         //public List<DocumentItem> Items
         //      {
