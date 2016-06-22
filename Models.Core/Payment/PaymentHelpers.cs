@@ -22,7 +22,7 @@ namespace Amica.vNext.Models
                 {
 					{ PaymentDate.DocumentDate, new FirstPaymentDate { Code = PaymentDate.DocumentDate, Description = Properties.Payment.AtDocumentDate }},
 					{ PaymentDate.EndOfMonth, new FirstPaymentDate { Code = PaymentDate.EndOfMonth, Description = Properties.Payment.AtEndOfMonth }},
-					{ PaymentDate.ExplicitDate, new FirstPaymentDate { Code = PaymentDate.ExplicitDate, Description = Properties.Payment.AtExplicitDate }},
+					{ PaymentDate.Explicit, new FirstPaymentDate { Code = PaymentDate.Explicit, Description = Properties.Payment.AtExplicitDate }},
                 });
     }
 }

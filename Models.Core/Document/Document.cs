@@ -10,6 +10,7 @@ namespace Amica.vNext.Models.Documents
 		private DateTime _date;
         private string _reason;
         private DateTime _expirationDate;
+        private DateTime _baseDateForPayments;
         //private decimal _total;
 
 
@@ -53,6 +54,15 @@ namespace Amica.vNext.Models.Documents
             get { return _expirationDate; }
         }
 
+		/// <summary>
+        /// Only used when Document.Payment.FirstPaymentDate is set to ExplicitDate.
+        /// </summary>
+		[JsonProperty("base_date_for_payments")]
+        public DateTime BaseDateForPayments
+        {
+            set { SetProperty(ref _baseDateForPayments, value); }
+            get { return _baseDateForPayments; }
+        }
         public DocumentNumber Number
         {
             set { SetProperty(ref _number, value); }

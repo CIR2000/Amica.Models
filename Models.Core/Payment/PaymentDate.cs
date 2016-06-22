@@ -4,6 +4,6 @@
     {
         DocumentDate = 1,
         EndOfMonth = 2,
-        ExplicitDate = 3
+        Explicit = 3
     }
 }
