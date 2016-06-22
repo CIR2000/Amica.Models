@@ -26,6 +26,7 @@ namespace Amica.vNext.Models.Documents
         private WithholdingTax _withholdingTax;
         private Shipping _shipping;
         private List<SocialSecurity> _socialSecurity;
+        private Bank _bank;
 
         //private  List<DocumentItem> _items = new List<DocumentItem>();
 
@@ -135,6 +136,12 @@ namespace Amica.vNext.Models.Documents
         {
             set { SetProperty(ref _shipping, value); }
             get { return _shipping; }
+        }
+
+        public Bank Bank
+        {
+            set { SetProperty(ref _bank, value); }
+            get { return _bank; }
         }
 
         //public decimal Total {
