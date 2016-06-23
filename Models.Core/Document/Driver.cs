@@ -1,4 +1,6 @@
-﻿namespace Amica.vNext.Models.Documents
+﻿using Newtonsoft.Json;
+
+namespace Amica.vNext.Models.Documents
 {
     public class Driver : ObservableObject
     {
@@ -10,12 +12,14 @@
             set { SetProperty(ref _name, value); }
             get { return _name; }
         }
+		[JsonProperty("license_id")]
         public string LicenseID
         {
             set { SetProperty(ref _licenseId, value); }
             get { return _licenseId; }
         }
 
+		[JsonProperty("plate_id")]
         public string PlateID
         {
             set { SetProperty(ref _plateId, value); }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace Amica.vNext.Models.Documents
 {
@@ -8,17 +9,24 @@ namespace Amica.vNext.Models.Documents
         private string _unitOfMeasure;
         private double _weight;
         private string _appearance;
-        private DateTime _dateTime;
+        private DateTime _date;
         private ContactDetailsEx _courier;
         private TransportMode _transportMode;
         private Driver _driver;
         private ShippingTerm _shippingTerms;
 
+		public Shipping()
+        {
+            Date = DateTime.Now;
+            TransportMode = DocumentHelpers.TransportModes[DocumentTransportMode.Courier];
+            Terms = DocumentHelpers.TransportTerms[DocumentShippingTerm.DeliveredDutyPaid];
+        }
         public int Volume
         {
             set { SetProperty(ref _volume, value); }
             get { return _volume; }
         }
+		[JsonProperty("unit_of_measure")]
         public string UnitOfMeasure
         {
             set { SetProperty(ref _unitOfMeasure, value); }
@@ -34,16 +42,17 @@ namespace Amica.vNext.Models.Documents
             set { SetProperty(ref _appearance, value); }
             get { return _appearance; }
         }
-        public DateTime DateTime
+        public DateTime Date
         {
-            set { SetProperty(ref _dateTime, value); }
-            get { return _dateTime; }
+            set { SetProperty(ref _date, value); }
+            get { return _date; }
         }
         public ContactDetailsEx Courier
         {
             set { SetProperty(ref _courier, value); }
             get { return _courier; }
         }
+		[JsonProperty("transport_mode")]
         public TransportMode TransportMode
         {
             set { SetProperty(ref _transportMode, value); }

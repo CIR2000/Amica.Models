@@ -22,7 +22,6 @@ namespace Amica.vNext.Models.Documents
         private BillingAddress _billTo;
         private ShippingAddress _shipTo;
         private ContactDetailsEx _agent;
-        private ContactDetailsEx _courier;
         private WithholdingTax _withholdingTax;
         private Shipping _shipping;
         private List<SocialSecurity> _socialSecurity;
@@ -111,12 +110,6 @@ namespace Amica.vNext.Models.Documents
         {
             set { SetProperty(ref _agent, value); }
             get { return _agent; }
-        }
-
-        public ContactDetailsEx Courier
-        {
-            set { SetProperty(ref _courier, value); }
-            get { return _courier; }
         }
 
         [JsonProperty("withholding_tax")]
