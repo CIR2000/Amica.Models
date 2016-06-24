@@ -21,6 +21,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactDetails.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactDetailsEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentVariation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentCategory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentHelpers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentNumber.cs" />
@@ -30,11 +31,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)Document\Driver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Shipping.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\VariationCategory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurityCategory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurityCategoryType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\ShippingTerm.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\TransportMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Status.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\Variation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\WitholdingTax.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Factories\DefaultFactories.cs" />

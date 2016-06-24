@@ -97,6 +97,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Document.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Variation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Variation.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\ShippingTerms.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -137,6 +142,10 @@
     <EmbeddedResource Include="Properties\Document.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Document.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Variation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Variation.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\ShippingTerms.resx">
       <Generator>ResXFileCodeGenerator</Generator>

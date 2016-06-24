@@ -25,6 +25,7 @@ namespace Amica.vNext.Models.Documents
         private WithholdingTax _withholdingTax;
         private Shipping _shipping;
         private List<SocialSecurity> _socialSecurity;
+        private List<Variation> _variation;
         private Bank _bank;
 
         //private  List<DocumentItem> _items = new List<DocumentItem>();
@@ -33,6 +34,7 @@ namespace Amica.vNext.Models.Documents
 		{
 		    Date = DateTime.Now;
             SocialSecurity = new List<SocialSecurity>();
+			Variation = new List<Variation>();
             //Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
         }
 
@@ -125,6 +127,14 @@ namespace Amica.vNext.Models.Documents
             set { SetProperty(ref _socialSecurity, value); }
             get { return _socialSecurity; }
         }
+
+        [JsonProperty("variation")]
+        public List<Variation> Variation
+        {
+            set { SetProperty(ref _variation, value); }
+            get { return _variation; }
+        }
+
         public Shipping Shipping
         {
             set { SetProperty(ref _shipping, value); }

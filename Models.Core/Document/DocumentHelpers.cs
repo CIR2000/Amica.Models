@@ -72,5 +72,14 @@ namespace Amica.vNext.Models.Documents
                     { DocumentShippingTerm.DeliveredDutyPaid, new ShippingTerm { Code = DocumentShippingTerm.DeliveredDutyPaid, Description = Properties.ShippingTerms.DeliveredDutyPaid }},
                     { DocumentShippingTerm.ExWorks, new ShippingTerm { Code = DocumentShippingTerm.ExWorks, Description = Properties.ShippingTerms.ExWorks }},
 				});
+
+		public static readonly ReadOnlyDictionary<DocumentVariation, VariationCategory > Variations = 
+			new ReadOnlyDictionary<DocumentVariation, VariationCategory>(
+				new Dictionary<DocumentVariation, VariationCategory>
+				{
+                    { DocumentVariation.Discount, new VariationCategory { Category = DocumentVariation.Discount, Description = Properties.Variation.Discount }},
+                    { DocumentVariation.PaymentDiscount, new VariationCategory { Category = DocumentVariation.PaymentDiscount, Description = Properties.Variation.PaymentDiscount }},
+                    { DocumentVariation.Raise, new VariationCategory { Category = DocumentVariation.Raise, Description = Properties.Variation.Raise }},
+				});
    }
 }
