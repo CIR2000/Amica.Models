@@ -29,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentTransportMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Driver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentPayment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Shipping.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\VariationCategory.cs" />

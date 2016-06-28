@@ -10,7 +10,6 @@ namespace Amica.vNext.Models.Documents
 		private DateTime _date;
         private string _reason;
         private DateTime _expirationDate;
-        private DateTime _baseDateForPayments;
         private decimal _rebate;
 
 
@@ -18,7 +17,7 @@ namespace Amica.vNext.Models.Documents
         private Status _status;
         private Category _category;
         private Currency _currency;
-        private Payment _payment;
+        private DocumentPayment _payment;
         private BillingAddress _billTo;
         private ShippingAddress _shipTo;
         private ContactDetailsEx _agent;
@@ -33,6 +32,7 @@ namespace Amica.vNext.Models.Documents
         public Document()
 		{
 		    Date = DateTime.Now;
+            Payment = new DocumentPayment();
             SocialSecurity = new List<SocialSecurity>();
 			Variation = new List<Variation>();
             //Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
@@ -56,15 +56,6 @@ namespace Amica.vNext.Models.Documents
             get { return _expirationDate; }
         }
 
-		/// <summary>
-        /// Only used when Document.Payment.FirstPaymentDate is set to ExplicitDate.
-        /// </summary>
-		[JsonProperty("base_date_for_payments")]
-        public DateTime BaseDateForPayments
-        {
-            set { SetProperty(ref _baseDateForPayments, value); }
-            get { return _baseDateForPayments; }
-        }
         public DocumentNumber Number
         {
             set { SetProperty(ref _number, value); }
@@ -88,7 +79,7 @@ namespace Amica.vNext.Models.Documents
             get { return _currency; }
         }
 
-        public Payment Payment
+        public DocumentPayment Payment
         {
             set { SetProperty(ref _payment, value); }
             get { return _payment; }
