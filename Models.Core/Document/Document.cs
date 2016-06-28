@@ -11,6 +11,7 @@ namespace Amica.vNext.Models.Documents
         private string _reason;
         private DateTime _expirationDate;
         private decimal _rebate;
+        private string _notes;
 
 
         private DocumentNumber _number;
@@ -143,6 +144,12 @@ namespace Amica.vNext.Models.Documents
         {
             set { SetProperty(ref _rebate, value); }
             get { return _rebate; }
+        }
+
+        public string Notes
+        {
+            set { SetProperty(ref _notes, value); }
+            get { return _notes; }
         }
 
         //public List<DocumentItem> Items
