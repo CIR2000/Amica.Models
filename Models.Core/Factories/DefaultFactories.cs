@@ -22,6 +22,7 @@ namespace Amica.vNext.Models
             Factory<PaymentMethod>.Register(() => new PaymentMethod());
             Factory<Document>.Register(typeof(Invoice), () => new Invoice());
             Factory<Document>.Register(() => new Document());
+            Factory<DocumentFee>.Register(() => new DocumentFee());
             Factory<NaturaPA>.Register(() => new NaturaPA());
             Factory<ModalitaPagamentoPA>.Register(() => new ModalitaPagamentoPA());
             Factory<Currency>.Register(() => new Currency());

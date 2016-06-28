@@ -24,9 +24,10 @@ namespace Amica.vNext.Models.Documents
         private ContactDetailsEx _agent;
         private WithholdingTax _withholdingTax;
         private Shipping _shipping;
-        private List<SocialSecurity> _socialSecurity;
-        private List<Variation> _variation;
         private Bank _bank;
+        private List<SocialSecurity> _socialSecurityCollection;
+        private List<Variation> _variationCollection;
+        private List<DocumentFee> _feeCollection;
 
         //private  List<DocumentItem> _items = new List<DocumentItem>();
 
@@ -35,8 +36,9 @@ namespace Amica.vNext.Models.Documents
 		    Date = DateTime.Now;
             Payment = new DocumentPayment();
             Currency = new DocumentCurrency();
-            SocialSecurity = new List<SocialSecurity>();
-			Variation = new List<Variation>();
+            SocialSecurityCollection = new List<SocialSecurity>();
+			VariationCollection = new List<Variation>();
+            FeeCollection = new List<DocumentFee>();
             //Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
         }
 
@@ -114,20 +116,6 @@ namespace Amica.vNext.Models.Documents
             get { return _withholdingTax; }
         }
 
-        [JsonProperty("social_security")]
-        public List<SocialSecurity> SocialSecurity
-        {
-            set { SetProperty(ref _socialSecurity, value); }
-            get { return _socialSecurity; }
-        }
-
-        [JsonProperty("variation")]
-        public List<Variation> Variation
-        {
-            set { SetProperty(ref _variation, value); }
-            get { return _variation; }
-        }
-
         public Shipping Shipping
         {
             set { SetProperty(ref _shipping, value); }
@@ -150,6 +138,27 @@ namespace Amica.vNext.Models.Documents
         {
             set { SetProperty(ref _notes, value); }
             get { return _notes; }
+        }
+
+        [JsonProperty("social_security_collection")]
+        public List<SocialSecurity> SocialSecurityCollection
+        {
+            set { SetProperty(ref _socialSecurityCollection, value); }
+            get { return _socialSecurityCollection; }
+        }
+
+        [JsonProperty("variation_collection")]
+        public List<Variation> VariationCollection
+        {
+            set { SetProperty(ref _variationCollection, value); }
+            get { return _variationCollection; }
+        }
+
+        [JsonProperty("fee_collection")]
+        public List<DocumentFee> FeeCollection
+        {
+            set { SetProperty(ref _feeCollection, value); }
+            get { return _feeCollection; }
         }
 
         //public List<DocumentItem> Items
