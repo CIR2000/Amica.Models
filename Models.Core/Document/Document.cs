@@ -16,7 +16,7 @@ namespace Amica.vNext.Models.Documents
         private DocumentNumber _number;
         private Status _status;
         private Category _category;
-        private Currency _currency;
+        private DocumentCurrency _currency;
         private DocumentPayment _payment;
         private BillingAddress _billTo;
         private ShippingAddress _shipTo;
@@ -33,6 +33,7 @@ namespace Amica.vNext.Models.Documents
 		{
 		    Date = DateTime.Now;
             Payment = new DocumentPayment();
+            Currency = new DocumentCurrency();
             SocialSecurity = new List<SocialSecurity>();
 			Variation = new List<Variation>();
             //Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
@@ -73,7 +74,7 @@ namespace Amica.vNext.Models.Documents
 			get { return _category; }
 		}
 
-        public Currency Currency
+        public DocumentCurrency Currency
         {
             set { SetProperty(ref _currency, value); }
             get { return _currency; }

@@ -21,6 +21,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactDetails.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\IContactDetailsEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentCurrency.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentVariation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentCategory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentHelpers.cs" />
