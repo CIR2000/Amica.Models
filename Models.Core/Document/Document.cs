@@ -7,11 +7,11 @@ namespace Amica.vNext.Models.Documents
     public class Document : BaseModelWithCompanyId
 	{
 
-		private DateTime _date;
         private string _reason;
-        private DateTime _expirationDate;
         private decimal _rebate;
         private string _notes;
+		private DateTime _date;
+        private DateTime _expirationDate;
 
 
         private DocumentNumber _number;
@@ -25,11 +25,11 @@ namespace Amica.vNext.Models.Documents
         private WithholdingTax _withholdingTax;
         private Shipping _shipping;
         private Bank _bank;
+
         private List<SocialSecurity> _socialSecurityCollection;
         private List<Variation> _variationCollection;
         private List<DocumentFee> _feeCollection;
-
-        //private  List<DocumentItem> _items = new List<DocumentItem>();
+        private List<DocumentItem> _itemCollection;
 
         public Document()
 		{
@@ -39,10 +39,11 @@ namespace Amica.vNext.Models.Documents
             SocialSecurityCollection = new List<SocialSecurity>();
 			VariationCollection = new List<Variation>();
             FeeCollection = new List<DocumentFee>();
-            //Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
+            ItemCollection = new List<DocumentItem>();
         }
 
-		public DateTime Date {
+		public DateTime Date
+        {
 			set { SetProperty (ref _date, value); }
 			get { return _date; }
 		}
@@ -161,11 +162,11 @@ namespace Amica.vNext.Models.Documents
             get { return _feeCollection; }
         }
 
-        //public List<DocumentItem> Items
-        //      {
-        //	set { SetProperty (ref _items, value); }
-        //	get { return _items; }
-
-        //      }
+        [JsonProperty("item_collection")]
+        public List<DocumentItem> ItemCollection
+        {
+            set { SetProperty(ref _itemCollection, value); }
+            get { return _itemCollection; }
+        }
     }
 }

@@ -23,6 +23,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Document\Category.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentFee.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentCurrency.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentItemLot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentItemSize.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentItemDetail.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentVariation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentCategory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentHelpers.cs" />
@@ -32,6 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Driver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\DocumentPayment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Document\OrderReference.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\Shipping.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\SocialSecurity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Document\VariationCategory.cs" />
