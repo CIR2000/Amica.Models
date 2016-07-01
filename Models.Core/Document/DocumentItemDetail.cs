@@ -9,7 +9,7 @@ namespace Amica.vNext.Models.Documents
     {
         private string _sku;
         private string _description;
-        private bool _unitOfMeasure;
+        private string _unitOfMeasure;
         private string _serial;
         private string _color;
         private string _notes;
@@ -27,12 +27,14 @@ namespace Amica.vNext.Models.Documents
 			set { SetProperty (ref _description, value); }
 			get { return _description; }
 		}
-        public bool UnitOfMeasure
+		[JsonProperty ("unit_of_measure")]
+        public string UnitOfMeasure
         {
             set { SetProperty(ref _unitOfMeasure, value); }
             get { return _unitOfMeasure; }
         }
 
+		[JsonProperty("serial_number")]
         public string SerialNumber
         {
             set { SetProperty(ref _serial, value); }

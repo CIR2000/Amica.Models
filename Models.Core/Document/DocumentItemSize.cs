@@ -17,7 +17,7 @@ namespace Amica.vNext.Models.Documents
             get { return _name; }
         }
 
-        public string Size
+        public string Number
         {
             set { SetProperty(ref _size, value); }
             get { return _size; }
