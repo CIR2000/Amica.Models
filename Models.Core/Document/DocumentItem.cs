@@ -21,6 +21,7 @@ namespace Amica.vNext.Models.Documents
         private DocumentItemDetail _detail;
 		private OrderReference _order;
         private Vat _vat;
+        private Warehouse _warehouse;
 
         private List<Variation> _variationCollection;
 
@@ -59,6 +60,11 @@ namespace Amica.vNext.Models.Documents
             set { SetProperty(ref _vat, value); }
             get { return _vat; }
         }
+
+		public Warehouse Warehouse {
+			set { SetProperty (ref _warehouse, value); }
+			get { return _warehouse; }
+		}
 
 		[JsonProperty ("withholding_tax")]
         public bool WithholdingTax
