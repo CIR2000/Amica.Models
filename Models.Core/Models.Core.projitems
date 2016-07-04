@@ -9,6 +9,8 @@
     <Import_RootNamespace>Models.Core</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Address.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Warehouse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModelWithCompanyId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\ObservableObject.cs" />
@@ -65,7 +67,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Payment\PaymentOption.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ReadOnlyDictionary.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Vat.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Contact\Address.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\AddressEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Contact\ContactIs.cs" />

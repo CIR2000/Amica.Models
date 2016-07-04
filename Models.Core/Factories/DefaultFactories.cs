@@ -34,6 +34,7 @@ namespace Amica.vNext.Models
             Factory<SocialSecurity>.Register(() => new SocialSecurity());
             Factory<Shipping>.Register(() => new Shipping());
             Factory<DocumentItem>.Register(() => new DocumentItem());
+            Factory<Warehouse>.Register(() => new Warehouse());
 
             _bootstrapped = true;
         }
