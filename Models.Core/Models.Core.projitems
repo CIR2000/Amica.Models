@@ -9,6 +9,7 @@
     <Import_RootNamespace>Models.Core</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Size.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Address.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Warehouse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BaseModels\BaseModel.cs" />
