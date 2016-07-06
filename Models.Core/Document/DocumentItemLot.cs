@@ -8,6 +8,13 @@ namespace Amica.vNext.Models.Documents
         private DateTime _date;
         private DateTime _expiration;
 
+		public DocumentItemLot()
+        {
+			// TODO these minvalues are needed for Adam. Must find a general solution.
+			// Consider handling minvalues in Eve.NET
+            Date = new DateTime(1900, 1, 1);
+            Expiration = new DateTime(1900,1,1);
+        }
         public string Number
         {
             set { SetProperty(ref _number, value); }
