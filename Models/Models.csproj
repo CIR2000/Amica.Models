@@ -13,7 +13,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -21,7 +21,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -34,6 +34,71 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Address.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="BaseModels\BaseModel.cs" />
+    <Compile Include="BaseModels\BaseModelWithCompanyId.cs" />
+    <Compile Include="BaseModels\ObservableObject.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Contact\AddressEx.cs" />
+    <Compile Include="Contact\BillingAddress.cs" />
+    <Compile Include="Contact\Contact.cs" />
+    <Compile Include="Contact\ContactDetails.cs" />
+    <Compile Include="Contact\ContactDetailsEx.cs" />
+    <Compile Include="Contact\ContactIs.cs" />
+    <Compile Include="Contact\IAddress.cs" />
+    <Compile Include="Contact\IBillingAddress.cs" />
+    <Compile Include="Contact\IContactDetails.cs" />
+    <Compile Include="Contact\IContactDetailsEx.cs" />
+    <Compile Include="Contact\ShippingAddress.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="Document\Category.cs" />
+    <Compile Include="Document\Document.cs" />
+    <Compile Include="Document\DocumentCategory.cs" />
+    <Compile Include="Document\DocumentCurrency.cs" />
+    <Compile Include="Document\DocumentFee.cs" />
+    <Compile Include="Document\DocumentHelpers.cs" />
+    <Compile Include="Document\DocumentItem.cs" />
+    <Compile Include="Document\DocumentItemDetail.cs" />
+    <Compile Include="Document\DocumentItemLot.cs" />
+    <Compile Include="Document\DocumentItemSize.cs" />
+    <Compile Include="Document\DocumentNumber.cs" />
+    <Compile Include="Document\DocumentPayment.cs" />
+    <Compile Include="Document\DocumentShippingTerm.cs" />
+    <Compile Include="Document\DocumentStatus.cs" />
+    <Compile Include="Document\DocumentTransportMode.cs" />
+    <Compile Include="Document\DocumentVariation.cs" />
+    <Compile Include="Document\Driver.cs" />
+    <Compile Include="Document\Invoice.cs" />
+    <Compile Include="Document\ObjectIdGenerator.cs" />
+    <Compile Include="Document\OrderReference.cs" />
+    <Compile Include="Document\Shipping.cs" />
+    <Compile Include="Document\ShippingTerm.cs" />
+    <Compile Include="Document\SocialSecurity.cs" />
+    <Compile Include="Document\SocialSecurityCategory.cs" />
+    <Compile Include="Document\SocialSecurityCategoryType.cs" />
+    <Compile Include="Document\Status.cs" />
+    <Compile Include="Document\TransportMode.cs" />
+    <Compile Include="Document\Variation.cs" />
+    <Compile Include="Document\VariationCategory.cs" />
+    <Compile Include="Document\WitholdingTax.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Factories\DefaultFactories.cs" />
+    <Compile Include="Factories\Factory.cs" />
+    <Compile Include="Fee.cs" />
+    <Compile Include="IDataErrorInfo.cs" />
+    <Compile Include="ItalianPA\ModalitaPagamentoPA.cs" />
+    <Compile Include="ItalianPA\NaturaPA.cs" />
+    <Compile Include="ItalianPA\PAHelpers.cs" />
+    <Compile Include="ItalianPA\PAItem.cs" />
+    <Compile Include="IUniqueId.cs" />
+    <Compile Include="Payment\FirstPaymentDate.cs" />
+    <Compile Include="Payment\FirstPaymentOption.cs" />
+    <Compile Include="Payment\Payment.cs" />
+    <Compile Include="Payment\PaymentDate.cs" />
+    <Compile Include="Payment\PaymentHelpers.cs" />
+    <Compile Include="Payment\PaymentMethod.cs" />
+    <Compile Include="Payment\PaymentOption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Payment.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -70,25 +135,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SocialSecurity.resx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\Storage\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Eve.NET\Eve\Eve.csproj">
-      <Project>{dd88d007-ad10-470d-9c89-aa8ee39857d0}</Project>
-      <Name>Eve</Name>
-    </ProjectReference>
+    <Compile Include="ReadOnlyDictionary.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="Vat.cs" />
+    <Compile Include="Warehouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Payment.resx">
@@ -120,7 +170,25 @@
       <LastGenOutput>SocialSecurity.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <Import Project="..\Models.Core\Models.Core.projitems" Label="Shared" />
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Eve.NET\Eve\Eve.csproj">
+      <Project>{dd88d007-ad10-470d-9c89-aa8ee39857d0}</Project>
+      <Name>Eve</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
