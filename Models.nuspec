@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Models</id>
+    <id>Amica.Models</id>
     <version>0.1</version>
-    <title>Models</title>
+    <title>Amica.Models</title>
     <authors>Nicola Iarocci</authors>
     <owners>CIR 2000</owners>
     <licenseUrl>https://github.com/CIR2000/Amica.vNext.Models/blob/master/LICENSE</licenseUrl>
