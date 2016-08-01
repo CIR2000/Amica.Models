@@ -79,10 +79,6 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Eve.NET\Eve\Eve.csproj">
-      <Project>{4749087d-fa43-420b-9324-5d53f7bf6567}</Project>
-      <Name>Eve</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{5a48fa69-73de-47fd-a391-289f6f76c434}</Project>
       <Name>Models</Name>
