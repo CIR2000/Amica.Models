@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Amica.vNext.Models.ItalianPA
+namespace Amica.Models.ItalianPA
 {
     public static class PAHelpers
     {

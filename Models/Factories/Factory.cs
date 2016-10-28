@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Amica.vNext.Models.Documents;
+using Amica.Models.Documents;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
 	public class Factory<T>
     {

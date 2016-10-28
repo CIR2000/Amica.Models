@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public static class ExtensionMethods
     {

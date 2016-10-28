@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Amica.vNext.Models.Documents
+namespace Amica.Models.Documents
 {
     public class DocumentItemLot : ObservableObject
     {

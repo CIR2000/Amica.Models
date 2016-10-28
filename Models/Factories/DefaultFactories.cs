@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Amica.vNext.Models.Documents;
-using Amica.vNext.Models.ItalianPA;
+using Amica.Models.Documents;
+using Amica.Models.ItalianPA;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
 	public class DefaultFactories
     {

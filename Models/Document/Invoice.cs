@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Amica.vNext.Models.Documents
+namespace Amica.Models.Documents
 {
     public class Invoice : Document
     {

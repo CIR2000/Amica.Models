@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public interface IContactDetails
     {

@@ -8,8 +8,8 @@
     <ProjectGuid>{5A48FA69-73DE-47FD-A391-289F6F76C434}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Amica.vNext.Models</RootNamespace>
-    <AssemblyName>Models</AssemblyName>
+    <RootNamespace>Amica.Models</RootNamespace>
+    <AssemblyName>Amica.Models</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -32,7 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\bin\Release\Models.XML</DocumentationFile>
+    <DocumentationFile>..\bin\Release\Amica.Models.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />

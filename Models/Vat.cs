@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
-using Amica.vNext.Models.ItalianPA;
+using Amica.Models.ItalianPA;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public class Vat : BaseModelWithCompanyId, IUniqueId
     {

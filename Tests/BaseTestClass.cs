@@ -2,7 +2,7 @@
 using Ploeh.AutoFixture;
 using Ploeh.AutoFixture.Idioms;
 
-namespace Amica.vNext.Models.Tests
+namespace Amica.Models.Tests
 {
 	public class BaseTestClass
 	{

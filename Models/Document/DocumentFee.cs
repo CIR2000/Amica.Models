@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Amica.vNext.Models.Documents
+namespace Amica.Models.Documents
 {
     public class DocumentFee : ObservableObject
     {

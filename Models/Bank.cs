@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public class Bank : ObservableObject
     {

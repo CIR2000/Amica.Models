@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Amica.vNext.Models.Documents
+namespace Amica.Models.Documents
 {
     public class DocumentHelpers
     {

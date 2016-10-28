@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using SQLite.Net.Attributes;
 using System;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
 	public abstract class BaseModel : ObservableObject, IDataErrorInfo
 	{

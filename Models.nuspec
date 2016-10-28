@@ -6,8 +6,8 @@
     <title>Amica.Models</title>
     <authors>Nicola Iarocci</authors>
     <owners>CIR 2000</owners>
-    <licenseUrl>https://github.com/CIR2000/Amica.vNext.Models/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/CIR2000/Amica.vNext.Models</projectUrl>
+    <licenseUrl>https://github.com/CIR2000/Amica.Models/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/CIR2000/Amica.Models</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Amica.vNext object models</description>
     <copyright>Copyright 2016 CIR 2000</copyright>
@@ -21,6 +21,6 @@
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="bin\Release\Models.???" target="lib\portable45-net45+win8+wp8+wpa81" />
+		<file src="bin\Release\Amica.Models.???" target="lib\portable45-net45+win8+wp8+wpa81" />
 	</files>
 </package>

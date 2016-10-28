@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using SQLite.Net.Attributes;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
 	public class Company : BaseModel
 	{

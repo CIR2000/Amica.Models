@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public class Payment : BaseModelWithCompanyId
     {

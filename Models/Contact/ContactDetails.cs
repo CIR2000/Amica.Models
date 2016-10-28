@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public class ContactDetails : ObservableObject, IContactDetails
     {

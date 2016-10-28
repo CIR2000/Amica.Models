@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Amica.vNext.Models;
-using Amica.vNext.Models.Documents;
+using Amica.Models;
+using Amica.Models.Documents;
 using Newtonsoft.Json;
 
 namespace Playground
@@ -13,7 +13,7 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            //var v = Amica.vNext.Models.ItalianPA.PAHelpers.NaturaPA;
+            //var v = Amica.Models.ItalianPA.PAHelpers.NaturaPA;
             //var i = ObjectFactory.CreateDocument(DocumentCategory.Invoice);
 
             //var d = new Invoice();

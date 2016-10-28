@@ -3,7 +3,7 @@ using SQLite.Net.Attributes;
 using System.Linq;
 using System.Reflection;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
 	public abstract class BaseModelWithCompanyId : BaseModel
 	{

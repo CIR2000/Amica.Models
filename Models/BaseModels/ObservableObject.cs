@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
 
     /// <summary>

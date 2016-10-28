@@ -1,3 +1,3 @@
-Amica.vNext.Models
-==================
+Amica.Models
+============
 Object Models for the Amica.vNext project.

@@ -1,4 +1,4 @@
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public enum PaymentOption
     {

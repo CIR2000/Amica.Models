@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     /// <summary>
     /// ReadOnlyDictionary implementation that works on both .NET4 and .NET45+

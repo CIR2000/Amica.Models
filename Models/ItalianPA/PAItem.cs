@@ -1,4 +1,4 @@
-﻿namespace Amica.vNext.Models.ItalianPA
+﻿namespace Amica.Models.ItalianPA
 {
     public class PAItem : ObservableObject
     {

@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace Amica.vNext.Models.Tests
+namespace Amica.Models.Tests
 {
 	[TestFixture]
 	public class Document : BaseTestClass

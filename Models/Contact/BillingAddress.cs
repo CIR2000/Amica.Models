@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Reflection;
 
-namespace Amica.vNext.Models
+namespace Amica.Models
 {
     public class BillingAddress : Address, IBillingAddress
     {

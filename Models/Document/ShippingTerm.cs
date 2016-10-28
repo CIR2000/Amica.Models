@@ -1,4 +1,4 @@
-﻿namespace Amica.vNext.Models.Documents
+﻿namespace Amica.Models.Documents
 {
     public class ShippingTerm : ObservableObject
     {
