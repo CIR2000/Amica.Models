@@ -7,8 +7,8 @@
     <ProjectGuid>{8DAE1E43-21D0-492B-80BB-51E30EB119FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Amica.vNext.Models.Tests</RootNamespace>
-    <AssemblyName>Amica.vNext.Models.Tests</AssemblyName>
+    <RootNamespace>Amica.Models.Tests</RootNamespace>
+    <AssemblyName>Amica.Models.Tests</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
