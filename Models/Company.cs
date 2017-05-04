@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using SQLite.Net.Attributes;
-
-namespace Amica.Models
+﻿namespace Amica.Models
 {
 	public class Company : BaseModel
 	{
@@ -11,7 +8,6 @@ namespace Amica.Models
 		/// Gets or sets the company name.
 		/// </summary>
 		/// <value>The company name.</value>
-		[Indexed]
 		public string Name {
 			set { SetProperty (ref _name, value); }
 			get { return _name; } 

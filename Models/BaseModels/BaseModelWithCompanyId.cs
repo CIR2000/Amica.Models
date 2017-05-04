@@ -1,6 +1,4 @@
 ﻿using Newtonsoft.Json;
-using SQLite.Net.Attributes;
-using System.Linq;
 using System.Reflection;
 
 namespace Amica.Models
@@ -14,7 +12,6 @@ namespace Amica.Models
 		/// </summary>
 		/// <value>The company identifier.</value>
 		[JsonProperty ("company_id")]
-		[Indexed][NotNull]
 		public  string CompanyId {
 			set {
                 var props = GetType().GetTypeInfo().DeclaredProperties;

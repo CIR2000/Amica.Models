@@ -1,6 +1,5 @@
 ﻿using Eve;
 using Newtonsoft.Json;
-using SQLite.Net.Attributes;
 using System;
 
 namespace Amica.Models
@@ -17,7 +16,6 @@ namespace Amica.Models
 		/// <value>The unique identifier.</value>
 		[JsonProperty ("_id")]
 		[Remote (Meta.DocumentId)]
-		[PrimaryKey]
 		public string UniqueId {
 			set { SetProperty (ref _uniqueId, value); }
 			get { return _uniqueId; }
@@ -29,7 +27,6 @@ namespace Amica.Models
 		/// <value>The ETag.</value>
 		[JsonProperty ("_etag")]
 		[Remote (Meta.ETag)]
-		[NotNull]
 		public string ETag {
 			set { SetProperty (ref _etag, value); }
 			get { return _etag; }
@@ -41,7 +38,6 @@ namespace Amica.Models
 		/// <value>The last updated date and time.</value>
 		[JsonProperty ("_updated")]
 		[Remote (Meta.LastUpdated)]
-		[Indexed][NotNull]
 		public DateTime Updated {
 			set { SetProperty (ref _updated, value); }
 			get { return _updated; }
@@ -53,7 +49,6 @@ namespace Amica.Models
 		/// <value>The creation date.</value>
 		[JsonProperty ("_created")]
 		[Remote (Meta.DateCreated)]
-		[Indexed][NotNull]
 		public DateTime Created {
 			set { SetProperty (ref _created, value); }
 			get { return _created; } 
