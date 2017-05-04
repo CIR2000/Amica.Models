@@ -14,7 +14,6 @@ namespace Playground
         static void Main(string[] args)
         {
             //var v = Amica.Models.ItalianPA.PAHelpers.NaturaPA;
-            //var i = ObjectFactory.CreateDocument(DocumentCategory.Invoice);
 
             //var d = new Invoice();
             //var d = new Invoice

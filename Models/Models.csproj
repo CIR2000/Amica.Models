@@ -84,8 +84,6 @@
     <Compile Include="Document\VariationCategory.cs" />
     <Compile Include="Document\WitholdingTax.cs" />
     <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="Factories\DefaultFactories.cs" />
-    <Compile Include="Factories\Factory.cs" />
     <Compile Include="Fee.cs" />
     <Compile Include="IDataErrorInfo.cs" />
     <Compile Include="ItalianPA\ModalitaPagamentoPA.cs" />
