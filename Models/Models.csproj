@@ -1,186 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A48FA69-73DE-47FD-A391-289F6F76C434}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Amica.Models</RootNamespace>
-    <AssemblyName>Amica.Models</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\bin\Release\Amica.Models.xml</DocumentationFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Address.cs" />
-    <Compile Include="Bank.cs" />
-    <Compile Include="BaseModels\BaseModel.cs" />
-    <Compile Include="BaseModels\BaseModelWithCompanyId.cs" />
-    <Compile Include="BaseModels\ObservableObject.cs" />
-    <Compile Include="Company.cs" />
-    <Compile Include="Contact\AddressEx.cs" />
-    <Compile Include="Contact\BillingAddress.cs" />
-    <Compile Include="Contact\Contact.cs" />
-    <Compile Include="Contact\ContactDetails.cs" />
-    <Compile Include="Contact\ContactDetailsEx.cs" />
-    <Compile Include="Contact\ContactIs.cs" />
-    <Compile Include="Contact\IAddress.cs" />
-    <Compile Include="Contact\IBillingAddress.cs" />
-    <Compile Include="Contact\IContactDetails.cs" />
-    <Compile Include="Contact\IContactDetailsEx.cs" />
-    <Compile Include="Contact\ShippingAddress.cs" />
-    <Compile Include="Currency.cs" />
-    <Compile Include="Properties\ItalianPA.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ItalianPA.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Payment.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Payment.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Document.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Document.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Document\Category.cs" />
-    <Compile Include="Document\Document.cs" />
-    <Compile Include="Document\DocumentCategory.cs" />
-    <Compile Include="Document\DocumentCurrency.cs" />
-    <Compile Include="Document\DocumentFee.cs" />
-    <Compile Include="Document\DocumentHelpers.cs" />
-    <Compile Include="Document\DocumentItem.cs" />
-    <Compile Include="Document\DocumentItemDetail.cs" />
-    <Compile Include="Document\DocumentItemLot.cs" />
-    <Compile Include="Document\DocumentItemSize.cs" />
-    <Compile Include="Document\DocumentNumber.cs" />
-    <Compile Include="Document\DocumentPayment.cs" />
-    <Compile Include="Document\DocumentShippingTerm.cs" />
-    <Compile Include="Document\DocumentStatus.cs" />
-    <Compile Include="Document\DocumentTransportMode.cs" />
-    <Compile Include="Document\DocumentVariation.cs" />
-    <Compile Include="Document\Driver.cs" />
-    <Compile Include="Document\Invoice.cs" />
-    <Compile Include="Document\ObjectIdGenerator.cs" />
-    <Compile Include="Document\OrderReference.cs" />
-    <Compile Include="Document\Shipping.cs" />
-    <Compile Include="Document\ShippingTerm.cs" />
-    <Compile Include="Document\SocialSecurity.cs" />
-    <Compile Include="Document\SocialSecurityCategory.cs" />
-    <Compile Include="Document\SocialSecurityCategoryType.cs" />
-    <Compile Include="Document\Status.cs" />
-    <Compile Include="Document\TransportMode.cs" />
-    <Compile Include="Document\Variation.cs" />
-    <Compile Include="Document\VariationCategory.cs" />
-    <Compile Include="Document\WitholdingTax.cs" />
-    <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="Fee.cs" />
-    <Compile Include="IDataErrorInfo.cs" />
-    <Compile Include="ItalianPA\ModalitaPagamentoPA.cs" />
-    <Compile Include="ItalianPA\NaturaPA.cs" />
-    <Compile Include="ItalianPA\PAHelpers.cs" />
-    <Compile Include="ItalianPA\PAItem.cs" />
-    <Compile Include="IUniqueId.cs" />
-    <Compile Include="Payment\FirstPaymentDate.cs" />
-    <Compile Include="Payment\FirstPaymentOption.cs" />
-    <Compile Include="Payment\Payment.cs" />
-    <Compile Include="Payment\PaymentDate.cs" />
-    <Compile Include="Payment\PaymentHelpers.cs" />
-    <Compile Include="Payment\PaymentMethod.cs" />
-    <Compile Include="Payment\PaymentOption.cs" />
-    <Compile Include="PriceList.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadOnlyDictionary.cs" />
-    <Compile Include="Properties\ShippingTerms.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ShippingTerms.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Size.cs" />
-    <Compile Include="Properties\SocialSecurity.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SocialSecurity.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\TransportMode.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TransportMode.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Variation.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Variation.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Vat.cs" />
-    <Compile Include="Warehouse.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Payment.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Payment.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\ItalianPA.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ItalianPA.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Document.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Document.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Variation.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Variation.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\ShippingTerms.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ShippingTerms.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\TransportMode.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>TransportMode.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\SocialSecurity.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SocialSecurity.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="project.json" />
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard1.4</TargetFramework>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Version>0.1.0</Version>
+        <Authors>Nicola Iarocci</Authors>
+        <Company>CIR 2000</Company>
+        <Product>Amica.Models</Product>
+        <Description>Amica.vNext object models</Description>
+        <PackageId>Amica.Models</PackageId>
+        <Copyright>Copyright 2017 CIR 2000</Copyright>
+        <PackageLicenseUrl>https://github.com/CIR2000/Amica.Models/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/CIR2000/Amica.Models</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/CIR2000/Amica.Models</RepositoryUrl>
+        <OutputPath>..\bin\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Eve.NET" Version="0.3.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+        <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
+    </ItemGroup>
 </Project>
