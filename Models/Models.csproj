@@ -13,6 +13,7 @@
         <PackageProjectUrl>https://github.com/CIR2000/Amica.Models</PackageProjectUrl>
         <RepositoryUrl>https://github.com/CIR2000/Amica.Models</RepositoryUrl>
         <OutputPath>..\bin\</OutputPath>
+        <RootNamespace>Amica.Models</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Eve.NET" Version="0.3.0" />
