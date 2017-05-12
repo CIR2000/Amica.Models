@@ -40,7 +40,7 @@ namespace Amica.Models.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Properties.ShippingTerms", typeof(ShippingTerms).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.Properties.ShippingTerms", typeof(ShippingTerms).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

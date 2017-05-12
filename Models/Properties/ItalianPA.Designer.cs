@@ -40,7 +40,7 @@ namespace Amica.Models.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Properties.ItalianPA", typeof(ItalianPA).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.Properties.ItalianPA", typeof(ItalianPA).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -301,15 +301,6 @@ namespace Amica.Models.Properties {
         internal static string N6 {
             get {
                 return ResourceManager.GetString("N6", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to test.
-        /// </summary>
-        internal static string String1 {
-            get {
-                return ResourceManager.GetString("String1", resourceCulture);
             }
         }
     }

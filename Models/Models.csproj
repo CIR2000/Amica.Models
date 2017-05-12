@@ -19,4 +19,70 @@
         <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
         <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
     </ItemGroup>
+    <ItemGroup>
+      <Compile Update="Properties\Document.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Document.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Properties\ItalianPA.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ItalianPA.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Properties\Payment.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Payment.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Properties\ShippingTerms.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ShippingTerms.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Properties\SocialSecurity.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SocialSecurity.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Properties\TransportMode.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>TransportMode.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Properties\Variation.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Variation.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="Properties\Document.resx">
+        <LastGenOutput>Document.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Properties\ItalianPA.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ItalianPA.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Properties\Payment.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Payment.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Properties\ShippingTerms.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ShippingTerms.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Properties\SocialSecurity.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>SocialSecurity.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Properties\TransportMode.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>TransportMode.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Properties\Variation.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Variation.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
 </Project>
