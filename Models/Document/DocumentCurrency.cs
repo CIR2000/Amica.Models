@@ -7,7 +7,10 @@ namespace Amica.Models.Documents
         private Currency _currency;
         private decimal _exchange_rate;
 
-		public DocumentCurrency() { }
+		public DocumentCurrency()
+        {
+            _currency = new Currency();
+        }
 
         public Currency Current
         {
