@@ -40,6 +40,8 @@ namespace Amica.Models.Documents
 			VariationCollection = new List<Variation>();
             FeeCollection = new List<DocumentFee>();
             ItemCollection = new List<DocumentItem>();
+            Status = DocumentHelpers.Statuses[DocumentStatus.Draft];
+            //Category = DocumentHelpers.Categories[DocumentCategory.]
         }
 
 		public DateTime Date
