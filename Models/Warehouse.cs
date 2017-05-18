@@ -6,6 +6,11 @@
         private string _notes;
         private Address _address;
 
+        public Warehouse()
+        {
+            _address = new Address();
+        }
+
         public string Name
         {
             set { SetProperty(ref _name, value); }
