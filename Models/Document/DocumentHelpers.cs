@@ -65,7 +65,7 @@ namespace Amica.Models.Documents
                     { DocumentTransportMode.Courier, new TransportMode { Code = DocumentTransportMode.Courier, Description = Properties.TransportMode.Courier }},
 				});
 
-		public static readonly ReadOnlyDictionary<DocumentShippingTerm, ShippingTerm> TransportTerms = 
+		public static readonly ReadOnlyDictionary<DocumentShippingTerm, ShippingTerm> ShippingTerms = 
 			new ReadOnlyDictionary<DocumentShippingTerm, ShippingTerm>(
 				new Dictionary<DocumentShippingTerm, ShippingTerm>
 				{

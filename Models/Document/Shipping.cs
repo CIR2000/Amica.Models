@@ -19,7 +19,7 @@ namespace Amica.Models.Documents
         {
             Date = DateTime.Now;
             TransportMode = DocumentHelpers.TransportModes[DocumentTransportMode.Courier];
-            Terms = DocumentHelpers.TransportTerms[DocumentShippingTerm.DeliveredDutyPaid];
+            Terms = DocumentHelpers.ShippingTerms[DocumentShippingTerm.DeliveredDutyPaid];
         }
         public int Volume
         {

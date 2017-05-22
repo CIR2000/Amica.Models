@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
-
-namespace Amica.Models.Documents
+﻿namespace Amica.Models.Documents
 {
     public class DocumentItemSize : ObservableObject
     {

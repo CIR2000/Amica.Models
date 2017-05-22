@@ -53,7 +53,7 @@ namespace Amica.Models.Documents
             get { return _notes; }
         }
 
-        public DocumentItemSize Size
+            public DocumentItemSize Size
         {
             set { SetProperty(ref _size, value); }
             get { return _size; }
