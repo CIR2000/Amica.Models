@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Amica.Models.Properties {
+namespace Models {
     using System;
     using System.Reflection;
     
@@ -23,14 +23,14 @@ namespace Amica.Models.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Document {
+    internal class PaymentResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Document() {
+        internal PaymentResources() {
         }
         
         /// <summary>
@@ -40,7 +40,7 @@ namespace Amica.Models.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Properties.Document", typeof(Document).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.PaymentResources", typeof(PaymentResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,74 +62,65 @@ namespace Amica.Models.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DDT.
+        ///   Looks up a localized string similar to Data documento.
         /// </summary>
-        internal static string DeliveryNote {
+        internal static string AtDocumentDate {
             get {
-                return ResourceManager.GetString("DeliveryNote", resourceCulture);
+                return ResourceManager.GetString("AtDocumentDate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fattura di acconto.
+        ///   Looks up a localized string similar to Fine mese.
         /// </summary>
-        internal static string DepositInvoice {
+        internal static string AtEndOfMonth {
             get {
-                return ResourceManager.GetString("DepositInvoice", resourceCulture);
+                return ResourceManager.GetString("AtEndOfMonth", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bozza.
+        ///   Looks up a localized string similar to Data indicata.
         /// </summary>
-        internal static string Draft {
+        internal static string AtExplicitDate {
             get {
-                return ResourceManager.GetString("Draft", resourceCulture);
+                return ResourceManager.GetString("AtExplicitDate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fattura differita.
+        ///   Looks up a localized string similar to Con spese.
         /// </summary>
-        internal static string Invoice {
+        internal static string FeesIncluded {
             get {
-                return ResourceManager.GetString("Invoice", resourceCulture);
+                return ResourceManager.GetString("FeesIncluded", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fatturato.
+        ///   Looks up a localized string similar to Normale.
         /// </summary>
-        internal static string InvoicedDeliveryNote {
+        internal static string Normal {
             get {
-                return ResourceManager.GetString("InvoicedDeliveryNote", resourceCulture);
+                return ResourceManager.GetString("Normal", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Emesso.
+        ///   Looks up a localized string similar to Con IVA.
         /// </summary>
-        internal static string Issued {
+        internal static string VatIncluded {
             get {
-                return ResourceManager.GetString("Issued", resourceCulture);
+                return ResourceManager.GetString("VatIncluded", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fattura pro-forma.
+        ///   Looks up a localized string similar to Solo IVA.
         /// </summary>
-        internal static string ProFormaInvoice {
+        internal static string VatOnly {
             get {
-                return ResourceManager.GetString("ProFormaInvoice", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Fattura accompagnatoria.
-        /// </summary>
-        internal static string ShippingInvoice {
-            get {
-                return ResourceManager.GetString("ShippingInvoice", resourceCulture);
+                return ResourceManager.GetString("VatOnly", resourceCulture);
             }
         }
     }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Amica.Models.Properties {
+namespace Models {
     using System;
     using System.Reflection;
     
@@ -23,14 +23,14 @@ namespace Amica.Models.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Payment {
+    internal class TransportModeResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Payment() {
+        internal TransportModeResources() {
         }
         
         /// <summary>
@@ -40,7 +40,7 @@ namespace Amica.Models.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Properties.Payment", typeof(Payment).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.TransportModeResources", typeof(TransportModeResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,65 +62,29 @@ namespace Amica.Models.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data documento.
+        ///   Looks up a localized string similar to Corriere.
         /// </summary>
-        internal static string AtDocumentDate {
+        internal static string Courier {
             get {
-                return ResourceManager.GetString("AtDocumentDate", resourceCulture);
+                return ResourceManager.GetString("Courier", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fine mese.
+        ///   Looks up a localized string similar to Destinatario.
         /// </summary>
-        internal static string AtEndOfMonth {
+        internal static string Recipient {
             get {
-                return ResourceManager.GetString("AtEndOfMonth", resourceCulture);
+                return ResourceManager.GetString("Recipient", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data indicata.
+        ///   Looks up a localized string similar to Mittente.
         /// </summary>
-        internal static string AtExplicitDate {
+        internal static string Sender {
             get {
-                return ResourceManager.GetString("AtExplicitDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Con spese.
-        /// </summary>
-        internal static string FeesIncluded {
-            get {
-                return ResourceManager.GetString("FeesIncluded", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Normale.
-        /// </summary>
-        internal static string Normal {
-            get {
-                return ResourceManager.GetString("Normal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Con IVA.
-        /// </summary>
-        internal static string VatIncluded {
-            get {
-                return ResourceManager.GetString("VatIncluded", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Solo IVA.
-        /// </summary>
-        internal static string VatOnly {
-            get {
-                return ResourceManager.GetString("VatOnly", resourceCulture);
+                return ResourceManager.GetString("Sender", resourceCulture);
             }
         }
     }

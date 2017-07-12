@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Amica.Models.Properties {
+namespace Models {
     using System;
     using System.Reflection;
     
@@ -23,14 +23,14 @@ namespace Amica.Models.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class TransportMode {
+    internal class ShippingTermsResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal TransportMode() {
+        internal ShippingTermsResources() {
         }
         
         /// <summary>
@@ -40,7 +40,7 @@ namespace Amica.Models.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Properties.TransportMode", typeof(TransportMode).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.ShippingTermsResources", typeof(ShippingTermsResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,29 +62,20 @@ namespace Amica.Models.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Corriere.
+        ///   Looks up a localized string similar to Porto franco.
         /// </summary>
-        internal static string Courier {
+        internal static string DeliveredDutyPaid {
             get {
-                return ResourceManager.GetString("Courier", resourceCulture);
+                return ResourceManager.GetString("DeliveredDutyPaid", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Destinatario.
+        ///   Looks up a localized string similar to Porto assegnato.
         /// </summary>
-        internal static string Recipient {
+        internal static string ExWorks {
             get {
-                return ResourceManager.GetString("Recipient", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mittente.
-        /// </summary>
-        internal static string Sender {
-            get {
-                return ResourceManager.GetString("Sender", resourceCulture);
+                return ResourceManager.GetString("ExWorks", resourceCulture);
             }
         }
     }

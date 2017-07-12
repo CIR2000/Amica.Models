@@ -117,28 +117,85 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DeliveryNote" xml:space="preserve">
-    <value>DDT</value>
+  <data name="MP01" xml:space="preserve">
+    <value>contanti</value>
   </data>
-  <data name="DepositInvoice" xml:space="preserve">
-    <value>Fattura di acconto</value>
+  <data name="MP02" xml:space="preserve">
+    <value>assegno</value>
   </data>
-  <data name="Draft" xml:space="preserve">
-    <value>Bozza</value>
+  <data name="MP03" xml:space="preserve">
+    <value>assegno circolare</value>
   </data>
-  <data name="Invoice" xml:space="preserve">
-    <value>Fattura differita</value>
+  <data name="MP04" xml:space="preserve">
+    <value>contanti presso Tesoreria</value>
   </data>
-  <data name="InvoicedDeliveryNote" xml:space="preserve">
-    <value>Fatturato</value>
+  <data name="MP05" xml:space="preserve">
+    <value>bonifico</value>
   </data>
-  <data name="Issued" xml:space="preserve">
-    <value>Emesso</value>
+  <data name="MP06" xml:space="preserve">
+    <value>vaglia cambiario</value>
   </data>
-  <data name="ProFormaInvoice" xml:space="preserve">
-    <value>Fattura pro-forma</value>
+  <data name="MP07" xml:space="preserve">
+    <value>bollettino bancario</value>
   </data>
-  <data name="ShippingInvoice" xml:space="preserve">
-    <value>Fattura accompagnatoria</value>
+  <data name="MP08" xml:space="preserve">
+    <value>carta di pagamento</value>
+  </data>
+  <data name="MP09" xml:space="preserve">
+    <value>RID</value>
+  </data>
+  <data name="MP10" xml:space="preserve">
+    <value>RID utenze</value>
+  </data>
+  <data name="MP11" xml:space="preserve">
+    <value>RID veloce</value>
+  </data>
+  <data name="MP12" xml:space="preserve">
+    <value>RIBA</value>
+  </data>
+  <data name="MP13" xml:space="preserve">
+    <value>MAV</value>
+  </data>
+  <data name="MP14" xml:space="preserve">
+    <value>quietanza erario</value>
+  </data>
+  <data name="MP15" xml:space="preserve">
+    <value>giroconto su conti di contabilità speciale</value>
+  </data>
+  <data name="MP16" xml:space="preserve">
+    <value>domiciliazione bancaria</value>
+  </data>
+  <data name="MP17" xml:space="preserve">
+    <value>domiciliazione postale</value>
+  </data>
+  <data name="MP18" xml:space="preserve">
+    <value>bollettino di c/c postale</value>
+  </data>
+  <data name="MP19" xml:space="preserve">
+    <value>SEPA Direct Debit</value>
+  </data>
+  <data name="MP20" xml:space="preserve">
+    <value>SEPA Direct Debit CORE</value>
+  </data>
+  <data name="MP21" xml:space="preserve">
+    <value>SEPA Direct Debit B2B</value>
+  </data>
+  <data name="N1" xml:space="preserve">
+    <value>escluse ex art. 15</value>
+  </data>
+  <data name="N2" xml:space="preserve">
+    <value>non soggette</value>
+  </data>
+  <data name="N3" xml:space="preserve">
+    <value>non imponibili</value>
+  </data>
+  <data name="N4" xml:space="preserve">
+    <value>esenti</value>
+  </data>
+  <data name="N5" xml:space="preserve">
+    <value>regime del margine</value>
+  </data>
+  <data name="N6" xml:space="preserve">
+    <value>inversione contabile (reverse charge)</value>
   </data>
 </root>
