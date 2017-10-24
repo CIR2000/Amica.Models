@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Amica.Models</PackageId>
     <Version>0.0.1</Version>
     <Authors>Nicola Iarocci</Authors>
@@ -16,8 +16,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Eve.NET" Version="0.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Eve.NET\Eve\Eve.csproj" />
   </ItemGroup>
 
   <ItemGroup>
