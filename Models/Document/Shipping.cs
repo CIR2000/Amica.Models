@@ -7,7 +7,7 @@ namespace Amica.Models.Documents
     {
         private int _volume;
         private string _unitOfMeasure;
-        private double _weight;
+        private float _weight;
         private string _appearance;
         private DateTime _date;
         private ContactDetailsEx _courier;
@@ -32,7 +32,7 @@ namespace Amica.Models.Documents
             set { SetProperty(ref _unitOfMeasure, value); }
             get { return _unitOfMeasure; }
         }
-        public double Weight
+        public float Weight
         {
             set { SetProperty(ref _weight, value); }
             get { return _weight; }

@@ -4,12 +4,12 @@ namespace Amica.Models.Documents
 {
     public class WithholdingTax : ObservableObject
     {
-		private double _rate;
+		private float _rate;
         private decimal _amount;
-        private double _taxableShare;
+        private float _taxableShare;
         private bool _includesSocialSecurity;
 
-		public double Rate {
+		public float Rate {
 			set { SetProperty (ref _rate, value); }
 			get { return _rate; }
 		}
@@ -19,7 +19,7 @@ namespace Amica.Models.Documents
 			get { return _amount; }
 		}
 		[JsonProperty("taxable_share")]
-		public double TaxableShare {
+		public float TaxableShare {
 			set { SetProperty (ref _taxableShare, value); }
 			get { return _taxableShare; }
 		}

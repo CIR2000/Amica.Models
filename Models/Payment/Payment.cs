@@ -5,7 +5,7 @@ namespace Amica.Models
     public class Payment : BaseModelWithCompanyId
     {
         private string _name;
-        private double _discount;
+        private float _discount;
 		// inizio scadenze
         private int _firstPaymentDateAdditionalDays;
 		// periodicità
@@ -42,7 +42,7 @@ namespace Amica.Models
             get { return _name; }
         }
 
-        public double Discount
+        public float Discount
         {
             set { SetProperty(ref _discount, value); }
             get { return _discount; }

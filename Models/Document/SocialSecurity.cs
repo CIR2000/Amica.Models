@@ -2,14 +2,14 @@
 {
     public class SocialSecurity : ObservableObject
     {
-        private double _rate;
+        private float _rate;
         private decimal _amount;
         private decimal _taxable;
         private SocialSecurityCategory _category;
         private Vat _vat;
         private bool _withholding;
 
-		public double Rate {
+		public float Rate {
 			set { SetProperty (ref _rate, value); }
 			get { return _rate; }
 		}

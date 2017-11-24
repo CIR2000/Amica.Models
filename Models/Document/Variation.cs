@@ -3,7 +3,7 @@
     public class Variation : ObservableObject
     {
         private string _description;
-        private double _rate;
+        private float _rate;
         private decimal _amount;
         private VariationCategory _category;
 
@@ -12,7 +12,7 @@
             set { SetProperty(ref _category, value); }
             get { return _category; }
         }
-        public double Rate
+        public float Rate
         {
             set { SetProperty(ref _rate, value); }
             get { return _rate; }
