@@ -7,8 +7,8 @@ namespace Amica.Models
     {
         private string _name;
         private string _code;
-        private double _rate;
-        private double _nonDeductible;
+        private float _rate;
+        private float _nonDeductible;
         private bool _isIntraCommunity;
         private bool _isSplitPayment;
         private  NaturaPA _naturaPA;
@@ -37,7 +37,7 @@ namespace Amica.Models
         /// Gets or sets the VAT rage.
         /// </summary>
         /// <value>The VAT rate.</value>
-        public double Rate
+        public float Rate
         {
             set { SetProperty(ref _rate, value); }
             get { return _rate; }
@@ -48,7 +48,7 @@ namespace Amica.Models
         /// </summary>
         /// <value>The non-deductible rate.</value>
 		[JsonProperty("non_deductible")]
-        public double NonDeductible
+        public float NonDeductible
         {
             set { SetProperty(ref _nonDeductible, value); }
             get { return _nonDeductible; }

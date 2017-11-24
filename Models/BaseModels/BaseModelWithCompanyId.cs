@@ -14,16 +14,16 @@ namespace Amica.Models
 		[JsonProperty ("company_id")]
 		public  string CompanyId {
 			set {
-                var props = GetType().GetTypeInfo().DeclaredProperties;
-				foreach (var prop in props) {
+                //var props = GetType().GetTypeInfo().DeclaredProperties;
+				//foreach (var prop in props) {
 
-					if (prop.PropertyType.GetTypeInfo().BaseType == typeof(BaseModelWithCompanyId)) {
+					//if (prop.PropertyType.GetTypeInfo().BaseType == typeof(BaseModelWithCompanyId)) {
 
-                        var obj = ((BaseModelWithCompanyId)prop.GetValue(this, null));
-						if (obj != null)
-							obj.CompanyId = value;
-                    }
-                }
+                        //var obj = ((BaseModelWithCompanyId)prop.GetValue(this, null));
+						//if (obj != null)
+							//obj.CompanyId = value;
+                    //}
+                //}
                 SetProperty (ref _companyId, value);
             }
 			get { return _companyId; }
