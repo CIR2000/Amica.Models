@@ -34,6 +34,7 @@ namespace Amica.Models
             InstallmentsEveryNumberOfDays = 30;
 			FirstPaymentDate= PaymentHelpers.FirstPaymentDates[PaymentDate.DocumentDate];
 			FirstPaymentOption = PaymentHelpers.FirstPaymentOptions[PaymentOption.Normal];
+            PaymentMethod = new PaymentMethod();
         }
 
         public string Name
