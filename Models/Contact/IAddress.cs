@@ -7,5 +7,6 @@
 		string PostalCode { get; set; }
 		string StateOrProvince{ get; set; }
 		string Country { get; set; }
+        string Notes { get; set; }
     }
 }

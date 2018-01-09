@@ -11,6 +11,7 @@ namespace Amica.Models.Company
         {
             ProfiloFiscale = new ProfiloFiscale();
             Predefinizioni = new Predefinizioni();
+            Address = new AddressEx();
         }
 		public string Name {
 			set { SetProperty (ref _name, value); }
@@ -48,5 +49,6 @@ namespace Amica.Models.Company
         [JsonProperty("profilo_fiscale")]
         public ProfiloFiscale ProfiloFiscale { get; }
         public Predefinizioni Predefinizioni { get; }
+        public AddressEx Address { get; }
     }
 }

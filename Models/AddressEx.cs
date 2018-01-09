@@ -89,5 +89,11 @@ namespace Amica.Models
             get { return _address.Country; }
             set { _address.Country = value; }
         }
+        public string Notes
+        {
+            get { return _address.Notes; }
+            set { _address.Notes = value; }
+        }
+
     }
 }

@@ -9,6 +9,7 @@ namespace Amica.Models
         private string _postalCode;
         private string _country;
         private string _stateOrProvince;
+        private string _notes;
         public string Street
         {
             get { return _street; }
@@ -35,6 +36,11 @@ namespace Amica.Models
         {
             get { return _stateOrProvince; }
             set { SetProperty(ref _stateOrProvince, value); }
+        }
+        public string Notes
+        {
+            get { return _notes; }
+            set { SetProperty(ref _notes, value); }
         }
     }
 }
