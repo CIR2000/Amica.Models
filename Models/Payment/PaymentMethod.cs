@@ -1,18 +1,24 @@
 ﻿using Newtonsoft.Json;
-using Amica.Models.ItalianPA;
 
 namespace Amica.Models
 {
+    /// <summary>
+    /// Payment method information.
+    /// </summary>
+    /// <seealso cref="Amica.Models.BaseModelWithCompanyId" />
+    /// <seealso cref="Amica.Models.IUniqueId" />
     public class PaymentMethod : BaseModelWithCompanyId, IUniqueId
     {
         private string _name;
         private bool _IsBankReceipt;
-        private ModalitaPagamentoPA _modalitaPagamentoPA;
+        private ItalianPA.PaymentMethod _paPaymentMethod;
 
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        /// <value>The name.</value>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -20,21 +26,29 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets wether this is a RiBa method.
+        /// Gets or sets a value indicating whether this instance is bank receipt.
         /// </summary>
-        /// <value>The wether this is a RiBa method.</value>
-		[JsonProperty("is_bank_receipt")]
+        /// <value>
+        ///   <c>true</c> if this instance is bank receipt; otherwise, <c>false</c>.
+        /// </value>
+        [JsonProperty("is_bank_receipt")]
         public bool IsBankReceipt
         {
             set { SetProperty(ref _IsBankReceipt, value); }
             get { return _IsBankReceipt; }
         }
 
-		[JsonProperty("pagamento_pa")]
-        public ModalitaPagamentoPA ModalitaPagamentoPA
+        /// <summary>
+        /// Gets or sets the public administration payment method.
+        /// </summary>
+        /// <value>
+        /// The public administration payment method.
+        /// </value>
+        [JsonProperty("public_administration_payment_method")]
+        public ItalianPA.PaymentMethod PublicAdministrationPaymentMethod
         {
-            set { SetProperty(ref _modalitaPagamentoPA, value); }
-            get { return _modalitaPagamentoPA; }
+            set { SetProperty(ref _paPaymentMethod, value); }
+            get { return _paPaymentMethod; }
         }
     }
 }

@@ -13,6 +13,12 @@
     <PackageProjectUrl>https://github.com/CIR2000/Amica.Models</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CIR2000/Amica.Models</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyName>Amica.Models</AssemblyName>
+    <RootNamespace>Amica.Models</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.1\Amica.Models.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

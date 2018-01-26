@@ -3,12 +3,16 @@ using System.Reflection;
 
 namespace Amica.Models
 {
-	public abstract class BaseModelWithCompanyId : BaseModel
+    /// <summary>
+    /// Base class for concrete data models with a company identifier.
+    /// </summary>
+    /// <seealso cref="Amica.Models.BaseModel" />
+    public abstract class BaseModelWithCompanyId : BaseModel
 	{
 		private string _companyId;
 
 		/// <summary>
-		/// Gets or sets the company Id.
+		/// Gets or sets the company identifier.
 		/// </summary>
 		/// <value>The company identifier.</value>
 		[JsonProperty ("company_id")]

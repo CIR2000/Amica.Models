@@ -1,54 +1,130 @@
 ﻿using Newtonsoft.Json;
+using System.Runtime.CompilerServices;
 
 namespace Amica.Models.Company
 {
-	public class Company : BaseModel
+    /// <summary>
+    /// This namespace holds data model classes used to store and retrieve company information.
+    /// </summary>
+    [CompilerGenerated]
+    class NamespaceDoc
+    {
+    }
+
+    /// <summary>
+    /// Represents a user company.
+    /// </summary>
+    /// <seealso cref="Amica.Models.BaseModel" />
+    public class Company : BaseModel
 	{
-		private string _name, _password, _codiceSia, _codiceRea, _logo, _lastPosition;
+		private string _name, _password, _siaCode, _reaCode, _logo, _lastPosition;
         private bool _legalEntity;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Company"/> class.
+        /// </summary>
         public Company()
         {
-            ProfiloFiscale = new ProfiloFiscale();
-            Predefinizioni = new Predefinizioni();
+            FiscalProfile = new FiscalProfile();
+            Preferences = new Preferences();
             Address = new AddressEx();
         }
-		public string Name {
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>
+        /// The name.
+        /// </value>
+        public string Name {
 			set { SetProperty (ref _name, value); }
 			get { return _name; } 
 		}
 
-		public string Password {
+        /// <summary>
+        /// Gets or sets the password.
+        /// </summary>
+        /// <value>
+        /// The password.
+        /// </value>
+        public string Password {
 			set { SetProperty (ref _password, value); }
 			get { return _password; }
 		}
-        [JsonProperty("codice_sia")]
-		public string CodiceSia {
-			set { SetProperty (ref _codiceSia, value); }
-			get { return _codiceSia; } 
+        /// <summary>
+        /// Gets or sets the SIA code.
+        /// </summary>
+        /// <value>
+        /// The SIA code.
+        /// </value>
+        [JsonProperty("sia_code")]
+		public string SIACode {
+			set { SetProperty (ref _siaCode, value); }
+			get { return _siaCode; } 
 		}
-        [JsonProperty("codice_rea")]
-		public string CodiceRea {
-			set { SetProperty (ref _codiceRea, value); }
-			get { return _codiceRea; } 
+        /// <summary>
+        /// Gets or sets the REA code.
+        /// </summary>
+        /// <value>
+        /// The REA code.
+        /// </value>
+        [JsonProperty("rea_code")]
+		public string REACode {
+			set { SetProperty (ref _reaCode, value); }
+			get { return _reaCode; } 
 		}
-        [JsonProperty("legal_entity")]
-		public bool LegalEntity {
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is a legal entity.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance is a legal entity; otherwise, <c>false</c>.
+        /// </value>
+        [JsonProperty("is_legal_entity")]
+		public bool IsLegalEntity {
 			set { SetProperty (ref _legalEntity, value); }
 			get { return _legalEntity; } 
 		}
-		public string Logo {
+        /// <summary>
+        /// Gets or sets the company logo filename. 
+        /// </summary>
+        /// <value>
+        /// The company logo filename.
+        /// </value>
+        public string Logo {
 			set { SetProperty (ref _logo, value); }
 			get { return _logo; } 
 		}
+        /// <summary>
+        /// Gets or sets the last user position known he was while working with the company.
+        /// </summary>
+        /// <value>
+        /// The last position.
+        /// </value>
         [JsonProperty("last_position")]
 		public string LastPosition {
 			set { SetProperty (ref _lastPosition, value); }
 			get { return _lastPosition; } 
 		}
-        [JsonProperty("profilo_fiscale")]
-        public ProfiloFiscale ProfiloFiscale { get; }
-        public Predefinizioni Predefinizioni { get; }
+        /// <summary>
+        /// Gets the company's fiscal profile.
+        /// </summary>
+        /// <value>
+        /// The fiscal profile.
+        /// </value>
+        [JsonProperty("fiscal_profile")]
+        public FiscalProfile FiscalProfile { get; }
+        /// <summary>
+        /// Gets the company preferences.
+        /// </summary>
+        /// <value>
+        /// The company preferences.
+        /// </value>
+        public Preferences Preferences { get; }
+        /// <summary>
+        /// Gets the companyt address.
+        /// </summary>
+        /// <value>
+        /// The companyt address.
+        /// </value>
         public AddressEx Address { get; }
     }
 }

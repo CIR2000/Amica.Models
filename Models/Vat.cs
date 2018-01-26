@@ -3,6 +3,11 @@ using Amica.Models.ItalianPA;
 
 namespace Amica.Models
 {
+    /// <summary>
+    /// VAT details.
+    /// </summary>
+    /// <seealso cref="Amica.Models.BaseModelWithCompanyId" />
+    /// <seealso cref="Amica.Models.IUniqueId" />
     public class Vat : BaseModelWithCompanyId, IUniqueId
     {
         private string _name;
@@ -11,7 +16,7 @@ namespace Amica.Models
         private float _nonDeductible;
         private bool _isIntraCommunity;
         private bool _isSplitPayment;
-        private  NaturaPA _naturaPA;
+        private  VatExemption _vat_exemption;
 
         /// <summary>
         /// Gets or sets the VAT name.
@@ -34,7 +39,7 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the VAT rage.
+        /// Gets or sets the VAT rate.
         /// </summary>
         /// <value>The VAT rate.</value>
         public float Rate
@@ -54,10 +59,12 @@ namespace Amica.Models
             get { return _nonDeductible; }
         }
         /// <summary>
-        /// Gets or sets intra-community flag.
+        /// Gets or sets a value indicating whether this instance is intra community.
         /// </summary>
-        /// <value>The intra-community flag.</value>
-		[JsonProperty("is_intra")]
+        /// <value>
+        ///   <c>true</c> if this instance is intra community; otherwise, <c>false</c>.
+        /// </value>
+        [JsonProperty("is_intra")]
         public bool IsIntraCommunity
         {
             set { SetProperty(ref _isIntraCommunity, value); }
@@ -65,10 +72,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets split payment flag.
+        /// Gets or sets a value indicating whether this instance is split payment.
         /// </summary>
-        /// <value>The split payment flag.</value>
-		[JsonProperty("is_split_payment")]
+        /// <value>
+        ///   <c>true</c> if this instance is split payment; otherwise, <c>false</c>.
+        /// </value>
+        [JsonProperty("is_split_payment")]
         public bool IsSplitPayment
         {
             set { SetProperty(ref _isSplitPayment, value); }
@@ -76,14 +85,16 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the Public Administration nature.
+        /// Gets or sets the vat exemption.
         /// </summary>
-        /// <value>The Public Administration nature.</value>
-		[JsonProperty("natura_pa")]
-        public NaturaPA NaturaPA
+        /// <value>
+        /// The vat exemption.
+        /// </value>
+        [JsonProperty("vat_exemption")]
+        public VatExemption VatExemption
         {
-            set { SetProperty(ref _naturaPA, value); }
-            get { return _naturaPA; }
+            set { SetProperty(ref _vat_exemption, value); }
+            get { return _vat_exemption; }
         }
     }
 }

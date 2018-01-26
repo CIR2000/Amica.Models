@@ -4,14 +4,19 @@ using System;
 
 namespace Amica.Models
 {
-	public abstract class BaseModel : ObservableObject, IDataErrorInfo
+    /// <summary>
+    /// Base class to be inherited by all concrete data models.
+    /// </summary>
+    /// <seealso cref="Amica.Models.ObservableObject" />
+    /// <seealso cref="Amica.Models.IDataErrorInfo" />
+    public abstract class BaseModel : ObservableObject, IDataErrorInfo
 	{
 		private string _uniqueId, _etag;
 		private DateTime _updated, _created;
 		private bool _deleted;
 
 		/// <summary>
-		/// Gets or sets the unique Id.
+		/// Gets or sets the unique identifier.
 		/// </summary>
 		/// <value>The unique identifier.</value>
 		[JsonProperty ("_id")]
@@ -65,8 +70,22 @@ namespace Amica.Models
 			get { return _deleted; } 
 		}
 
-	    public string Error => null;
+        /// <summary>
+        /// Gets the error.
+        /// </summary>
+        /// <value>
+        /// The error.
+        /// </value>
+        public string Error => null;
 
-	    public string this[string columnName] => null;
+        /// <summary>
+        /// Gets the <see cref="System.String"/> with the specified column name.
+        /// </summary>
+        /// <value>
+        /// The <see cref="System.String"/>.
+        /// </value>
+        /// <param name="columnName">Name of the column.</param>
+        /// <returns></returns>
+        public string this[string columnName] => null;
 	}
 }

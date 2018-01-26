@@ -13,24 +13,24 @@ namespace Amica.Models
     public abstract class ObservableObject : INotifyPropertyChanged
     {
         /// <summary>
-        /// Occurs when property is changed.
+        /// Occurs when a property value changes.
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
         /// <summary>
-        /// Raises the PropertyChanged event.
+        /// Notifies the property changed.
         /// </summary>
-        /// <param name="propertyName">The name of the property to raise the PropertyChanged event for.</param>
+        /// <param name="propertyName">Name of the property.</param>
         protected virtual void NotifyPropertyChanged([CallerMemberName]string propertyName = null)
         {
             OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
         }
 
         /// <summary>
-        /// Raises the PropertyChanged event.
+        /// Notifies the property changed.
         /// </summary>
-        /// <typeparam name="T">The 1st type parameter.</typeparam>
-        /// <param name="propertyExpression">The lambda expression of the property to raise the PropertyChanged event for.</param>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="propertyExpression">The property expression.</param>
         protected virtual void NotifyPropertyChanged<T>(Expression<Func<T>> propertyExpression)
         {
             var propertyName = GetPropertyName(propertyExpression);
@@ -38,11 +38,9 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// The property changed event invoker.
+        /// Raises the <see cref="E:PropertyChanged" /> event.
         /// </summary>
-        /// <param name="e">
-        /// The event arguments.
-        /// </param>
+        /// <param name="e">The <see cref="PropertyChangedEventArgs"/> instance containing the event data.</param>
         protected virtual void OnPropertyChanged(PropertyChangedEventArgs e)
         {
             var eventHandler = PropertyChanged;
@@ -50,7 +48,7 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Changes the property if the value is different and raises the PropertyChanged event.
+        /// Changes the property if the value is different, then raises the PropertyChanged event.
         /// </summary>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         /// <param name="storage">Reference to current value.</param>
@@ -65,7 +63,7 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Changes the property if the value is different and raises the PropertyChanged event.
+        /// Changes the property if the value is different, then raises the PropertyChanged event.
         /// </summary>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
         /// <param name="storage">Reference to current value.</param>
@@ -80,28 +78,18 @@ namespace Amica.Models
             }
 
             storage = value;
-            // ReSharper disable once ExplicitCallerInfoArgument
             NotifyPropertyChanged(propertyName);
             return true;
         }
 
         /// <summary>
-        /// Gets property name from expression.
+        /// Gets the name of the property.
         /// </summary>
-        /// <param name="propertyExpression">
-        /// The property expression.
-        /// </param>
-        /// <typeparam name="T">
-        /// </typeparam>
-        /// <returns>
-        /// The <see cref="string"/>.
-        /// </returns>
-        /// <exception cref="ArgumentNullException">
-        /// Throws an exception if expression is null.
-        /// </exception>
-        /// <exception cref="ArgumentException">
-        /// Expression should be a member access lambda expression
-        /// </exception>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="propertyExpression">The property expression.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException">propertyExpression</exception>
+        /// <exception cref="ArgumentException">Should be a member access lambda expression - propertyExpression</exception>
         private static string GetPropertyName<T>(Expression<Func<T>> propertyExpression)
         {
             if (propertyExpression == null)

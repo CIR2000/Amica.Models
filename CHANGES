@@ -1,15 +1,45 @@
 Changelog
 =========
 
+v0.0.3
+======
+
+- Rename assembly from Models to Amica.Models.
+- IntelliSense and documentantion support.
+- Rename Predefinizioni class to Preferences
+- Rename ProfiloFiscale class to FiscalProfile
+- Rename RivalsaInps class to InpsReimbursement
+- Rename NaturaPA class to VatExemption
+- Rename NaturaPAItem class to VatExemptionItem
+- Rename PAHelpers class to ItalianPAHelpers
+- Rename ModalitaPagamentoPA to PaymentMethod
+- Rename Company.ProfiloFiscale to FiscalCode
+- Rename Company.Predefinizioni to Predefinizioni
+- Rename Company.CodiceRea to REACode
+- Rename Company.LegalEntity to IsLegalEntity
+- Rename FiscalProfile.Professionista to IsFreelance
+- Rename FiscalProfile.Monomandatario to IsExclusiveAgent
+- Rename FiscalProfile.Enasarco to EnasarcoFund
+- Rename FiscalProfile.RivalsaInps to InpsReimbursement
+- Rename FiscalProfile.CassaAlboProfessionale to FreelanceFund
+- Rename FiscalProfile.Ritenuta to Deduction
+- Rename Deduction.RataSuImponibile to TaxableShare
+- Rename Deduction.IncludeCassaPrevidenziale to IsWelfareIncluded
+- Rename Preferences.IvaEsclusa to IsVatExcluded
+- Rename Preferences.UnitaMisura to UnitofMeasure
+- Rename EmailAttachment.Smtp to SmtpAddress
+- Rename Vat.NaturaPA to VatExemption
+- Rename ItalianPAHelpers.NaturaPA to VatExemption
+- Rename ItalianPAHelpers.ModalitaPagamentoPA to PaymentMethod
+
 v0.0.2
 ======
 
 Released on 9 January, 2018
 
-- Company is now complete.
-- Add Feature class.
+- Acknowledge the new Amica.Models.Company namespace.
 
 v0.0.1
 ======
 
-First release.
+Initial release.
