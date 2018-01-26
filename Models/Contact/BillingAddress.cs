@@ -26,7 +26,7 @@ namespace Amica.Models
         /// <param name="contact">The contact.</param>
         public BillingAddress(Contact contact)
         {
-            ContactId = contact.ContactId;
+            UniqueId = contact.UniqueId;
 
             Name = contact.Name;
             VatIdentificationNumber = contact.VatIdentificationNumber;
@@ -43,7 +43,7 @@ namespace Amica.Models
         /// </summary>
         /// <value>The unique id.</value>
 		[JsonProperty("contact_id")]
-        public string ContactId
+        public string UniqueId
         {
             set { SetProperty(ref _id, value); }
             get { return _id; }

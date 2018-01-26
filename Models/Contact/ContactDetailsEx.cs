@@ -19,7 +19,7 @@ namespace Amica.Models
         /// The contact identifier.
         /// </value>
         [JsonProperty("contact_id")]
-        public string ContactId
+        public string UniqueId
         {
             get { return _uniqueId; }
             set { SetProperty(ref _uniqueId, value); }

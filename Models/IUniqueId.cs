@@ -1,7 +1,16 @@
 ﻿namespace Amica.Models
 {
+    /// <summary>
+    /// Unique id interface.
+    /// </summary>
     public interface IUniqueId
     {
-        string ContactId { get; set; }
+        /// <summary>
+        /// Gets or sets the unique identifier.
+        /// </summary>
+        /// <value>
+        /// The unique identifier.
+        /// </value>
+        string UniqueId { get; set; }
     }
 }

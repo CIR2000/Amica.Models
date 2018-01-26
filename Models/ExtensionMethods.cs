@@ -3,19 +3,48 @@ using System.Collections.Generic;
 
 namespace Amica.Models
 {
+    /// <summary>
+    /// Dictionary extension and helper methods.
+    /// </summary>
     public static class ExtensionMethods
     {
-		public static V GetValueOrDefault<K, V>(this IDictionary<K, V> dict, K key)
+        /// <summary>
+        /// Gets the value or default.
+        /// </summary>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <param name="dict">The dictionary.</param>
+        /// <param name="key">The key.</param>
+        /// <returns></returns>
+        public static V GetValueOrDefault<K, V>(this IDictionary<K, V> dict, K key)
 		{
 			return dict.GetValueOrDefault(key, default(V));
 		}
 
-		public static V GetValueOrDefault<K, V>(this IDictionary<K, V> dict, K key, V defVal)
+        /// <summary>
+        /// Gets the value or default.
+        /// </summary>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <param name="dict">The dictionary.</param>
+        /// <param name="key">The key.</param>
+        /// <param name="defVal">The definition value.</param>
+        /// <returns></returns>
+        public static V GetValueOrDefault<K, V>(this IDictionary<K, V> dict, K key, V defVal)
 		{
 			return dict.GetValueOrDefault(key, () => defVal);
 		}
 
-		public static V GetValueOrDefault<K, V>(this IDictionary<K, V> dict, K key, Func<V> defValSelector)
+        /// <summary>
+        /// Gets the value or default.
+        /// </summary>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <param name="dict">The dictionary.</param>
+        /// <param name="key">The key.</param>
+        /// <param name="defValSelector">The definition value selector.</param>
+        /// <returns></returns>
+        public static V GetValueOrDefault<K, V>(this IDictionary<K, V> dict, K key, Func<V> defValSelector)
 		{
 			V value;
 			return dict.TryGetValue(key, out value) ? value : defValSelector();
