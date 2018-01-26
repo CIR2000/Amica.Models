@@ -3,6 +3,10 @@ using Newtonsoft.Json;
 
 namespace Amica.Models
 {
+    /// <summary>
+    /// Contact information.
+    /// </summary>
+    /// <seealso cref="Amica.Models.BaseModelWithCompanyId" />
     public class Contact : BaseModelWithCompanyId
     {
         private string _name;
@@ -14,15 +18,17 @@ namespace Amica.Models
 
         private AddressEx _address;
         private Currency _currency;
-        private ContactIs _is = new ContactIs();
+        private Relationship _relationship = new Relationship();
         private Bank _bank;
 
         private List<ShippingAddress> _otherAddresses = new List<ShippingAddress>();
 
         /// <summary>
-        /// Gets or sets the contact name.
+        /// Gets or sets the name.
         /// </summary>
-        /// <value>The contact name.</value>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -30,10 +36,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the contact ID.
+        /// Gets or sets the identifier code.
         /// </summary>
-        /// <value>The contact ID.</value>
-		[JsonProperty("id_code")]
+        /// <value>
+        /// The identifier code.
+        /// </value>
+        [JsonProperty("id_code")]
         public string IdCode
         {
             set { SetProperty(ref _idCode, value); }
@@ -41,10 +49,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the wax Identification Code.
+        /// Gets or sets the tax identification number.
         /// </summary>
-        /// <value>The Tax Identification Code.</value>
-		[JsonProperty("tax_id_number")]
+        /// <value>
+        /// The tax identification number.
+        /// </value>
+        [JsonProperty("tax_id_number")]
         public string TaxIdentificationNumber
         {
             set { SetProperty(ref _taxIdNumber, value); }
@@ -52,20 +62,24 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the wax Public Administration Index number.
+        /// Gets or sets the index of the public administration.
         /// </summary>
-        /// <value>The Public Administration index number.</value>
-		[JsonProperty("pa_index")]
+        /// <value>
+        /// The index of the public administration.
+        /// </value>
+        [JsonProperty("pa_index")]
         public string PublicAdministrationIndex
         {
             set { SetProperty(ref _paIndex, value); }
             get { return _paIndex; }
         }
         /// <summary>
-        /// Gets or sets the VAT number.
+        /// Gets or sets the vat identification number.
         /// </summary>
-        /// <value>The VAT number.</value>
-		[JsonProperty("vat_id_number")]
+        /// <value>
+        /// The vat identification number.
+        /// </value>
+        [JsonProperty("vat_id_number")]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
@@ -73,10 +87,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the geographic market area.
+        /// Gets or sets the market area.
         /// </summary>
-        /// <value>The geographic market area.</value>
-		[JsonProperty("market_area")]
+        /// <value>
+        /// The market area.
+        /// </value>
+        [JsonProperty("market_area")]
         public string MarketArea
         {
             set { SetProperty(ref _marketArea, value); }
@@ -84,9 +100,11 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the contact currency.
+        /// Gets or sets the currency.
         /// </summary>
-        /// <value>The contact currency.</value>
+        /// <value>
+        /// The currency.
+        /// </value>
         public Currency Currency
         {
             set { SetProperty(ref _currency, value); }
@@ -94,19 +112,21 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the contact status.
+        /// Gets or sets the is.
         /// </summary>
-        /// <value>The contact status.</value>
-        public ContactIs Is
+        /// <value>
+        /// The is.
+        /// </value>
+        public Relationship Relationship
         {
-            set { SetProperty(ref _is, value); }
-            get { return _is; }
+            set { SetProperty(ref _relationship, value); }
+            get { return _relationship; }
         }
 
         /// <summary>
         /// Gets or sets the address.
         /// </summary>
-        /// <value>The contact address</value>
+        /// <value>The address.</value>
         public AddressEx Address
         {
             set { SetProperty(ref _address, value); }
@@ -116,7 +136,9 @@ namespace Amica.Models
         /// <summary>
         /// Gets or sets the bank.
         /// </summary>
-        /// <value>The bank</value>
+        /// <value>
+        /// The bank.
+        /// </value>
         public Bank Bank
         {
             set { SetProperty(ref _bank, value); }
@@ -124,10 +146,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the secondary addresses.
+        /// Gets or sets the other addresses.
         /// </summary>
-        /// <value>The secondary addresses</value>
-		[JsonProperty("other_addresses")]
+        /// <value>
+        /// The other addresses.
+        /// </value>
+        [JsonProperty("other_addresses")]
         public List<ShippingAddress> OtherAddresses
         {
             set { SetProperty(ref _otherAddresses, value); }

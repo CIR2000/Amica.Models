@@ -1,8 +1,9 @@
-﻿using Newtonsoft.Json;
-using System.ComponentModel;
-
-namespace Amica.Models
+﻿namespace Amica.Models
 {
+    /// <summary>
+    /// Currency informations.
+    /// </summary>
+    /// <seealso cref="Amica.Models.ObservableObject" />
     public class Currency : ObservableObject
     {
         private string _name;
@@ -10,9 +11,11 @@ namespace Amica.Models
         private string _symbol;
 
         /// <summary>
-        /// Gets or sets the currency name.
+        /// Gets or sets the name.
         /// </summary>
-        /// <value>The currency name.</value>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -20,9 +23,11 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the ISO 4217 currency code.
+        /// Gets or sets the code.
         /// </summary>
-        /// <value>The ISO 4217 currency code.</value>
+        /// <value>
+        /// The code.
+        /// </value>
         public string Code
         {
             set { SetProperty(ref _code, value); }
@@ -30,9 +35,11 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the currency symbol.
+        /// Gets or sets the symbol.
         /// </summary>
-        /// <value>The currency symbol.</value>
+        /// <value>
+        /// The symbol.
+        /// </value>
         public string Symbol
         {
             set { SetProperty(ref _symbol, value); }

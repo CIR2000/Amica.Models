@@ -3,6 +3,11 @@ using System.Reflection;
 
 namespace Amica.Models
 {
+    /// <summary>
+    /// Billing address information.
+    /// </summary>
+    /// <seealso cref="Amica.Models.Address" />
+    /// <seealso cref="Amica.Models.IBillingAddress" />
     public class BillingAddress : Address, IBillingAddress
     {
         private string _id;
@@ -10,11 +15,18 @@ namespace Amica.Models
         private string _vatIdNumber;
         private string _taxIdNumber;
 
-		public BillingAddress()
-		{ }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BillingAddress"/> class.
+        /// </summary>
+        public BillingAddress()
+        { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BillingAddress"/> class.
+        /// </summary>
+        /// <param name="contact">The contact.</param>
         public BillingAddress(Contact contact)
         {
-            UniqueId = contact.UniqueId;
+            ContactId = contact.ContactId;
 
             Name = contact.Name;
             VatIdentificationNumber = contact.VatIdentificationNumber;
@@ -31,15 +43,17 @@ namespace Amica.Models
         /// </summary>
         /// <value>The unique id.</value>
 		[JsonProperty("contact_id")]
-        public string UniqueId
+        public string ContactId
         {
             set { SetProperty(ref _id, value); }
             get { return _id; }
         }
         /// <summary>
-        /// Gets or sets the contact name.
+        /// Gets or sets the name.
         /// </summary>
-        /// <value>The contact name.</value>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -47,10 +61,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the VAT number.
+        /// Gets or sets the vat identification number.
         /// </summary>
-        /// <value>The VAT number.</value>
-		[JsonProperty("vat_id_number")]
+        /// <value>
+        /// The vat identification number.
+        /// </value>
+        [JsonProperty("vat_id_number")]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
@@ -58,10 +74,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the Tax Id number.
+        /// Gets or sets the tax identification number.
         /// </summary>
-        /// <value>The Tax Identification number.</value>
-		[JsonProperty("tax_id_number")]
+        /// <value>
+        /// The tax identification number.
+        /// </value>
+        [JsonProperty("tax_id_number")]
         public string TaxIdentificationNumber
         {
             set { SetProperty(ref _taxIdNumber, value); }

@@ -21,7 +21,7 @@ namespace Amica.Models
 		/// <value>The unique identifier.</value>
 		[JsonProperty ("_id")]
 		[Remote (Meta.DocumentId)]
-		public string UniqueId {
+		public string ContactId {
 			set { SetProperty (ref _uniqueId, value); }
 			get { return _uniqueId; }
 		}

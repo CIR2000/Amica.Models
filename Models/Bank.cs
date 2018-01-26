@@ -3,6 +3,10 @@ using System.ComponentModel;
 
 namespace Amica.Models
 {
+    /// <summary>
+    /// Bank information.
+    /// </summary>
+    /// <seealso cref="Amica.Models.ObservableObject" />
     public class Bank : ObservableObject
     {
         private string _name;
@@ -10,9 +14,11 @@ namespace Amica.Models
         private string _bicSwiftCode;
 
         /// <summary>
-        /// Gets or sets the currency name.
+        /// Gets or sets the name.
         /// </summary>
-        /// <value>The currency name.</value>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -22,8 +28,10 @@ namespace Amica.Models
         /// <summary>
         /// Gets or sets the IBAN code.
         /// </summary>
-        /// <value>The IBAN code.</value>
-		[JsonProperty("iban")]
+        /// <value>
+        /// The IBAN code.
+        /// </value>
+        [JsonProperty("iban_code")]
         public string IbanCode
         {
             set { SetProperty(ref _ibanCode, value); }
@@ -31,10 +39,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the BIC/Swift symbol.
+        /// Gets or sets the BIG/SWIFT code.
         /// </summary>
-        /// <value>The BIC/SWIFT code.</value>
-		[JsonProperty("bic_swift")]
+        /// <value>
+        /// The BIC/SWIFT code.
+        /// </value>
+        [JsonProperty("bic_swift_code")]
         public string BicSwiftCode
         {
             set { SetProperty(ref _bicSwiftCode, value); }

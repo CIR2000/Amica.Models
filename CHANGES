@@ -12,9 +12,10 @@ v0.0.3
 - Rename NaturaPA class to VatExemption
 - Rename NaturaPAItem class to VatExemptionItem
 - Rename PAHelpers class to ItalianPAHelpers
-- Rename ModalitaPagamentoPA to PaymentMethod
-- Rename Company.ProfiloFiscale to FiscalCode
-- Rename Company.Predefinizioni to Predefinizioni
+- Rename ModalitaPagamentoPA class to PaymentMethod
+- Rename ContactIs class to Relationship
+- Rename Company.ProfiloFiscale to FiscalProfile
+- Rename Company.Predefinizioni to Preferences
 - Rename Company.CodiceRea to REACode
 - Rename Company.LegalEntity to IsLegalEntity
 - Rename FiscalProfile.Professionista to IsFreelance
@@ -31,6 +32,15 @@ v0.0.3
 - Rename Vat.NaturaPA to VatExemption
 - Rename ItalianPAHelpers.NaturaPA to VatExemption
 - Rename ItalianPAHelpers.ModalitaPagamentoPA to PaymentMethod
+- Rename Contact.Is to Contact.Relationship
+- Rename Relationship.Active to IsActive
+- Rename Relationship.Client to IsClient
+- Rename Relationship.Company to IsCompany
+- Rename Relationship.Vendor to IsVendor
+- Rename Relationship.Courier to IsCourier
+- Rename Relationship.Agent to IsAgent
+- Rename Relationship.AreaManager to IsAreaManager
+- Rename ContactDetailsEx.UniqueId to ContactId
 
 v0.0.2
 ======

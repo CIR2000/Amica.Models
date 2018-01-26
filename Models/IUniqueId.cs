@@ -2,6 +2,6 @@
 {
     public interface IUniqueId
     {
-        string UniqueId { get; set; }
+        string ContactId { get; set; }
     }
 }
