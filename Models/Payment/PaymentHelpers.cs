@@ -3,20 +3,29 @@ using Models;
 
 namespace Amica.Models
 {
-    public  class PaymentHelpers
+    /// <summary>
+    /// Payment helpers.
+    /// </summary>
+    public class PaymentHelpers
     {
         // by convention, item with key 1 is the default value
 
-		public static readonly ReadOnlyDictionary<PaymentOption, FirstPaymentOption> FirstPaymentOptions = 
+        /// <summary>
+        /// The first payment options
+        /// </summary>
+        public static readonly ReadOnlyDictionary<PaymentOption, FirstPaymentOption> FirstPaymentOptions = 
 			new ReadOnlyDictionary<PaymentOption, FirstPaymentOption>(
 				new Dictionary<PaymentOption, FirstPaymentOption>
 				{
-                    { PaymentOption.Normal, new FirstPaymentOption { Code = PaymentOption.Normal, Description = PaymentResources.Normal }},
-					{ PaymentOption.VatIncluded, new FirstPaymentOption { Code = PaymentOption.VatIncluded, Description =  PaymentResources.VatIncluded }},
-					{ PaymentOption.VatOnly, new FirstPaymentOption { Code = PaymentOption.VatOnly, Description = PaymentResources.VatOnly }},
-					{ PaymentOption.FeesIncluded, new FirstPaymentOption { Code = PaymentOption.FeesIncluded, Description = PaymentResources.FeesIncluded }},
+                    { PaymentOption.Normal, new FirstPaymentOption { Option = PaymentOption.Normal, Description = PaymentResources.Normal }},
+					{ PaymentOption.VatIncluded, new FirstPaymentOption { Option = PaymentOption.VatIncluded, Description =  PaymentResources.VatIncluded }},
+					{ PaymentOption.VatOnly, new FirstPaymentOption { Option = PaymentOption.VatOnly, Description = PaymentResources.VatOnly }},
+					{ PaymentOption.FeesIncluded, new FirstPaymentOption { Option = PaymentOption.FeesIncluded, Description = PaymentResources.FeesIncluded }},
 				});
 
+        /// <summary>
+        /// The first payment date options
+        /// </summary>
         public static readonly ReadOnlyDictionary<PaymentDate, FirstPaymentDate> FirstPaymentDates = 
 			new ReadOnlyDictionary<PaymentDate,  FirstPaymentDate>(
                 new Dictionary<PaymentDate,  FirstPaymentDate>

@@ -41,6 +41,7 @@ v0.0.3
 - Rename Relationship.Agent to IsAgent
 - Rename Relationship.AreaManager to IsAreaManager
 - Rename ContactDetailsEx.UniqueId to ContactId
+- Rename FirstPaymentOption.Code to Option
 
 v0.0.2
 ======

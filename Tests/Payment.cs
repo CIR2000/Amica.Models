@@ -19,7 +19,7 @@ namespace Amica.Models.Tests
             Assert.That(p.FirstPaymentDateAdditionalDays, Is.EqualTo(30));
             Assert.That(p.Installments, Is.EqualTo(1));
             Assert.That(p.InstallmentsEveryNumberOfDays, Is.EqualTo(30));
-            Assert.That(p.ForceEndOfMonth, Is.True);
+            Assert.That(p.ShouldForceToEndOfMonth, Is.True);
 		}
 
 	}
