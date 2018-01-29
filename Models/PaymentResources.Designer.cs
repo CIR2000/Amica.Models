@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Models {
+namespace Amica.Models {
     using System;
     using System.Reflection;
     
@@ -20,10 +20,10 @@ namespace Models {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class PaymentResources {
+    public class PaymentResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -37,10 +37,10 @@ namespace Models {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.PaymentResources", typeof(PaymentResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.PaymentResources", typeof(PaymentResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -52,7 +52,7 @@ namespace Models {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -64,7 +64,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Data documento.
         /// </summary>
-        internal static string AtDocumentDate {
+        public static string AtDocumentDate {
             get {
                 return ResourceManager.GetString("AtDocumentDate", resourceCulture);
             }
@@ -73,7 +73,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Fine mese.
         /// </summary>
-        internal static string AtEndOfMonth {
+        public static string AtEndOfMonth {
             get {
                 return ResourceManager.GetString("AtEndOfMonth", resourceCulture);
             }
@@ -82,7 +82,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Data indicata.
         /// </summary>
-        internal static string AtExplicitDate {
+        public static string AtExplicitDate {
             get {
                 return ResourceManager.GetString("AtExplicitDate", resourceCulture);
             }
@@ -91,7 +91,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Con spese.
         /// </summary>
-        internal static string FeesIncluded {
+        public static string FeesIncluded {
             get {
                 return ResourceManager.GetString("FeesIncluded", resourceCulture);
             }
@@ -100,7 +100,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Normale.
         /// </summary>
-        internal static string Normal {
+        public static string Normal {
             get {
                 return ResourceManager.GetString("Normal", resourceCulture);
             }
@@ -109,7 +109,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Con IVA.
         /// </summary>
-        internal static string VatIncluded {
+        public static string VatIncluded {
             get {
                 return ResourceManager.GetString("VatIncluded", resourceCulture);
             }
@@ -118,7 +118,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Solo IVA.
         /// </summary>
-        internal static string VatOnly {
+        public static string VatOnly {
             get {
                 return ResourceManager.GetString("VatOnly", resourceCulture);
             }

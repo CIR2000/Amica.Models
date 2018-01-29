@@ -25,6 +25,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is freelance; otherwise, <c>false</c>.
         /// </value>
+        [JsonProperty("is_freelance")]
         public bool IsFreelance {
 			set { SetProperty (ref _isFreelance, value); }
 			get { return _isFreelance; } 
@@ -35,6 +36,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if the company acts as an exclusive agent; otherwise, <c>false</c>.
         /// </value>
+        [JsonProperty("is_exclusive_agent")]
         public bool IsExclusiveAgent {
 			set { SetProperty (ref _isExclusiveAgent, value); }
 			get { return _isExclusiveAgent; } 
@@ -45,6 +47,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The Enasarco fund.
         /// </value>
+        [JsonProperty("enasarco_fund")]
         public float EnasarcoFund {
 			set { SetProperty (ref _enasarco, value); }
 			get { return _enasarco; } 

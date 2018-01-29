@@ -31,9 +31,9 @@ namespace Amica.Models
 			new ReadOnlyDictionary<PaymentDate,  FirstPaymentDate>(
                 new Dictionary<PaymentDate,  FirstPaymentDate>
                 {
-					{ PaymentDate.DocumentDate, new FirstPaymentDate { Code = PaymentDate.DocumentDate, Description = PaymentResources.AtDocumentDate }},
-					{ PaymentDate.EndOfMonth, new FirstPaymentDate { Code = PaymentDate.EndOfMonth, Description = PaymentResources.AtEndOfMonth }},
-					{ PaymentDate.Explicit, new FirstPaymentDate { Code = PaymentDate.Explicit, Description = PaymentResources.AtExplicitDate }},
+					{ PaymentDate.DocumentDate, new FirstPaymentDate { Option = PaymentDate.DocumentDate, Description = PaymentResources.AtDocumentDate }},
+					{ PaymentDate.EndOfMonth, new FirstPaymentDate { Option = PaymentDate.EndOfMonth, Description = PaymentResources.AtEndOfMonth }},
+					{ PaymentDate.Explicit, new FirstPaymentDate { Option = PaymentDate.Explicit, Description = PaymentResources.AtExplicitDate }},
                 });
     }
 }

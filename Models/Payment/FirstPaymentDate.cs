@@ -15,7 +15,7 @@
         /// <value>
         /// The code.
         /// </value>
-        public PaymentDate Code
+        public PaymentDate Option
         {
             set { SetProperty(ref _code, value); }
             get { return _code; }

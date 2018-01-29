@@ -37,7 +37,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if deduction includes welfare; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_includes_welfare")]
+        [JsonProperty("is_welfare_included")]
 		public bool IsWelfareIncluded{
 			set { SetProperty (ref _isWelfareIncluded, value); }
 			get { return _isWelfareIncluded; } 

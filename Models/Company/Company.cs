@@ -18,7 +18,7 @@ namespace Amica.Models.Company
     public class Company : BaseModel
 	{
 		private string _name, _password, _siaCode, _reaCode, _logo, _lastPosition;
-        private bool _legalEntity;
+        private bool _legalEntity, _adminAccount;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Company"/> class.
@@ -82,6 +82,17 @@ namespace Amica.Models.Company
 		public bool IsLegalEntity {
 			set { SetProperty (ref _legalEntity, value); }
 			get { return _legalEntity; } 
+		}
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is the administrative account.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance is the administrative account; otherwise, <c>false</c>.
+        /// </value>
+        [JsonProperty("is_administrative_account")]
+		public bool IsAdministrativeAccount {
+			set { SetProperty (ref _adminAccount, value); }
+			get { return _adminAccount; } 
 		}
         /// <summary>
         /// Gets or sets the company logo filename. 

@@ -73,7 +73,7 @@
       <LastGenOutput>ItalianPAResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="PaymentResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>PaymentResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="DocumentResources.resx">
