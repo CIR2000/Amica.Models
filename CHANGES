@@ -4,6 +4,8 @@ Changelog
 v0.0.3
 ======
 
+Released on 30 January, 2018
+
 - Rename assembly from Models to Amica.Models.
 - IntelliSense and documentantion support.
 - Add Company.IsAdministrativeAccount property.
