@@ -56,7 +56,6 @@ namespace Amica.Models.Documents
             get { return _reason; }
         }
 
-		[JsonProperty("expiration_date")]
         public DateTime ExpirationDate
         {
             set { SetProperty(ref _expirationDate, value); }
@@ -92,14 +91,12 @@ namespace Amica.Models.Documents
             get { return _payment; }
         }
 
-        [JsonProperty("bill_to")]
         public BillingAddress BillTo
         {
             set { SetProperty(ref _billTo, value); }
             get { return _billTo; }
         }
 
-        [JsonProperty("ship_to")]
         public ShippingAddress ShipTo
         {
             set { SetProperty(ref _shipTo, value); }
@@ -112,7 +109,6 @@ namespace Amica.Models.Documents
             get { return _agent; }
         }
 
-        [JsonProperty("withholding_tax")]
         public WithholdingTax WithholdingTax
         {
             set { SetProperty(ref _withholdingTax, value); }
@@ -143,28 +139,24 @@ namespace Amica.Models.Documents
             get { return _notes; }
         }
 
-        [JsonProperty("social_security_collection")]
         public List<SocialSecurity> SocialSecurityCollection
         {
             set { SetProperty(ref _socialSecurityCollection, value); }
             get { return _socialSecurityCollection; }
         }
 
-        [JsonProperty("variation_collection")]
         public List<Variation> VariationCollection
         {
             set { SetProperty(ref _variationCollection, value); }
             get { return _variationCollection; }
         }
 
-        [JsonProperty("fee_collection")]
         public List<DocumentFee> FeeCollection
         {
             set { SetProperty(ref _feeCollection, value); }
             get { return _feeCollection; }
         }
 
-        [JsonProperty("item_collection")]
         public List<DocumentItem> ItemCollection
         {
             set { SetProperty(ref _itemCollection, value); }

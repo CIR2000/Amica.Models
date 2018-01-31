@@ -15,7 +15,6 @@ namespace Amica.Models
 		/// Gets or sets the company identifier.
 		/// </summary>
 		/// <value>The company identifier.</value>
-		[JsonProperty ("company_id")]
 		public  string CompanyId {
 			set {
                 //var props = GetType().GetTypeInfo().DeclaredProperties;

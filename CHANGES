@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.0.4
+======
+
+Released on 31 January, 2018
+
+- Don't rely on JsonProperty for property names (exception: eve meta fields)
+
 v0.0.3
 ======
 

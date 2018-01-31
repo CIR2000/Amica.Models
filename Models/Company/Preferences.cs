@@ -24,7 +24,6 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if VAT is excluded; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_vat_excluded")]
         public bool IsVatExcluded
         {
             set { SetProperty(ref _isVatExcluded, value); }
@@ -36,7 +35,6 @@ namespace Amica.Models.Company
         /// <value>
         /// The unit of measure.
         /// </value>
-        [JsonProperty("unit_of_measure")]
         public string UnitOfMeasure
         {
             set { SetProperty(ref _unitOfMeasure, value); }
@@ -55,7 +53,6 @@ namespace Amica.Models.Company
         /// <value>
         /// The email attachment.
         /// </value>
-        [JsonProperty("email_attachment")]
         public EmailAttachment EmailAttachment { get; }
     }
 }

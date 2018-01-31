@@ -67,7 +67,6 @@ namespace Amica.Models
         /// <value>
         /// The additional days to the first payment date.
         /// </value>
-        [JsonProperty("first_payment_additional_days")]
         public int FirstPaymentDateAdditionalDays
         {
             set { SetProperty(ref _firstPaymentDateAdditionalDays, value); }
@@ -80,7 +79,6 @@ namespace Amica.Models
         /// <value>
         /// The installments every number of days.
         /// </value>
-        [JsonProperty("installments_every_number_of_days")]
         public int InstallmentsEveryNumberOfDays
         {
             set { SetProperty(ref _installmentsEveryNumberOfDays, value); }
@@ -105,7 +103,6 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if installments should be force to the end of month; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("should_force_to_end_of_month")]
         public bool ShouldForceToEndOfMonth
         {
             set { SetProperty(ref _forceEndOfMonth, value); }
@@ -118,7 +115,6 @@ namespace Amica.Models
         /// <value>
         /// The extra days.
         /// </value>
-        [JsonProperty("extra_days")]
         public int ExtraDays
         {
             set { SetProperty(ref _extraDays, value); }
@@ -131,7 +127,6 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if exact days should be considered; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_exact_days")]
         public bool IsExactDays
         {
             set { SetProperty(ref _exactDays, value); }
@@ -144,7 +139,6 @@ namespace Amica.Models
         /// <value>
         /// The first payment date.
         /// </value>
-        [JsonProperty("first_payment_date")]
         public FirstPaymentDate FirstPaymentDate
         {
             set { SetProperty(ref _firstPaymentDate, value); }
@@ -157,7 +151,6 @@ namespace Amica.Models
         /// <value>
         /// The first payment option.
         /// </value>
-        [JsonProperty("first_payment_option")]
         public FirstPaymentOption FirstPaymentOption
         {
             set { SetProperty(ref _firstPaymentOption, value); }
@@ -194,7 +187,6 @@ namespace Amica.Models
         /// <value>
         /// The payment method.
         /// </value>
-        [JsonProperty("payment_method")]
         public PaymentMethod PaymentMethod
         {
             set { SetProperty(ref _paymentMethod, value); }

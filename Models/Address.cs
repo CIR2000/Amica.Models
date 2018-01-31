@@ -43,7 +43,6 @@ namespace Amica.Models
         /// <value>
         /// The postal code.
         /// </value>
-        [JsonProperty("postal_code")]
         public string PostalCode
         {
             get { return _postalCode; }
@@ -66,7 +65,6 @@ namespace Amica.Models
         /// <value>
         /// The state or province.
         /// </value>
-        [JsonProperty("state_or_province")]
         public string StateOrProvince
         {
             get { return _stateOrProvince; }

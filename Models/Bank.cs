@@ -31,7 +31,6 @@ namespace Amica.Models
         /// <value>
         /// The IBAN code.
         /// </value>
-        [JsonProperty("iban_code")]
         public string IbanCode
         {
             set { SetProperty(ref _ibanCode, value); }
@@ -44,7 +43,6 @@ namespace Amica.Models
         /// <value>
         /// The BIC/SWIFT code.
         /// </value>
-        [JsonProperty("bic_swift_code")]
         public string BicSwiftCode
         {
             set { SetProperty(ref _bicSwiftCode, value); }

@@ -56,7 +56,6 @@ namespace Amica.Models.Company
         /// <value>
         /// The SIA code.
         /// </value>
-        [JsonProperty("sia_code")]
 		public string SIACode {
 			set { SetProperty (ref _siaCode, value); }
 			get { return _siaCode; } 
@@ -67,7 +66,6 @@ namespace Amica.Models.Company
         /// <value>
         /// The REA code.
         /// </value>
-        [JsonProperty("rea_code")]
 		public string REACode {
 			set { SetProperty (ref _reaCode, value); }
 			get { return _reaCode; } 
@@ -78,7 +76,6 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is a legal entity; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_legal_entity")]
 		public bool IsLegalEntity {
 			set { SetProperty (ref _legalEntity, value); }
 			get { return _legalEntity; } 
@@ -89,7 +86,6 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is the administrative account; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_administrative_account")]
 		public bool IsAdministrativeAccount {
 			set { SetProperty (ref _adminAccount, value); }
 			get { return _adminAccount; } 
@@ -110,7 +106,6 @@ namespace Amica.Models.Company
         /// <value>
         /// The last position.
         /// </value>
-        [JsonProperty("last_position")]
 		public string LastPosition {
 			set { SetProperty (ref _lastPosition, value); }
 			get { return _lastPosition; } 
@@ -121,7 +116,6 @@ namespace Amica.Models.Company
         /// <value>
         /// The fiscal profile.
         /// </value>
-        [JsonProperty("fiscal_profile")]
         public FiscalProfile FiscalProfile { get; }
         /// <summary>
         /// Gets the company preferences.

@@ -41,7 +41,6 @@ namespace Amica.Models
         /// <value>
         /// The identifier code.
         /// </value>
-        [JsonProperty("id_code")]
         public string IdCode
         {
             set { SetProperty(ref _idCode, value); }
@@ -54,7 +53,6 @@ namespace Amica.Models
         /// <value>
         /// The tax identification number.
         /// </value>
-        [JsonProperty("tax_id_number")]
         public string TaxIdentificationNumber
         {
             set { SetProperty(ref _taxIdNumber, value); }
@@ -67,7 +65,6 @@ namespace Amica.Models
         /// <value>
         /// The index of the public administration.
         /// </value>
-        [JsonProperty("pa_index")]
         public string PublicAdministrationIndex
         {
             set { SetProperty(ref _paIndex, value); }
@@ -79,7 +76,6 @@ namespace Amica.Models
         /// <value>
         /// The vat identification number.
         /// </value>
-        [JsonProperty("vat_id_number")]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
@@ -92,7 +88,6 @@ namespace Amica.Models
         /// <value>
         /// The market area.
         /// </value>
-        [JsonProperty("market_area")]
         public string MarketArea
         {
             set { SetProperty(ref _marketArea, value); }
@@ -151,7 +146,6 @@ namespace Amica.Models
         /// <value>
         /// The other addresses.
         /// </value>
-        [JsonProperty("other_addresses")]
         public List<ShippingAddress> OtherAddresses
         {
             set { SetProperty(ref _otherAddresses, value); }

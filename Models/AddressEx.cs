@@ -83,7 +83,6 @@ namespace Amica.Models
         /// <value>
         /// The PEC mail.
         /// </value>
-        [JsonProperty("pec_mail")]
         public string PecMail
         {
             get { return _contactDetails.PecMail; }
@@ -95,7 +94,6 @@ namespace Amica.Models
         /// <value>
         /// The web site.
         /// </value>
-        [JsonProperty("web_site")]
         public string WebSite
         {
             get { return _contactDetails.WebSite; }
@@ -132,7 +130,6 @@ namespace Amica.Models
         /// <value>
         /// The postal code.
         /// </value>
-        [JsonProperty("postal_code")]
         public string PostalCode
         {
             get { return _address.PostalCode; }
@@ -145,7 +142,6 @@ namespace Amica.Models
         /// <value>
         /// The state or province.
         /// </value>
-        [JsonProperty("state_or_province")]
         public string StateOrProvince
         {
             get { return _address.StateOrProvince; }

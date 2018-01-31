@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Models {
+namespace Amica.Models {
     using System;
     using System.Reflection;
     
@@ -20,10 +20,10 @@ namespace Models {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class DocumentResources {
+    public class DocumentResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -37,10 +37,10 @@ namespace Models {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.DocumentResources", typeof(DocumentResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.DocumentResources", typeof(DocumentResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -52,7 +52,7 @@ namespace Models {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -64,7 +64,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to DDT.
         /// </summary>
-        internal static string DeliveryNote {
+        public static string DeliveryNote {
             get {
                 return ResourceManager.GetString("DeliveryNote", resourceCulture);
             }
@@ -73,7 +73,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Fattura di acconto.
         /// </summary>
-        internal static string DepositInvoice {
+        public static string DepositInvoice {
             get {
                 return ResourceManager.GetString("DepositInvoice", resourceCulture);
             }
@@ -82,7 +82,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Bozza.
         /// </summary>
-        internal static string Draft {
+        public static string Draft {
             get {
                 return ResourceManager.GetString("Draft", resourceCulture);
             }
@@ -91,7 +91,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Fattura differita.
         /// </summary>
-        internal static string Invoice {
+        public static string Invoice {
             get {
                 return ResourceManager.GetString("Invoice", resourceCulture);
             }
@@ -100,7 +100,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Fatturato.
         /// </summary>
-        internal static string InvoicedDeliveryNote {
+        public static string InvoicedDeliveryNote {
             get {
                 return ResourceManager.GetString("InvoicedDeliveryNote", resourceCulture);
             }
@@ -109,7 +109,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Emesso.
         /// </summary>
-        internal static string Issued {
+        public static string Issued {
             get {
                 return ResourceManager.GetString("Issued", resourceCulture);
             }
@@ -118,7 +118,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Fattura pro-forma.
         /// </summary>
-        internal static string ProFormaInvoice {
+        public static string ProFormaInvoice {
             get {
                 return ResourceManager.GetString("ProFormaInvoice", resourceCulture);
             }
@@ -127,7 +127,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Fattura accompagnatoria.
         /// </summary>
-        internal static string ShippingInvoice {
+        public static string ShippingInvoice {
             get {
                 return ResourceManager.GetString("ShippingInvoice", resourceCulture);
             }
@@ -136,7 +136,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Value.
         /// </summary>
-        internal static string Test {
+        public static string Test {
             get {
                 return ResourceManager.GetString("Test", resourceCulture);
             }

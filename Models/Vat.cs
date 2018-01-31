@@ -52,7 +52,6 @@ namespace Amica.Models
         /// Gets or sets the non-deductible rate.
         /// </summary>
         /// <value>The non-deductible rate.</value>
-		[JsonProperty("non_deductible")]
         public float NonDeductible
         {
             set { SetProperty(ref _nonDeductible, value); }
@@ -64,7 +63,6 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is intra community; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_intra")]
         public bool IsIntraCommunity
         {
             set { SetProperty(ref _isIntraCommunity, value); }
@@ -77,7 +75,6 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is split payment; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_split_payment")]
         public bool IsSplitPayment
         {
             set { SetProperty(ref _isSplitPayment, value); }
@@ -90,7 +87,6 @@ namespace Amica.Models
         /// <value>
         /// The vat exemption.
         /// </value>
-        [JsonProperty("vat_exemption")]
         public VatExemption VatExemption
         {
             set { SetProperty(ref _vat_exemption, value); }

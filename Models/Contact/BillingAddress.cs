@@ -66,7 +66,6 @@ namespace Amica.Models
         /// <value>
         /// The vat identification number.
         /// </value>
-        [JsonProperty("vat_id_number")]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
@@ -79,7 +78,6 @@ namespace Amica.Models
         /// <value>
         /// The tax identification number.
         /// </value>
-        [JsonProperty("tax_id_number")]
         public string TaxIdentificationNumber
         {
             set { SetProperty(ref _taxIdNumber, value); }

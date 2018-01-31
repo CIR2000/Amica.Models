@@ -66,7 +66,6 @@ namespace Amica.Models.Company
         /// <value>
         /// The message body.
         /// </value>
-        [JsonProperty("email_attachment")]
 		public string MessageBody {
 			set { SetProperty (ref _body, value); }
 			get { return _body; } 

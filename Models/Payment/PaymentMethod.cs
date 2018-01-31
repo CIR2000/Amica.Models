@@ -31,7 +31,6 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is bank receipt; otherwise, <c>false</c>.
         /// </value>
-        [JsonProperty("is_bank_receipt")]
         public bool IsBankReceipt
         {
             set { SetProperty(ref _IsBankReceipt, value); }
@@ -44,7 +43,6 @@ namespace Amica.Models
         /// <value>
         /// The public administration payment method.
         /// </value>
-        [JsonProperty("public_administration_payment_method")]
         public ItalianPA.PaymentMethod PublicAdministrationPaymentMethod
         {
             set { SetProperty(ref _paPaymentMethod, value); }

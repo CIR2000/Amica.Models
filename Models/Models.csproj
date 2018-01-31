@@ -69,7 +69,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="ItalianPAResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ItalianPAResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="PaymentResources.resx">
@@ -77,23 +77,23 @@
       <LastGenOutput>PaymentResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="DocumentResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DocumentResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="ShippingTermsResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ShippingTermsResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="SocialSecurityResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SocialSecurityResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="TransportModeResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>TransportModeResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="VariationResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>VariationResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>

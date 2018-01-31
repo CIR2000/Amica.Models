@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Models {
+namespace Amica.Models {
     using System;
     using System.Reflection;
     
@@ -20,10 +20,10 @@ namespace Models {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class SocialSecurityResources {
+    public class SocialSecurityResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -37,10 +37,10 @@ namespace Models {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.SocialSecurityResources", typeof(SocialSecurityResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.SocialSecurityResources", typeof(SocialSecurityResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -52,7 +52,7 @@ namespace Models {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -64,7 +64,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Cassa nazionale previdenza e assistenza avvocati e procuratori legali.
         /// </summary>
-        internal static string TC01 {
+        public static string TC01 {
             get {
                 return ResourceManager.GetString("TC01", resourceCulture);
             }
@@ -73,7 +73,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Cassa previdenza dottori commercialisti.
         /// </summary>
-        internal static string TC02 {
+        public static string TC02 {
             get {
                 return ResourceManager.GetString("TC02", resourceCulture);
             }
@@ -82,7 +82,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Cassa previdenza e assistenza geometri.
         /// </summary>
-        internal static string TC03 {
+        public static string TC03 {
             get {
                 return ResourceManager.GetString("TC03", resourceCulture);
             }
@@ -91,7 +91,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Cassa nazionale previdenza e assistenza ingegneri e architetti liberi professionisti.
         /// </summary>
-        internal static string TC04 {
+        public static string TC04 {
             get {
                 return ResourceManager.GetString("TC04", resourceCulture);
             }
@@ -100,7 +100,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Cassa nazionale del notariato.
         /// </summary>
-        internal static string TC05 {
+        public static string TC05 {
             get {
                 return ResourceManager.GetString("TC05", resourceCulture);
             }
@@ -109,7 +109,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Cassa nazionale previdenza e assistenza ragionieri e periti commerciali.
         /// </summary>
-        internal static string TC06 {
+        public static string TC06 {
             get {
                 return ResourceManager.GetString("TC06", resourceCulture);
             }
@@ -118,7 +118,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale assistenza agenti e rappresentanti di commercio (ENASARCO).
         /// </summary>
-        internal static string TC07 {
+        public static string TC07 {
             get {
                 return ResourceManager.GetString("TC07", resourceCulture);
             }
@@ -127,7 +127,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza consulenti del lavoro (ENPACL).
         /// </summary>
-        internal static string TC08 {
+        public static string TC08 {
             get {
                 return ResourceManager.GetString("TC08", resourceCulture);
             }
@@ -136,7 +136,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza medici (ENPAM).
         /// </summary>
-        internal static string TC09 {
+        public static string TC09 {
             get {
                 return ResourceManager.GetString("TC09", resourceCulture);
             }
@@ -145,7 +145,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza farmacisti (ENPAF).
         /// </summary>
-        internal static string TC10 {
+        public static string TC10 {
             get {
                 return ResourceManager.GetString("TC10", resourceCulture);
             }
@@ -154,7 +154,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza veterinari (ENPAV).
         /// </summary>
-        internal static string TC11 {
+        public static string TC11 {
             get {
                 return ResourceManager.GetString("TC11", resourceCulture);
             }
@@ -163,7 +163,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza impiegati dell&apos;agricoltura (ENPAIA).
         /// </summary>
-        internal static string TC12 {
+        public static string TC12 {
             get {
                 return ResourceManager.GetString("TC12", resourceCulture);
             }
@@ -172,7 +172,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Fondo previdenza impiegati imprese di spedizione e agenzie marittime.
         /// </summary>
-        internal static string TC13 {
+        public static string TC13 {
             get {
                 return ResourceManager.GetString("TC13", resourceCulture);
             }
@@ -181,7 +181,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Istituto nazionale previdenza giornalisti italiani (INPGI).
         /// </summary>
-        internal static string TC14 {
+        public static string TC14 {
             get {
                 return ResourceManager.GetString("TC14", resourceCulture);
             }
@@ -190,7 +190,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Opera nazionale assistenza orfani sanitari italiani (ONAOSI).
         /// </summary>
-        internal static string TC15 {
+        public static string TC15 {
             get {
                 return ResourceManager.GetString("TC15", resourceCulture);
             }
@@ -199,7 +199,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Cassa autonoma assistenza integrativa giornalisti italiani (CASAGIT).
         /// </summary>
-        internal static string TC16 {
+        public static string TC16 {
             get {
                 return ResourceManager.GetString("TC16", resourceCulture);
             }
@@ -208,7 +208,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente previdenza periti industriali e periti industriali laureati (EPPI).
         /// </summary>
-        internal static string TC17 {
+        public static string TC17 {
             get {
                 return ResourceManager.GetString("TC17", resourceCulture);
             }
@@ -217,7 +217,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente previdenza e assistenza pluricategoriale (EPAP).
         /// </summary>
-        internal static string TC18 {
+        public static string TC18 {
             get {
                 return ResourceManager.GetString("TC18", resourceCulture);
             }
@@ -226,7 +226,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza biologi (ENPAB).
         /// </summary>
-        internal static string TC19 {
+        public static string TC19 {
             get {
                 return ResourceManager.GetString("TC19", resourceCulture);
             }
@@ -235,7 +235,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza professione infermieristica (ENPAPI).
         /// </summary>
-        internal static string TC20 {
+        public static string TC20 {
             get {
                 return ResourceManager.GetString("TC20", resourceCulture);
             }
@@ -244,7 +244,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Ente nazionale previdenza e assistenza psicologi (ENPAP).
         /// </summary>
-        internal static string TC21 {
+        public static string TC21 {
             get {
                 return ResourceManager.GetString("TC21", resourceCulture);
             }
@@ -253,7 +253,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to INPS.
         /// </summary>
-        internal static string TC22 {
+        public static string TC22 {
             get {
                 return ResourceManager.GetString("TC22", resourceCulture);
             }

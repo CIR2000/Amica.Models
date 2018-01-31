@@ -65,7 +65,6 @@ namespace Amica.Models
         /// <value>
         /// The PEC mail.
         /// </value>
-        [JsonProperty("pec_mail")]
         public string PecMail
         {
             get { return _pecMail; }
@@ -77,7 +76,6 @@ namespace Amica.Models
         /// <value>
         /// The web site.
         /// </value>
-        [JsonProperty("web_site")]
         public string WebSite
         {
             get { return _webSite; }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Models {
+namespace Amica.Models {
     using System;
     using System.Reflection;
     
@@ -20,10 +20,10 @@ namespace Models {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class TransportModeResources {
+    public class TransportModeResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -37,10 +37,10 @@ namespace Models {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Models.TransportModeResources", typeof(TransportModeResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.TransportModeResources", typeof(TransportModeResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -52,7 +52,7 @@ namespace Models {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -64,7 +64,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Corriere.
         /// </summary>
-        internal static string Courier {
+        public static string Courier {
             get {
                 return ResourceManager.GetString("Courier", resourceCulture);
             }
@@ -73,7 +73,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Destinatario.
         /// </summary>
-        internal static string Recipient {
+        public static string Recipient {
             get {
                 return ResourceManager.GetString("Recipient", resourceCulture);
             }
@@ -82,7 +82,7 @@ namespace Models {
         /// <summary>
         ///   Looks up a localized string similar to Mittente.
         /// </summary>
-        internal static string Sender {
+        public static string Sender {
             get {
                 return ResourceManager.GetString("Sender", resourceCulture);
             }

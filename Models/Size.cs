@@ -38,7 +38,6 @@ namespace Amica.Models
         /// <value>
         /// The numbers collection.
         /// </value>
-        [JsonProperty("number_collection")]
         public List<string> NumberCollection
         {
             get { return _numberCollection; }
