@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v0.0.5
+======
+
+- Add Company.FiscalProfile.VatIdentificationNumber
+- Add Company.FiscalProfile.TaxIdentificationNumber
+
 v0.0.4
 ======
 

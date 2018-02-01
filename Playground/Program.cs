@@ -13,7 +13,8 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            //var v = Amica.Models.ItalianPA.PAHelpers.NaturaPA;
+            var c = new Amica.Models.Company.Company();
+            var x = new Contact();
 
             //var d = new Invoice();
             //var d = new Invoice

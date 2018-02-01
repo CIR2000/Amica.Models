@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace Amica.Models.Company
+﻿namespace Amica.Models.Company
 {
     /// <summary>
     /// Company's fiscal profile.
@@ -10,6 +8,8 @@ namespace Amica.Models.Company
     {
         bool _isFreelance, _isExclusiveAgent;
         float _enasarco;
+        string _vatIdNumber, _taxIdNumber;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="FiscalProfile"/> class.
         /// </summary>
@@ -70,5 +70,28 @@ namespace Amica.Models.Company
         /// The deduction.
         /// </value>
         public Deduction Deduction { get; }
+        /// <summary>
+        /// Gets or sets the vat identification number.
+        /// </summary>
+        /// <value>
+        /// The vat identification number.
+        /// </value>
+        public string VatIdentificationNumber
+        {
+            set { SetProperty(ref _vatIdNumber, value); }
+            get { return _vatIdNumber; }
+        }
+
+        /// <summary>
+        /// Gets or sets the tax identification number.
+        /// </summary>
+        /// <value>
+        /// The tax identification number.
+        /// </value>
+        public string TaxIdentificationNumber
+        {
+            set { SetProperty(ref _taxIdNumber, value); }
+            get { return _taxIdNumber; }
+        }
     }
 }
