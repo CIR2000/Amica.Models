@@ -18,12 +18,10 @@ namespace Amica.Models.Documents
 			set { SetProperty (ref _amount, value); }
 			get { return _amount; }
 		}
-		[JsonProperty("taxable_share")]
 		public float TaxableShare {
 			set { SetProperty (ref _taxableShare, value); }
 			get { return _taxableShare; }
 		}
-		[JsonProperty("is_social_security_included")]
 		public bool IsSocialSecurityIncluded {
 			set { SetProperty (ref _includesSocialSecurity, value); }
 			get { return _includesSocialSecurity; }

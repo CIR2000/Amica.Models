@@ -26,7 +26,6 @@ namespace Amica.Models.Documents
             set { SetProperty(ref _volume, value); }
             get { return _volume; }
         }
-		[JsonProperty("unit_of_measure")]
         public string UnitOfMeasure
         {
             set { SetProperty(ref _unitOfMeasure, value); }
@@ -52,7 +51,6 @@ namespace Amica.Models.Documents
             set { SetProperty(ref _courier, value); }
             get { return _courier; }
         }
-		[JsonProperty("transport_mode")]
         public TransportMode TransportMode
         {
             set { SetProperty(ref _transportMode, value); }

@@ -21,7 +21,6 @@ namespace Amica.Models.Documents
             get { return _date; }
         }
 
-		[JsonProperty("item_id")]
         public string ItemId
         {
             set { SetProperty(ref _itemId, value); }

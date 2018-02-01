@@ -18,7 +18,6 @@ namespace Amica.Models.Documents
             get { return _currency; }
         }
 
-		[JsonProperty("exchange_rate")]
         public decimal ExchangeRate
         {
             set { SetProperty(ref _exchange_rate, value); }

@@ -32,7 +32,6 @@ namespace Amica.Models.Documents
             get { return _vat; }
         }
 
-		[JsonProperty("is_from_payment")]
         public bool IsFromPayment
         {
             set { SetProperty(ref _is_from_payment, value); }

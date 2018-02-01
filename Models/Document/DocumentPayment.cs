@@ -19,7 +19,6 @@ namespace Amica.Models.Documents
 		/// <summary>
         /// Only used when Document.Payment.FirstPaymentDate is set to ExplicitDate.
         /// </summary>
-		[JsonProperty("base_date_for_payments")]
         public DateTime BaseDateForPayments
         {
             set { SetProperty(ref _baseDateForPayments, value); }

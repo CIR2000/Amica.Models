@@ -27,14 +27,12 @@ namespace Amica.Models.Documents
 			set { SetProperty (ref _description, value); }
 			get { return _description; }
 		}
-		[JsonProperty ("unit_of_measure")]
         public string UnitOfMeasure
         {
             set { SetProperty(ref _unitOfMeasure, value); }
             get { return _unitOfMeasure; }
         }
 
-		[JsonProperty("serial_number")]
         public string SerialNumber
         {
             set { SetProperty(ref _serial, value); }

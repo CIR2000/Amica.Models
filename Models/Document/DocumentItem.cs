@@ -65,7 +65,6 @@ namespace Amica.Models.Documents
 			get { return _warehouse; }
 		}
 
-		[JsonProperty ("withholding_tax")]
         public bool WithholdingTax
         {
             set { SetProperty(ref _withholdingTax, value); }
@@ -78,14 +77,12 @@ namespace Amica.Models.Documents
             get { return _quantity; }
         }
 
-		[JsonProperty ("processed_quantity")]
         public float ProcessedQuantity
         {
             set { SetProperty(ref _processedQuantity, value); }
             get { return _processedQuantity; }
         }
 
-		[JsonProperty("variation_collection")]
         public List<Variation> VariationCollection
         {
             set { SetProperty(ref _variationCollection, value); }
@@ -98,7 +95,6 @@ namespace Amica.Models.Documents
             get { return _commission; }
         }
 
-		[JsonProperty("area_manager_commission")]
         public float AreaManagerCommission
         {
             set { SetProperty(ref _areaManagerCommission, value); }
@@ -111,14 +107,12 @@ namespace Amica.Models.Documents
             get { return _price; }
         }
 
-		[JsonProperty ("net_price")]
         public decimal NetPrice
         {
             set { SetProperty(ref _netPrice, value); }
             get { return _netPrice; }
         }
 
-		[JsonProperty ("price_vat_inclusive")]
         public decimal PriceVatInclusive
         {
             set { SetProperty(ref _priceVatInclusive, value); }

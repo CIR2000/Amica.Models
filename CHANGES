@@ -6,6 +6,7 @@ v0.0.5
 
 - Add Company.FiscalProfile.VatIdentificationNumber
 - Add Company.FiscalProfile.TaxIdentificationNumber
+- Remove leftover JsonProperty attributes (Documents)
 
 v0.0.4
 ======
