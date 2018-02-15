@@ -30,9 +30,8 @@ namespace Amica.Models
 		/// Gets or sets the ETag.
 		/// </summary>
 		/// <value>The ETag.</value>
-		[JsonProperty ("_etag")]
 		[Remote (Meta.ETag)]
-		public string ETag {
+		public string Etag {
 			set { SetProperty (ref _etag, value); }
 			get { return _etag; }
 		}
@@ -41,7 +40,6 @@ namespace Amica.Models
 		/// Gets or sets the last update date and time.
 		/// </summary>
 		/// <value>The last updated date and time.</value>
-		[JsonProperty ("_updated")]
 		[Remote (Meta.LastUpdated)]
 		public DateTime Updated {
 			set { SetProperty (ref _updated, value); }
@@ -52,7 +50,6 @@ namespace Amica.Models
 		/// Gets or sets the creation date.
 		/// </summary>
 		/// <value>The creation date.</value>
-		[JsonProperty ("_created")]
 		[Remote (Meta.DateCreated)]
 		public DateTime Created {
 			set { SetProperty (ref _created, value); }
@@ -63,7 +60,6 @@ namespace Amica.Models
 		/// Gets or set the deleted status.
 		/// </summary>
 		/// <value>The creation date.</value>
-		[JsonProperty ("_deleted")]
 		[Remote (Meta.DateCreated)]
 		public bool Deleted {
 			set { SetProperty (ref _deleted, value); }
