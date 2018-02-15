@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v0.0.6
+======
+
+Released on 15 February, 2018
+
+- Braking: rename BaseModel.ETag to Etag.
+- Get rid of JsonProperties in BaseModel class, except for UniqueId.
+
 v0.0.5
 ======
 
