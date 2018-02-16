@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v0.0.7-alpha
+============
+
+Released on 16 February, 2018
+
+- Add Display attribute for Company class.
+- Add Resources.PropertyNames resx file.
+
 v0.0.6
 ======
 
