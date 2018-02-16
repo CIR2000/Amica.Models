@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 
 namespace Amica.Models.Company
@@ -35,6 +36,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The name.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.CompanyName), ResourceType = typeof(Resources.PropertyNames))]
         public string Name {
 			set { SetProperty (ref _name, value); }
 			get { return _name; } 
@@ -56,6 +58,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The SIA code.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.SIACode), ResourceType = typeof(Resources.PropertyNames))]
 		public string SIACode {
 			set { SetProperty (ref _siaCode, value); }
 			get { return _siaCode; } 
@@ -66,6 +69,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The REA code.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.REACode), ResourceType = typeof(Resources.PropertyNames))]
 		public string REACode {
 			set { SetProperty (ref _reaCode, value); }
 			get { return _reaCode; } 
@@ -76,6 +80,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is a legal entity; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.IsLegalEntity), ResourceType = typeof(Resources.PropertyNames))]
 		public bool IsLegalEntity {
 			set { SetProperty (ref _legalEntity, value); }
 			get { return _legalEntity; } 
@@ -86,6 +91,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is the administrative account; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.IsAdministrativeAccount), ResourceType = typeof(Resources.PropertyNames))]
 		public bool IsAdministrativeAccount {
 			set { SetProperty (ref _adminAccount, value); }
 			get { return _adminAccount; } 
@@ -116,6 +122,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The fiscal profile.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.FiscalProfile), ResourceType = typeof(Resources.PropertyNames))]
         public FiscalProfile FiscalProfile { get; }
         /// <summary>
         /// Gets the company preferences.
@@ -123,6 +130,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The company preferences.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Preferences), ResourceType = typeof(Resources.PropertyNames))]
         public Preferences Preferences { get; }
         /// <summary>
         /// Gets the companyt address.
@@ -130,6 +138,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The companyt address.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Address), ResourceType = typeof(Resources.PropertyNames))]
         public AddressEx Address { get; }
     }
 }

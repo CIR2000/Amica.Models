@@ -1,6 +1,8 @@
 ﻿using Eve;
 using Newtonsoft.Json;
 using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
 {
@@ -21,6 +23,7 @@ namespace Amica.Models
 		/// <value>The unique identifier.</value>
 		[JsonProperty ("_id")]
 		[Remote (Meta.DocumentId)]
+        [Display(Name = nameof(Resources.PropertyNames.UniqueId), ResourceType = typeof(Resources.PropertyNames))]
 		public string UniqueId {
 			set { SetProperty (ref _uniqueId, value); }
 			get { return _uniqueId; }
@@ -41,6 +44,7 @@ namespace Amica.Models
 		/// </summary>
 		/// <value>The last updated date and time.</value>
 		[Remote (Meta.LastUpdated)]
+        [Display(Name = nameof(Resources.PropertyNames.Updated), ResourceType = typeof(Resources.PropertyNames))]
 		public DateTime Updated {
 			set { SetProperty (ref _updated, value); }
 			get { return _updated; }
@@ -51,6 +55,7 @@ namespace Amica.Models
 		/// </summary>
 		/// <value>The creation date.</value>
 		[Remote (Meta.DateCreated)]
+        [Display(Name = nameof(Resources.PropertyNames.Created), ResourceType = typeof(Resources.PropertyNames))]
 		public DateTime Created {
 			set { SetProperty (ref _created, value); }
 			get { return _created; } 
@@ -60,7 +65,8 @@ namespace Amica.Models
 		/// Gets or set the deleted status.
 		/// </summary>
 		/// <value>The creation date.</value>
-		[Remote (Meta.DateCreated)]
+		[Remote (Meta.Deleted)]
+        [Display(Name = nameof(Resources.PropertyNames.Deleted), ResourceType = typeof(Resources.PropertyNames))]
 		public bool Deleted {
 			set { SetProperty (ref _deleted, value); }
 			get { return _deleted; } 

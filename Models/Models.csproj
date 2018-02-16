@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +45,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>DocumentResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\PropertyNames.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PropertyNames.resx</DependentUpon>
     </Compile>
     <Compile Update="ShippingTermsResources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -79,6 +85,10 @@
     <EmbeddedResource Update="DocumentResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DocumentResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\PropertyNames.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PropertyNames.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="ShippingTermsResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
