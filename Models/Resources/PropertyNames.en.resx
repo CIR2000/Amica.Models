@@ -118,39 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Address" xml:space="preserve">
-    <value>Indirizzo</value>
+    <value>Address</value>
   </data>
   <data name="CompanyName" xml:space="preserve">
-    <value>Nome</value>
+    <value>Name</value>
   </data>
   <data name="Created" xml:space="preserve">
-    <value>Creazione</value>
+    <value>Created</value>
   </data>
   <data name="Deleted" xml:space="preserve">
-    <value>Cancellato</value>
+    <value>Deleted</value>
   </data>
   <data name="FiscalProfile" xml:space="preserve">
-    <value>Profilo fiscale</value>
+    <value>Fiscal profile</value>
   </data>
   <data name="IsAdministrativeAccount" xml:space="preserve">
-    <value>Account amministrativo</value>
+    <value>Admin account</value>
   </data>
   <data name="IsLegalEntity" xml:space="preserve">
-    <value>Persona giuridica</value>
+    <value>Legal entity</value>
   </data>
   <data name="Preferences" xml:space="preserve">
-    <value>Predefinizioni</value>
+    <value>Preferences</value>
   </data>
   <data name="REACode" xml:space="preserve">
-    <value>Codice REA</value>
+    <value>REA code</value>
   </data>
   <data name="SIACode" xml:space="preserve">
-    <value>Codice SIA</value>
+    <value>SIA code</value>
   </data>
   <data name="UniqueId" xml:space="preserve">
     <value>Id</value>
   </data>
   <data name="Updated" xml:space="preserve">
-    <value>Aggiornamento</value>
+    <value>Updated</value>
   </data>
 </root>

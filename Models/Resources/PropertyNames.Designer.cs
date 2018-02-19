@@ -98,7 +98,7 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ProfiloFiscale.
+        ///   Looks up a localized string similar to Profilo fiscale.
         /// </summary>
         public static string FiscalProfile {
             get {
@@ -107,7 +107,7 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AccountAmministrativo.
+        ///   Looks up a localized string similar to Account amministrativo.
         /// </summary>
         public static string IsAdministrativeAccount {
             get {
@@ -116,7 +116,7 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PersonaGiuridica.
+        ///   Looks up a localized string similar to Persona giuridica.
         /// </summary>
         public static string IsLegalEntity {
             get {
@@ -134,7 +134,7 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CodiceREA.
+        ///   Looks up a localized string similar to Codice REA.
         /// </summary>
         public static string REACode {
             get {
@@ -143,7 +143,7 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CodiceSIA.
+        ///   Looks up a localized string similar to Codice SIA.
         /// </summary>
         public static string SIACode {
             get {
