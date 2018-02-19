@@ -1,4 +1,6 @@
-﻿namespace Amica.Models.Company
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Amica.Models.Company
 {
     /// <summary>
     /// Company's fiscal profile.
@@ -25,6 +27,7 @@
         /// <value>
         ///   <c>true</c> if this instance is freelance; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Vat), ResourceType = typeof(Resources.PropertyNames))]
         public bool IsFreelance {
 			set { SetProperty (ref _isFreelance, value); }
 			get { return _isFreelance; } 
@@ -35,6 +38,7 @@
         /// <value>
         ///   <c>true</c> if the company acts as an exclusive agent; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.IsExclusiveAgent), ResourceType = typeof(Resources.PropertyNames))]
         public bool IsExclusiveAgent {
 			set { SetProperty (ref _isExclusiveAgent, value); }
 			get { return _isExclusiveAgent; } 
@@ -45,6 +49,7 @@
         /// <value>
         /// The Enasarco fund.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.EnasarcoFund), ResourceType = typeof(Resources.PropertyNames))]
         public float EnasarcoFund {
 			set { SetProperty (ref _enasarco, value); }
 			get { return _enasarco; } 
@@ -55,6 +60,7 @@
         /// <value>
         /// The INPS reimbursement.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.InpsReimbursement), ResourceType = typeof(Resources.PropertyNames))]
         public InpsReimbursement InpsReimbursement { get; }
         /// <summary>
         /// Gets the freelance fund.
@@ -62,6 +68,7 @@
         /// <value>
         /// The freelance fund.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.FreelanceFund), ResourceType = typeof(Resources.PropertyNames))]
         public FreelanceFund FreelanceFund { get; }
         /// <summary>
         /// Gets the deduction.
@@ -69,6 +76,7 @@
         /// <value>
         /// The deduction.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Deduction), ResourceType = typeof(Resources.PropertyNames))]
         public Deduction Deduction { get; }
         /// <summary>
         /// Gets or sets the vat identification number.
@@ -76,6 +84,7 @@
         /// <value>
         /// The vat identification number.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.VatIdentificationNumber), ResourceType = typeof(Resources.PropertyNames))]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
@@ -88,6 +97,7 @@
         /// <value>
         /// The tax identification number.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.TaxIdentificationNumber), ResourceType = typeof(Resources.PropertyNames))]
         public string TaxIdentificationNumber
         {
             set { SetProperty(ref _taxIdNumber, value); }

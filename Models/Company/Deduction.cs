@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models.Company
 {
@@ -16,6 +16,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The deduction rate.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Rate), ResourceType = typeof(Resources.PropertyNames))]
         public float Rate {
 			set { SetProperty (ref _rate, value); }
 			get { return _rate; } 
@@ -26,6 +27,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The taxable share.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.TaxableShare), ResourceType = typeof(Resources.PropertyNames))]
 		public float TaxableShare {
 			set { SetProperty (ref _taxableShare, value); }
 			get { return _taxableShare; } 
@@ -36,6 +38,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if deduction includes welfare; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.IsWelfareIncluded), ResourceType = typeof(Resources.PropertyNames))]
 		public bool IsWelfareIncluded{
 			set { SetProperty (ref _isWelfareIncluded, value); }
 			get { return _isWelfareIncluded; } 

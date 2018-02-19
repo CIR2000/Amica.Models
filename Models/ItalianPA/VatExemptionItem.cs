@@ -1,4 +1,6 @@
-﻿namespace Amica.Models.ItalianPA
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Amica.Models.ItalianPA
 {
     /// <summary>
     /// VAT exception item.
@@ -15,6 +17,7 @@
         /// <value>
         /// The code.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Code), ResourceType = typeof(Resources.PropertyNames))]
         public string Code
         {
             set { SetProperty(ref _code, value); }
@@ -27,6 +30,7 @@
         /// <value>
         /// The description.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Description), ResourceType = typeof(Resources.PropertyNames))]
         public string Description
         {
             set { SetProperty(ref _description, value); }

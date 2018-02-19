@@ -1,4 +1,6 @@
-﻿namespace Amica.Models.Company
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Amica.Models.Company
 {
     /// <summary>
     /// Freelance fund details.
@@ -14,6 +16,7 @@
         /// <value>
         /// The rate.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Rate), ResourceType = typeof(Resources.PropertyNames))]
         public float Rate {
 			set { SetProperty (ref _rate, value); }
 			get { return _rate; } 
@@ -24,6 +27,7 @@
         /// <value>
         /// The description.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Description), ResourceType = typeof(Resources.PropertyNames))]
         public string Description {
 			set { SetProperty (ref _description, value); }
 			get { return _description; } 

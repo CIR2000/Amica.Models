@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models.Company
 {
@@ -24,6 +25,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if VAT is excluded; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.IsVatExcluded), ResourceType = typeof(Resources.PropertyNames))]
         public bool IsVatExcluded
         {
             set { SetProperty(ref _isVatExcluded, value); }
@@ -35,6 +37,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The unit of measure.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.UnitOfMeasure), ResourceType = typeof(Resources.PropertyNames))]
         public string UnitOfMeasure
         {
             set { SetProperty(ref _unitOfMeasure, value); }
@@ -46,6 +49,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The VAT.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Vat), ResourceType = typeof(Resources.PropertyNames))]
         public Vat Vat { get; }
         /// <summary>
         /// Gets the email attachment.
@@ -53,6 +57,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The email attachment.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.EmailAttachment), ResourceType = typeof(Resources.PropertyNames))]
         public EmailAttachment EmailAttachment { get; }
     }
 }

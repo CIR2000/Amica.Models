@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
 {
@@ -39,6 +40,7 @@ namespace Amica.Models
         /// <value>
         /// The phone.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Phone), ResourceType = typeof(Resources.PropertyNames))]
         public string Phone
         {
             get { return _contactDetails.Phone; }
@@ -50,6 +52,7 @@ namespace Amica.Models
         /// <value>
         /// The mobile.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Mobile), ResourceType = typeof(Resources.PropertyNames))]
         public string Mobile
         {
             get { return _contactDetails.Mobile; }
@@ -61,6 +64,7 @@ namespace Amica.Models
         /// <value>
         /// The fax.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Fax), ResourceType = typeof(Resources.PropertyNames))]
         public string Fax
         {
             get { return _contactDetails.Fax; }
@@ -72,6 +76,7 @@ namespace Amica.Models
         /// <value>
         /// The mail.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Mail), ResourceType = typeof(Resources.PropertyNames))]
         public string Mail
         {
             get { return _contactDetails.Mail; }
@@ -83,6 +88,7 @@ namespace Amica.Models
         /// <value>
         /// The PEC mail.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.PecMail), ResourceType = typeof(Resources.PropertyNames))]
         public string PecMail
         {
             get { return _contactDetails.PecMail; }
@@ -94,6 +100,7 @@ namespace Amica.Models
         /// <value>
         /// The web site.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.WebSite), ResourceType = typeof(Resources.PropertyNames))]
         public string WebSite
         {
             get { return _contactDetails.WebSite; }
@@ -106,6 +113,7 @@ namespace Amica.Models
         /// <value>
         /// The street.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Street), ResourceType = typeof(Resources.PropertyNames))]
         public string Street
         {
             get { return _address.Street; }
@@ -118,6 +126,7 @@ namespace Amica.Models
         /// <value>
         /// The town.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Town), ResourceType = typeof(Resources.PropertyNames))]
         public string Town
         {
             get { return _address.Town; }
@@ -130,6 +139,7 @@ namespace Amica.Models
         /// <value>
         /// The postal code.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.PostalCode), ResourceType = typeof(Resources.PropertyNames))]
         public string PostalCode
         {
             get { return _address.PostalCode; }
@@ -142,6 +152,7 @@ namespace Amica.Models
         /// <value>
         /// The state or province.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.StateOrProvince), ResourceType = typeof(Resources.PropertyNames))]
         public string StateOrProvince
         {
             get { return _address.StateOrProvince; }
@@ -154,6 +165,7 @@ namespace Amica.Models
         /// <value>
         /// The country.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Country), ResourceType = typeof(Resources.PropertyNames))]
         public string Country
         {
             get { return _address.Country; }
@@ -165,6 +177,7 @@ namespace Amica.Models
         /// <value>
         /// The notes.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Notes), ResourceType = typeof(Resources.PropertyNames))]
         public string Notes
         {
             get { return _address.Notes; }
