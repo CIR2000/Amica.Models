@@ -1,41 +1,32 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models.Company
 {
     /// <summary>
-    /// An email attachment.
+    /// Company's mail settings.
     /// </summary>
     /// <seealso cref="Amica.Models.ObservableObject" />
-    public class EmailAttachment : ObservableObject
+    public class MailSettings : ObservableObject
     {
-        string _username, _password, _smpt, _protocol, _body;
+        string _smpt, _protocol;
         int _port;
         /// <summary>
-        /// Gets or sets the username.
+        /// Initializes a new instance of the <see cref="MailSettings"/> class.
         /// </summary>
-        /// <value>
-        /// The username.
-        /// </value>
-        public string Username {
-			set { SetProperty (ref _username, value); }
-			get { return _username; } 
-		}
-        /// <summary>
-        /// Gets or sets the password.
-        /// </summary>
-        /// <value>
-        /// The password.
-        /// </value>
-        public string Password {
-			set { SetProperty (ref _password, value); }
-			get { return _password; } 
-		}
+        public MailSettings()
+        {
+            Template = new List<MailTemplate>();
+        }
+
         /// <summary>
         /// Gets or sets the SMPT address.
         /// </summary>
         /// <value>
         /// The SMPT address.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.SmptAddress), ResourceType = typeof(Resources.PropertyNames))]
         public string SmptAddress {
 			set { SetProperty (ref _smpt, value); }
 			get { return _smpt; } 
@@ -46,6 +37,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The protocol.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Protocol), ResourceType = typeof(Resources.PropertyNames))]
         public string Protocol {
 			set { SetProperty (ref _protocol, value); }
 			get { return _protocol; } 
@@ -56,19 +48,18 @@ namespace Amica.Models.Company
         /// <value>
         /// The port.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Port), ResourceType = typeof(Resources.PropertyNames))]
         public int Port {
 			set { SetProperty (ref _port, value); }
 			get { return _port; } 
 		}
         /// <summary>
-        /// Gets or sets the message body.
+        /// Gets email templates.
         /// </summary>
         /// <value>
-        /// The message body.
+        /// The email templates.
         /// </value>
-		public string MessageBody {
-			set { SetProperty (ref _body, value); }
-			get { return _body; } 
-		}
+        [Display(Name = nameof(Resources.PropertyNames.Templates), ResourceType = typeof(Resources.PropertyNames))]
+        public List<MailTemplate> Template { get; } 
     }
 }

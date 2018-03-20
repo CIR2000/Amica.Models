@@ -18,8 +18,8 @@ namespace Amica.Models.Company
     /// <seealso cref="Amica.Models.BaseModel" />
     public class Company : BaseModel
 	{
-		private string _name, _password, _siaCode, _reaCode, _logo, _lastPosition;
-        private bool _legalEntity, _adminAccount;
+		private string _name, _password, _lastPosition;
+        private bool _adminAccount;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Company"/> class.
@@ -53,39 +53,6 @@ namespace Amica.Models.Company
 			get { return _password; }
 		}
         /// <summary>
-        /// Gets or sets the SIA code.
-        /// </summary>
-        /// <value>
-        /// The SIA code.
-        /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.SIACode), ResourceType = typeof(Resources.PropertyNames))]
-		public string SIACode {
-			set { SetProperty (ref _siaCode, value); }
-			get { return _siaCode; } 
-		}
-        /// <summary>
-        /// Gets or sets the REA code.
-        /// </summary>
-        /// <value>
-        /// The REA code.
-        /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.REACode), ResourceType = typeof(Resources.PropertyNames))]
-		public string REACode {
-			set { SetProperty (ref _reaCode, value); }
-			get { return _reaCode; } 
-		}
-        /// <summary>
-        /// Gets or sets a value indicating whether this instance is a legal entity.
-        /// </summary>
-        /// <value>
-        ///   <c>true</c> if this instance is a legal entity; otherwise, <c>false</c>.
-        /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.IsLegalEntity), ResourceType = typeof(Resources.PropertyNames))]
-		public bool IsLegalEntity {
-			set { SetProperty (ref _legalEntity, value); }
-			get { return _legalEntity; } 
-		}
-        /// <summary>
         /// Gets or sets a value indicating whether this instance is the administrative account.
         /// </summary>
         /// <value>
@@ -95,16 +62,6 @@ namespace Amica.Models.Company
 		public bool IsAdministrativeAccount {
 			set { SetProperty (ref _adminAccount, value); }
 			get { return _adminAccount; } 
-		}
-        /// <summary>
-        /// Gets or sets the company logo filename. 
-        /// </summary>
-        /// <value>
-        /// The company logo filename.
-        /// </value>
-        public string Logo {
-			set { SetProperty (ref _logo, value); }
-			get { return _logo; } 
 		}
         /// <summary>
         /// Gets or sets the last user position known he was while working with the company.

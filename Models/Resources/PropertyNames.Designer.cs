@@ -449,6 +449,78 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inidirizzo mittente.
+        /// </summary>
+        public static string TemplateFromAddress {
+            get {
+                return ResourceManager.GetString("TemplateFromAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome mittente.
+        /// </summary>
+        public static string TemplateFromName {
+            get {
+                return ResourceManager.GetString("TemplateFromName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Corpo del messaggio.
+        /// </summary>
+        public static string TemplateMessageBody {
+            get {
+                return ResourceManager.GetString("TemplateMessageBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oggetto del messaggio.
+        /// </summary>
+        public static string TemplateMessageSubject {
+            get {
+                return ResourceManager.GetString("TemplateMessageSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome.
+        /// </summary>
+        public static string TemplateName {
+            get {
+                return ResourceManager.GetString("TemplateName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modelli Mail.
+        /// </summary>
+        public static string Templates {
+            get {
+                return ResourceManager.GetString("Templates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password smtp.
+        /// </summary>
+        public static string TemplateSmptPassword {
+            get {
+                return ResourceManager.GetString("TemplateSmptPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome utente.
+        /// </summary>
+        public static string TemplateSmptUsername {
+            get {
+                return ResourceManager.GetString("TemplateSmptUsername", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Localita.
         /// </summary>
         public static string Town {
@@ -481,15 +553,6 @@ namespace Amica.Models.Resources {
         public static string Updated {
             get {
                 return ResourceManager.GetString("Updated", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Nome utente.
-        /// </summary>
-        public static string Username {
-            get {
-                return ResourceManager.GetString("Username", resourceCulture);
             }
         }
         

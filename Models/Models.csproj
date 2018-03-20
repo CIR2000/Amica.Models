@@ -87,7 +87,7 @@
       <LastGenOutput>DocumentResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\PropertyNames.en.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\PropertyNames.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

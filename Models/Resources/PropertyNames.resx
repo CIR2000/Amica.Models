@@ -228,7 +228,7 @@
   <data name="UnitOfMeasure" xml:space="preserve">
     <value>Unita di misura</value>
   </data>
-  <data name="Username" xml:space="preserve">
+  <data name="TemplateSmptUsername" xml:space="preserve">
     <value>Nome utente</value>
   </data>
   <data name="Vat" xml:space="preserve">
@@ -272,5 +272,26 @@
   </data>
   <data name="WebSite" xml:space="preserve">
     <value>Sito web</value>
+  </data>
+  <data name="TemplateMessageBody" xml:space="preserve">
+    <value>Corpo del messaggio</value>
+  </data>
+  <data name="TemplateMessageSubject" xml:space="preserve">
+    <value>Oggetto del messaggio</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="TemplateFromAddress" xml:space="preserve">
+    <value>Inidirizzo mittente</value>
+  </data>
+  <data name="TemplateFromName" xml:space="preserve">
+    <value>Nome mittente</value>
+  </data>
+  <data name="TemplateSmptPassword" xml:space="preserve">
+    <value>Password smtp</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>Modelli Mail</value>
   </data>
 </root>

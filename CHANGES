@@ -1,7 +1,25 @@
 Changelog
 =========
 
-v0.0.7-alpha
+v0.0.8
+======
+
+Released on March 20, 2018
+
+- Company.IsLegalEntity moved to Company.FiscalProfile
+- Company.IsVatExcluded moved to Company.FiscalProfile
+- Company.Vat moved to Company.FiscalProfile
+- Company.REACode moved to Company.FiscalProfile
+- Company.SIACode moved to Company.FiscalProfile
+- Company.Logo moved to Company.Preferences
+- EmailAttachment renamed to MailSettings
+- EmailAttachment.MessageBody moved to MailSettings.Template.MessageBody
+- EmailAttachment.Username moved to MailSettings.Template.SmptUsername
+- EmailAttachment.Password moved to MailSettings.Template.SmptPassword
+- Add MailSettings.Template property
+- New MailTemplate class
+
+v0.0.7.1-alpha
 ============
 
 Released on 16 February, 2018
