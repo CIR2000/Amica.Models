@@ -50,7 +50,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is freelance; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Vat), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.PropertyNames.IsFreelance), ResourceType = typeof(Resources.PropertyNames))]
         public bool IsFreelance {
 			set { SetProperty (ref _isFreelance, value); }
 			get { return _isFreelance; } 

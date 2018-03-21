@@ -192,8 +192,8 @@
   <data name="Code" xml:space="preserve">
     <value>Codice</value>
   </data>
-  <data name="EmailAttachment" xml:space="preserve">
-    <value>Mail</value>
+  <data name="MailSettings" xml:space="preserve">
+    <value>Impostazioni mail</value>
   </data>
   <data name="IsIntraCommunity" xml:space="preserve">
     <value>Intracomunitaria</value>
@@ -293,5 +293,8 @@
   </data>
   <data name="Templates" xml:space="preserve">
     <value>Modelli Mail</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo aziendale</value>
   </data>
 </root>

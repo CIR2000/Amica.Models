@@ -134,15 +134,6 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mail.
-        /// </summary>
-        public static string EmailAttachment {
-            get {
-                return ResourceManager.GetString("EmailAttachment", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Importo ENASARCO.
         /// </summary>
         public static string EnasarcoFund {
@@ -260,11 +251,29 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Logo aziendale.
+        /// </summary>
+        public static string Logo {
+            get {
+                return ResourceManager.GetString("Logo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mail.
         /// </summary>
         public static string Mail {
             get {
                 return ResourceManager.GetString("Mail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Impostazioni mail.
+        /// </summary>
+        public static string MailSettings {
+            get {
+                return ResourceManager.GetString("MailSettings", resourceCulture);
             }
         }
         

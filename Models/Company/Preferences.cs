@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models.Company
 {
@@ -36,7 +35,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The email attachment.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.EmailAttachment), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.PropertyNames.MailSettings), ResourceType = typeof(Resources.PropertyNames))]
         public MailSettings MailSettings { get; }
         /// <summary>
         /// Gets or sets the company logo. 
@@ -44,6 +43,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The company logo.
         /// </value>
+        [Display(Name = nameof(Resources.PropertyNames.Logo), ResourceType = typeof(Resources.PropertyNames))]
         public string Logo {
 			set { SetProperty (ref _logo, value); }
 			get { return _logo; } 
