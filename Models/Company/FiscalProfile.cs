@@ -21,6 +21,9 @@ namespace Amica.Models.Company
             FreelanceFund = new FreelanceFund();
             Deduction = new Deduction();
             Vat = new Vat();
+
+            IsVatExcluded = true;
+            IsLegalEntity = true;
         }
         /// <summary>
         /// Gets or sets the SIA code.

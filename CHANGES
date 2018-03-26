@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.0.10
+======
+
+- Default value for FiscalProvile.IsVatExcluded = true.
+- Default value for FiscalProvile.IsLegalEntity = true.
+- Default value for Preferences.UnitOfMeasure = "N."
+
 v0.0.9
 ======
 

@@ -16,6 +16,7 @@ namespace Amica.Models.Company
         public Preferences()
         {
             MailSettings = new MailSettings();
+            UnitOfMeasure = "N.";
         }
         /// <summary>
         /// Gets or sets the unit of measure.
