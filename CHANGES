@@ -4,6 +4,7 @@ Changelog
 v0.0.10
 ======
 
+- Company 'user' properties now carry a Description attribute.
 - Default value for FiscalProvile.IsVatExcluded = true.
 - Default value for FiscalProvile.IsLegalEntity = true.
 - Default value for Preferences.UnitOfMeasure = "N.".

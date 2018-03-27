@@ -46,6 +46,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DocumentResources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\PropertyDescriptions.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PropertyDescriptions.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\PropertyNames.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -85,6 +90,10 @@
     <EmbeddedResource Update="DocumentResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DocumentResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\PropertyDescriptions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PropertyDescriptions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\PropertyNames.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
