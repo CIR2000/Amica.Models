@@ -4,6 +4,8 @@ Changelog
 v0.0.10
 ======
 
+Released on March 27, 2018.
+
 - Company 'user' properties now carry a Description attribute.
 - Default value for FiscalProvile.IsVatExcluded = true.
 - Default value for FiscalProvile.IsLegalEntity = true.
