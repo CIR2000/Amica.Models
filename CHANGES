@@ -2,13 +2,13 @@ Changelog
 =========
 
 v0.0.10
-======
+=======
 
 Released on March 27, 2018.
 
 - Company 'user' properties now carry a Description attribute.
-- Default value for FiscalProvile.IsVatExcluded = true.
-- Default value for FiscalProvile.IsLegalEntity = true.
+- Default value for FiscalProfile.IsVatExcluded = true.
+- Default value for FiscalProfile.IsLegalEntity = true.
 - Default value for Preferences.UnitOfMeasure = "N.".
 - Add tests for the above default values
 - Add NUnit3 test adapter so tests can actually run in VS.
