@@ -1,16 +1,16 @@
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Amica.Models.Tests
 {
-	[TestFixture]
+	[TestClass]
 	public class Preferences : BaseTestClass
 	{
-		[Test]
+		[TestMethod]
 		public void WritablePropertyAssertions ()
 		{
 			WritablePropertyAssertions (typeof(Company.Preferences));
 		}
-		[Test]
+		[TestMethod]
 		public void DefaultValues ()
 		{
             var p = new Company.Preferences();

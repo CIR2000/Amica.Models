@@ -1,10 +1,15 @@
 Changelog
 =========
 
+v0.0.12
+=======
+
+- Test project is now a NET Core/MSTest project.
+
 v0.0.11
 =======
 
-Released on Aprile 4, 2018.
+Released on April 4, 2018.
 
 - Use DisplayAttribute extra options for property Description and Prompt.
 

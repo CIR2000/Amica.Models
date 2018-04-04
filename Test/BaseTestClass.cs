@@ -1,10 +1,10 @@
 ﻿using System;
-using Ploeh.AutoFixture;
-using Ploeh.AutoFixture.Idioms;
+using AutoFixture;
+using AutoFixture.Idioms;
 
 namespace Amica.Models.Tests
 {
-	public class BaseTestClass
+    public class BaseTestClass
 	{
 		/// <summary>
 		/// Test that all writable properties of a given type instance are behaving properly.

@@ -1,11 +1,11 @@
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Amica.Models.Tests
 {
-	[TestFixture]
+	[TestClass]
 	public class Document : BaseTestClass
 	{
-		[Test]
+		[TestMethod]
 		public void WritablePropertyAssertions ()
 		{
 			WritablePropertyAssertions (typeof(Document));
