@@ -31,7 +31,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The SIA code.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.SIACode), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.SIACode), ResourceType = typeof(Resources.Properties))]
 		public string SIACode {
 			set { SetProperty (ref _siaCode, value); }
 			get { return _siaCode; } 
@@ -42,7 +42,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The REA code.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.REACode), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.REACode), ResourceType = typeof(Resources.Properties))]
 		public string REACode {
 			set { SetProperty (ref _reaCode, value); }
 			get { return _reaCode; } 
@@ -53,7 +53,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is freelance; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.IsFreelance), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.IsFreelance), ResourceType = typeof(Resources.Properties))]
         public bool IsFreelance {
 			set { SetProperty (ref _isFreelance, value); }
 			get { return _isFreelance; } 
@@ -64,7 +64,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if the company acts as an exclusive agent; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.IsExclusiveAgent), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.IsExclusiveAgent), ResourceType = typeof(Resources.Properties))]
         public bool IsExclusiveAgent {
 			set { SetProperty (ref _isExclusiveAgent, value); }
 			get { return _isExclusiveAgent; } 
@@ -75,7 +75,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The Enasarco fund.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.EnasarcoFund), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.EnasarcoFund), ResourceType = typeof(Resources.Properties))]
         public float EnasarcoFund {
 			set { SetProperty (ref _enasarco, value); }
 			get { return _enasarco; } 
@@ -86,7 +86,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The INPS reimbursement.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.InpsReimbursement), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.InpsReimbursement), ResourceType = typeof(Resources.Properties))]
         public InpsReimbursement InpsReimbursement { get; }
         /// <summary>
         /// Gets the freelance fund.
@@ -94,7 +94,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The freelance fund.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.FreelanceFund), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.FreelanceFund), ResourceType = typeof(Resources.Properties))]
         public FreelanceFund FreelanceFund { get; }
         /// <summary>
         /// Gets the deduction.
@@ -102,7 +102,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The deduction.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Deduction), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Deduction), ResourceType = typeof(Resources.Properties))]
         public Deduction Deduction { get; }
         /// <summary>
         /// Gets or sets the vat identification number.
@@ -110,7 +110,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The vat identification number.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.VatIdentificationNumber), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.VatIdentificationNumber), Prompt = "ITXXXXXXXXXXX", ResourceType = typeof(Resources.Properties))]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
@@ -123,7 +123,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The tax identification number.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.TaxIdentificationNumber), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.TaxIdentificationNumber), ResourceType = typeof(Resources.Properties))]
         public string TaxIdentificationNumber
         {
             set { SetProperty(ref _taxIdNumber, value); }
@@ -135,7 +135,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is a legal entity; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.IsLegalEntity), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.IsLegalEntity), ResourceType = typeof(Resources.Properties))]
 		public bool IsLegalEntity {
 			set { SetProperty (ref _legalEntity, value); }
 			get { return _legalEntity; } 
@@ -146,7 +146,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if VAT is excluded; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.IsVatExcluded), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.IsVatExcluded), ResourceType = typeof(Resources.Properties))]
         public bool IsVatExcluded
         {
             set { SetProperty(ref _isVatExcluded, value); }
@@ -158,7 +158,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The VAT.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Vat), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Vat), ResourceType = typeof(Resources.Properties))]
         public Vat Vat { get; }
     }
 }

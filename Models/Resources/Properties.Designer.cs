@@ -23,14 +23,14 @@ namespace Amica.Models.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class PropertyNames {
+    public class Properties {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PropertyNames() {
+        internal Properties() {
         }
         
         /// <summary>
@@ -40,7 +40,7 @@ namespace Amica.Models.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Resources.PropertyNames", typeof(PropertyNames).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Resources.Properties", typeof(Properties).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -71,6 +71,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indirizzo principale dell&apos;azienda.
+        /// </summary>
+        public static string AddressDescription {
+            get {
+                return ResourceManager.GetString("AddressDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Codice.
         /// </summary>
         public static string Code {
@@ -85,6 +94,15 @@ namespace Amica.Models.Resources {
         public static string CompanyName {
             get {
                 return ResourceManager.GetString("CompanyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome dell&apos;azienda.
+        /// </summary>
+        public static string CompanyNameDescription {
+            get {
+                return ResourceManager.GetString("CompanyNameDescription", resourceCulture);
             }
         }
         
@@ -157,6 +175,15 @@ namespace Amica.Models.Resources {
         public static string FiscalProfile {
             get {
                 return ResourceManager.GetString("FiscalProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profilo fiscale dell&apos;azienda.
+        /// </summary>
+        public static string FiscalProfileDescription {
+            get {
+                return ResourceManager.GetString("FiscalProfileDescription", resourceCulture);
             }
         }
         
@@ -332,6 +359,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Password necessaria per lavorare con l&apos;azienda.
+        /// </summary>
+        public static string PasswordDescription {
+            get {
+                return ResourceManager.GetString("PasswordDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PEC.
         /// </summary>
         public static string PecMail {
@@ -373,6 +409,15 @@ namespace Amica.Models.Resources {
         public static string Preferences {
             get {
                 return ResourceManager.GetString("Preferences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Impostazione predefinite.
+        /// </summary>
+        public static string PreferencesDescription {
+            get {
+                return ResourceManager.GetString("PreferencesDescription", resourceCulture);
             }
         }
         

@@ -26,7 +26,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The SMPT address.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.SmptAddress), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.SmptAddress), ResourceType = typeof(Resources.Properties))]
         public string SmptAddress {
 			set { SetProperty (ref _smpt, value); }
 			get { return _smpt; } 
@@ -37,7 +37,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The protocol.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Protocol), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Protocol), ResourceType = typeof(Resources.Properties))]
         public string Protocol {
 			set { SetProperty (ref _protocol, value); }
 			get { return _protocol; } 
@@ -48,7 +48,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The port.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Port), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Port), ResourceType = typeof(Resources.Properties))]
         public int Port {
 			set { SetProperty (ref _port, value); }
 			get { return _port; } 
@@ -59,7 +59,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The email templates.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Templates), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Templates), ResourceType = typeof(Resources.Properties))]
         public List<MailTemplate> Template { get; } 
     }
 }

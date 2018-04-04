@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 using Amica.Models.Resources;
 
@@ -37,8 +36,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The name.
         /// </value>
-        [Display(Name = nameof(PropertyNames.CompanyName))]
-        [Description(nameof(PropertyDescriptions.CompanyName))]
+        [Display(Name = nameof(Properties.CompanyName), Description = nameof(Properties.CompanyNameDescription), ResourceType =typeof(Properties))]
         public string Name {
 			set { SetProperty (ref _name, value); }
 			get { return _name; } 
@@ -50,7 +48,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The password.
         /// </value>
-        [Description(nameof(PropertyDescriptions.Password))]
+        [Display(Name = nameof(Properties.Password), Description = nameof(Properties.PasswordDescription), ResourceType = typeof(Properties))]
         public string Password {
 			set { SetProperty (ref _password, value); }
 			get { return _password; }
@@ -61,7 +59,7 @@ namespace Amica.Models.Company
         /// <value>
         ///   <c>true</c> if this instance is the administrative account; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(PropertyNames.IsAdministrativeAccount), ResourceType = typeof(PropertyNames))]
+        [Display(Name = nameof(Properties.IsAdministrativeAccount), ResourceType = typeof(Properties))]
 		public bool IsAdministrativeAccount {
 			set { SetProperty (ref _adminAccount, value); }
 			get { return _adminAccount; } 
@@ -82,8 +80,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The fiscal profile.
         /// </value>
-        [Display(Name = nameof(PropertyNames.FiscalProfile), ResourceType = typeof(PropertyNames))]
-        [Description(nameof(PropertyDescriptions.FiscalProfile))]
+        [Display(Name = nameof(Properties.FiscalProfile), Description = nameof(Properties.FiscalProfileDescription), ResourceType = typeof(Properties))]
         public FiscalProfile FiscalProfile { get; }
         /// <summary>
         /// Gets the company preferences.
@@ -91,8 +88,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The company preferences.
         /// </value>
-        [Display(Name = nameof(PropertyNames.Preferences), ResourceType = typeof(PropertyNames))]
-        [Description(nameof(PropertyDescriptions.Preferences))]
+        [Display(Name = nameof(Properties.Preferences), Description = nameof(Properties.PreferencesDescription), ResourceType = typeof(Properties))]
         public Preferences Preferences { get; }
         /// <summary>
         /// Gets the companyt address.
@@ -100,8 +96,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The companyt address.
         /// </value>
-        [Display(Name = nameof(PropertyNames.Address), ResourceType = typeof(PropertyNames))]
-        [Description(nameof(PropertyDescriptions.Address))]
+        [Display(Name = nameof(Properties.Address), Description = nameof(Properties.AddressDescription), ResourceType = typeof(Properties))]
         public AddressEx Address { get; }
     }
 }

@@ -17,7 +17,7 @@ namespace Amica.Models.ItalianPA
         /// <value>
         /// The code.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Code), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Code), ResourceType = typeof(Resources.Properties))]
         public string Code
         {
             set { SetProperty(ref _code, value); }
@@ -30,7 +30,7 @@ namespace Amica.Models.ItalianPA
         /// <value>
         /// The description.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Description), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Description), ResourceType = typeof(Resources.Properties))]
         public string Description
         {
             set { SetProperty(ref _description, value); }

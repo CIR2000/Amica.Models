@@ -23,7 +23,7 @@ namespace Amica.Models
 		/// <value>The unique identifier.</value>
 		[JsonProperty ("_id")]
 		[Remote (Meta.DocumentId)]
-        [Display(Name = nameof(Resources.PropertyNames.UniqueId), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.UniqueId), ResourceType = typeof(Resources.Properties))]
 		public string UniqueId {
 			set { SetProperty (ref _uniqueId, value); }
 			get { return _uniqueId; }
@@ -44,7 +44,7 @@ namespace Amica.Models
 		/// </summary>
 		/// <value>The last updated date and time.</value>
 		[Remote (Meta.LastUpdated)]
-        [Display(Name = nameof(Resources.PropertyNames.Updated), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Updated), ResourceType = typeof(Resources.Properties))]
 		public DateTime Updated {
 			set { SetProperty (ref _updated, value); }
 			get { return _updated; }
@@ -55,7 +55,7 @@ namespace Amica.Models
 		/// </summary>
 		/// <value>The creation date.</value>
 		[Remote (Meta.DateCreated)]
-        [Display(Name = nameof(Resources.PropertyNames.Created), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Created), ResourceType = typeof(Resources.Properties))]
 		public DateTime Created {
 			set { SetProperty (ref _created, value); }
 			get { return _created; } 
@@ -66,7 +66,7 @@ namespace Amica.Models
 		/// </summary>
 		/// <value>The creation date.</value>
 		[Remote (Meta.Deleted)]
-        [Display(Name = nameof(Resources.PropertyNames.Deleted), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Deleted), ResourceType = typeof(Resources.Properties))]
 		public bool Deleted {
 			set { SetProperty (ref _deleted, value); }
 			get { return _deleted; } 

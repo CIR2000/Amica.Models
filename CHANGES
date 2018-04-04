@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.0.11
+=======
+
+Released on Aprile 4, 2018.
+
+- Use DisplayAttribute extra options for property Description and Prompt.
+
 v0.0.10
 =======
 

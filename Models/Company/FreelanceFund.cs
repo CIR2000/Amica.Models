@@ -16,7 +16,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The rate.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Rate), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Rate), ResourceType = typeof(Resources.Properties))]
         public float Rate {
 			set { SetProperty (ref _rate, value); }
 			get { return _rate; } 
@@ -27,7 +27,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The description.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.Description), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Description), ResourceType = typeof(Resources.Properties))]
         public string Description {
 			set { SetProperty (ref _description, value); }
 			get { return _description; } 

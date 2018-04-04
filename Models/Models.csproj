@@ -46,15 +46,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DocumentResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\PropertyDescriptions.Designer.cs">
+    <Compile Update="Resources\Properties.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>PropertyDescriptions.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\PropertyNames.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>PropertyNames.resx</DependentUpon>
+      <DependentUpon>Properties.resx</DependentUpon>
     </Compile>
     <Compile Update="ShippingTermsResources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -91,16 +86,12 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DocumentResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\PropertyDescriptions.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>PropertyDescriptions.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\PropertyNames.en.resx">
+    <EmbeddedResource Update="Resources\Properties.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Resources\PropertyNames.resx">
+    <EmbeddedResource Update="Resources\Properties.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>PropertyNames.Designer.cs</LastGenOutput>
+      <LastGenOutput>Properties.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="ShippingTermsResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

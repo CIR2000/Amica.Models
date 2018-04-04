@@ -23,7 +23,7 @@ namespace Amica.Models
         /// Gets or sets the VAT name.
         /// </summary>
         /// <value>The VAT name.</value>
-        [Display(Name = nameof(Resources.PropertyNames.Name), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Name), ResourceType = typeof(Resources.Properties))]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -34,7 +34,7 @@ namespace Amica.Models
         /// Gets or sets the VAT code.
         /// </summary>
         /// <value>The VAT code.</value>
-        [Display(Name = nameof(Resources.PropertyNames.Code), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Code), ResourceType = typeof(Resources.Properties))]
         public string Code
         {
             set { SetProperty(ref _code, value); }
@@ -45,7 +45,7 @@ namespace Amica.Models
         /// Gets or sets the VAT rate.
         /// </summary>
         /// <value>The VAT rate.</value>
-        [Display(Name = nameof(Resources.PropertyNames.Rate), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.Rate), ResourceType = typeof(Resources.Properties))]
         public float Rate
         {
             set { SetProperty(ref _rate, value); }
@@ -56,7 +56,7 @@ namespace Amica.Models
         /// Gets or sets the non-deductible rate.
         /// </summary>
         /// <value>The non-deductible rate.</value>
-        [Display(Name = nameof(Resources.PropertyNames.NonDeductible), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.NonDeductible), ResourceType = typeof(Resources.Properties))]
         public float NonDeductible
         {
             set { SetProperty(ref _nonDeductible, value); }
@@ -68,7 +68,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is intra community; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.IsIntraCommunity), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.IsIntraCommunity), ResourceType = typeof(Resources.Properties))]
         public bool IsIntraCommunity
         {
             set { SetProperty(ref _isIntraCommunity, value); }
@@ -81,7 +81,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is split payment; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.IsSplitPayment), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.IsSplitPayment), ResourceType = typeof(Resources.Properties))]
         public bool IsSplitPayment
         {
             set { SetProperty(ref _isSplitPayment, value); }
@@ -94,7 +94,7 @@ namespace Amica.Models
         /// <value>
         /// The vat exemption.
         /// </value>
-        [Display(Name = nameof(Resources.PropertyNames.VatExemption), ResourceType = typeof(Resources.PropertyNames))]
+        [Display(Name = nameof(Resources.Properties.VatExemption), ResourceType = typeof(Resources.Properties))]
         public VatExemption VatExemption
         {
             set { SetProperty(ref _vat_exemption, value); }

@@ -297,4 +297,19 @@
   <data name="Logo" xml:space="preserve">
     <value>Logo aziendale</value>
   </data>
+  <data name="AddressDescription" xml:space="preserve">
+    <value>Indirizzo principale dell'azienda</value>
+  </data>
+  <data name="CompanyNameDescription" xml:space="preserve">
+    <value>Nome dell'azienda</value>
+  </data>
+  <data name="FiscalProfileDescription" xml:space="preserve">
+    <value>Profilo fiscale dell'azienda</value>
+  </data>
+  <data name="PasswordDescription" xml:space="preserve">
+    <value>Password necessaria per lavorare con l'azienda</value>
+  </data>
+  <data name="PreferencesDescription" xml:space="preserve">
+    <value>Impostazione predefinite</value>
+  </data>
 </root>
