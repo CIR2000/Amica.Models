@@ -4,7 +4,8 @@ Changelog
 v0.0.12
 =======
 
-- Test project is now a NET Core/MSTest project.
+- Test: now a NET Core/MSTest project.
+- Test: drop Autofixture dependency.
 
 v0.0.11
 =======

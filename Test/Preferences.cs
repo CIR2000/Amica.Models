@@ -3,13 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Amica.Models.Tests
 {
 	[TestClass]
-	public class Preferences : BaseTestClass
+	public class Preferences 
 	{
-		[TestMethod]
-		public void WritablePropertyAssertions ()
-		{
-			WritablePropertyAssertions (typeof(Company.Preferences));
-		}
 		[TestMethod]
 		public void DefaultValues ()
 		{
