@@ -110,7 +110,7 @@ namespace Amica.Models.Company
         /// <value>
         /// The vat identification number.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.VatIdentificationNumber), Prompt = "ITXXXXXXXXXXX", ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Resources.Properties.VatIdentificationNumber), Prompt = nameof(Resources.Properties.VatIdentificationNumberPrompt), ResourceType = typeof(Resources.Properties))]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
