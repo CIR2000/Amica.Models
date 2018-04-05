@@ -4,6 +4,7 @@ Changelog
 v0.0.12
 =======
 
+- Add and use the VatIdentificationNumberPrompt resource string.
 - Test: now a NET Core/MSTest project.
 - Test: drop Autofixture dependency.
 
