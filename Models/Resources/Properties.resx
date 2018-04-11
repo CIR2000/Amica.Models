@@ -315,4 +315,22 @@
   <data name="VatIdentificationNumberPrompt" xml:space="preserve">
     <value>ITXXXXXXXXXXX</value>
   </data>
+  <data name="IsIntraCommunityDescription" xml:space="preserve">
+    <value>Se si tratta di causale IVA intracomunitaria</value>
+  </data>
+  <data name="IsSplitPaymentDescription" xml:space="preserve">
+    <value>Se si applica split payment a questa causale IVA</value>
+  </data>
+  <data name="NonDeductibleDescription" xml:space="preserve">
+    <value>Quota non deducibile</value>
+  </data>
+  <data name="VatCodeDescription" xml:space="preserve">
+    <value>Codice mnemonico della causale IVA (es: I22)</value>
+  </data>
+  <data name="VatExemptionDescription" xml:space="preserve">
+    <value>Causale di esenzione IVA</value>
+  </data>
+  <data name="VatNameDescription" xml:space="preserve">
+    <value>Nome esteso della causale IVA (es: IVA al 22%)</value>
+  </data>
 </root>

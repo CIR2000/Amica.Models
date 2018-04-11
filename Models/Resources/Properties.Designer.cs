@@ -242,6 +242,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Se si tratta di causale IVA intracomunitaria.
+        /// </summary>
+        public static string IsIntraCommunityDescription {
+            get {
+                return ResourceManager.GetString("IsIntraCommunityDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Persona giuridica.
         /// </summary>
         public static string IsLegalEntity {
@@ -256,6 +265,15 @@ namespace Amica.Models.Resources {
         public static string IsSplitPayment {
             get {
                 return ResourceManager.GetString("IsSplitPayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se si applica split payment a questa causale IVA.
+        /// </summary>
+        public static string IsSplitPaymentDescription {
+            get {
+                return ResourceManager.GetString("IsSplitPaymentDescription", resourceCulture);
             }
         }
         
@@ -337,6 +355,15 @@ namespace Amica.Models.Resources {
         public static string NonDeductible {
             get {
                 return ResourceManager.GetString("NonDeductible", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quota non deducibile.
+        /// </summary>
+        public static string NonDeductibleDescription {
+            get {
+                return ResourceManager.GetString("NonDeductibleDescription", resourceCulture);
             }
         }
         
@@ -620,11 +647,29 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Codice mnemonico della causale IVA (es: I22).
+        /// </summary>
+        public static string VatCodeDescription {
+            get {
+                return ResourceManager.GetString("VatCodeDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Esenzione IVA.
         /// </summary>
         public static string VatExemption {
             get {
                 return ResourceManager.GetString("VatExemption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Causale di esenzione IVA.
+        /// </summary>
+        public static string VatExemptionDescription {
+            get {
+                return ResourceManager.GetString("VatExemptionDescription", resourceCulture);
             }
         }
         
@@ -643,6 +688,15 @@ namespace Amica.Models.Resources {
         public static string VatIdentificationNumberPrompt {
             get {
                 return ResourceManager.GetString("VatIdentificationNumberPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nome esteso della causale IVA (es: IVA al 22%).
+        /// </summary>
+        public static string VatNameDescription {
+            get {
+                return ResourceManager.GetString("VatNameDescription", resourceCulture);
             }
         }
         

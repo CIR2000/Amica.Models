@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Amica.Models.ItalianPA;
+using Amica.Models.Resources;
 using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
@@ -23,7 +24,7 @@ namespace Amica.Models
         /// Gets or sets the VAT name.
         /// </summary>
         /// <value>The VAT name.</value>
-        [Display(Name = nameof(Resources.Properties.Name), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Name), Description = nameof(Properties.VatNameDescription), ResourceType = typeof(Properties))]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -34,7 +35,7 @@ namespace Amica.Models
         /// Gets or sets the VAT code.
         /// </summary>
         /// <value>The VAT code.</value>
-        [Display(Name = nameof(Resources.Properties.Code), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Code), Description = nameof(Properties.VatCodeDescription), ResourceType = typeof(Properties))]
         public string Code
         {
             set { SetProperty(ref _code, value); }
@@ -45,7 +46,7 @@ namespace Amica.Models
         /// Gets or sets the VAT rate.
         /// </summary>
         /// <value>The VAT rate.</value>
-        [Display(Name = nameof(Resources.Properties.Rate), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Rate), ResourceType = typeof(Properties))]
         public float Rate
         {
             set { SetProperty(ref _rate, value); }
@@ -56,7 +57,7 @@ namespace Amica.Models
         /// Gets or sets the non-deductible rate.
         /// </summary>
         /// <value>The non-deductible rate.</value>
-        [Display(Name = nameof(Resources.Properties.NonDeductible), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.NonDeductible), Description = nameof(Properties.NonDeductibleDescription), ResourceType = typeof(Properties))]
         public float NonDeductible
         {
             set { SetProperty(ref _nonDeductible, value); }
@@ -68,7 +69,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is intra community; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.IsIntraCommunity), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.IsIntraCommunity), Description = nameof(Properties.IsIntraCommunity), ResourceType = typeof(Properties))]
         public bool IsIntraCommunity
         {
             set { SetProperty(ref _isIntraCommunity, value); }
@@ -81,7 +82,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is split payment; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.IsSplitPayment), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.IsSplitPayment), Description = nameof(Properties.IsIntraCommunityDescription), ResourceType = typeof(Properties))]
         public bool IsSplitPayment
         {
             set { SetProperty(ref _isSplitPayment, value); }
@@ -94,7 +95,7 @@ namespace Amica.Models
         /// <value>
         /// The vat exemption.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.VatExemption), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.VatExemption), Description = nameof(Properties.VatExemptionDescription), ResourceType = typeof(Properties))]
         public VatExemption VatExemption
         {
             set { SetProperty(ref _vat_exemption, value); }
