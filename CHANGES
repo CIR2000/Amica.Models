@@ -4,6 +4,8 @@ Changelog
 v0.0.13
 =======
 
+Released on May 4, 2018.
+
 - Description attributes for Vat properties.
 - New Models.PropertyModels.Vat model.
 
