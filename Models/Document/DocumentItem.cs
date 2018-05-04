@@ -19,7 +19,7 @@ namespace Amica.Models.Documents
 
         private DocumentItemDetail _detail;
 		private OrderReference _order;
-        private Vat _vat;
+        private PropertyModels.Vat _vat;
         private Warehouse _warehouse;
 
         private List<Variation> _variationCollection;
@@ -54,7 +54,7 @@ namespace Amica.Models.Documents
             get { return _sourcePriceList; }
         }
 
-        public Vat Vat
+        public PropertyModels.Vat Vat
         {
             set { SetProperty(ref _vat, value); }
             get { return _vat; }

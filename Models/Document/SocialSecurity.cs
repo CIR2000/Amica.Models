@@ -6,7 +6,7 @@
         private decimal _amount;
         private decimal _taxable;
         private SocialSecurityCategory _category;
-        private Vat _vat;
+        private PropertyModels.Vat _vat;
         private bool _withholding;
 
 		public float Rate {
@@ -32,7 +32,7 @@
 			set { SetProperty (ref _category, value); }
 			get { return _category; }
 		}
-		public Vat Vat {
+		public PropertyModels.Vat Vat {
 			set { SetProperty (ref _vat, value); }
 			get { return _vat; }
 		}

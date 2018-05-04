@@ -9,7 +9,7 @@
     {
         private string _name;
         private decimal _amount;
-        private Vat _vat;
+        private PropertyModels.Vat _vat;
 
         /// <summary>
         /// Gets or sets the name.
@@ -41,7 +41,7 @@
         /// <value>
         /// The VAT.
         /// </value>
-        public Vat Vat
+        public PropertyModels.Vat Vat
         {
             set { SetProperty(ref _vat, value); }
             get { return _vat; }

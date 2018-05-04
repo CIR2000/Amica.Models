@@ -6,7 +6,7 @@ namespace Amica.Models.Documents
     {
         private string _name;
         private decimal _amount;
-        private Vat _vat;
+        private PropertyModels.Vat _vat;
         private bool _is_from_payment;
 
 		public DocumentFee()
@@ -26,7 +26,7 @@ namespace Amica.Models.Documents
             get { return _amount; }
         }
 
-        public Vat Vat
+        public PropertyModels.Vat Vat
         {
             set { SetProperty(ref _vat, value); }
             get { return _vat; }

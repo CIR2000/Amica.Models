@@ -5,6 +5,7 @@ v0.0.13
 =======
 
 - Description attributes for Vat properties.
+- New Models.PropertyModels.Vat model.
 
 v0.0.12
 =======

@@ -13,7 +13,8 @@ namespace Amica.Models
     /// <seealso cref="Amica.Models.IDataErrorInfo" />
     public abstract class BaseModel : ObservableObject, IDataErrorInfo
 	{
-		private string _uniqueId, _etag;
+		protected string _uniqueId;
+        private string _etag;
 		private DateTime _updated, _created;
 		private bool _deleted;
 

@@ -20,7 +20,7 @@ namespace Amica.Models.Company
             InpsReimbursement = new InpsReimbursement();
             FreelanceFund = new FreelanceFund();
             Deduction = new Deduction();
-            Vat = new Vat();
+            Vat = new PropertyModels.Vat();
 
             IsVatExcluded = true;
             IsLegalEntity = true;
@@ -159,6 +159,6 @@ namespace Amica.Models.Company
         /// The VAT.
         /// </value>
         [Display(Name = nameof(Resources.Properties.Vat), ResourceType = typeof(Resources.Properties))]
-        public Vat Vat { get; }
+        public PropertyModels.Vat Vat { get; }
     }
 }
