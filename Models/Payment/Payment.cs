@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Amica.Models.Resources;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
 {
@@ -43,6 +44,7 @@ namespace Amica.Models
         /// <value>
         /// The name.
         /// </value>
+        [Display(Name = nameof(Properties.Name), ResourceType =typeof(Properties))]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -55,6 +57,7 @@ namespace Amica.Models
         /// <value>
         /// The discount rate.
         /// </value>
+        [Display(Name = nameof(Properties.Discount), ResourceType =typeof(Properties))]
         public float Discount
         {
             set { SetProperty(ref _discount, value); }
@@ -67,6 +70,7 @@ namespace Amica.Models
         /// <value>
         /// The additional days to the first payment date.
         /// </value>
+        [Display(Name = nameof(Properties.FirstPaymentDateAdditionalDays), ResourceType =typeof(Properties))]
         public int FirstPaymentDateAdditionalDays
         {
             set { SetProperty(ref _firstPaymentDateAdditionalDays, value); }
@@ -79,6 +83,7 @@ namespace Amica.Models
         /// <value>
         /// The installments every number of days.
         /// </value>
+        [Display(Name = nameof(Properties.InstallmentsEveryNumberOfDays), ResourceType =typeof(Properties))]
         public int InstallmentsEveryNumberOfDays
         {
             set { SetProperty(ref _installmentsEveryNumberOfDays, value); }
@@ -91,6 +96,7 @@ namespace Amica.Models
         /// <value>
         /// The number of installments.
         /// </value>
+        [Display(Name = nameof(Properties.Installments), ResourceType =typeof(Properties))]
         public int Installments
         {
             set { SetProperty(ref _installments, value); }
@@ -103,6 +109,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if installments should be force to the end of month; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.ShouldForceToEndOfMonth), ResourceType =typeof(Properties))]
         public bool ShouldForceToEndOfMonth
         {
             set { SetProperty(ref _forceEndOfMonth, value); }
@@ -115,6 +122,7 @@ namespace Amica.Models
         /// <value>
         /// The extra days.
         /// </value>
+        [Display(Name = nameof(Properties.ExtraDays), Description = nameof(Properties.ExtraDaysDescription), ResourceType =typeof(Properties))]
         public int ExtraDays
         {
             set { SetProperty(ref _extraDays, value); }
@@ -127,6 +135,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if exact days should be considered; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsExactDays), ResourceType =typeof(Properties))]
         public bool IsExactDays
         {
             set { SetProperty(ref _exactDays, value); }
@@ -139,6 +148,7 @@ namespace Amica.Models
         /// <value>
         /// The first payment date.
         /// </value>
+        [Display(Name = nameof(Properties.FirstPaymentDate), ResourceType =typeof(Properties))]
         public FirstPaymentDate FirstPaymentDate
         {
             set { SetProperty(ref _firstPaymentDate, value); }
@@ -151,6 +161,7 @@ namespace Amica.Models
         /// <value>
         /// The first payment option.
         /// </value>
+        [Display(Name = nameof(Properties.FirstPaymentOption), ResourceType =typeof(Properties))]
         public FirstPaymentOption FirstPaymentOption
         {
             set { SetProperty(ref _firstPaymentOption, value); }
@@ -163,6 +174,7 @@ namespace Amica.Models
         /// <value>
         /// The bank.
         /// </value>
+        [Display(Name = nameof(Properties.Bank), ResourceType =typeof(Properties))]
         public Bank Bank
         {
             set { SetProperty(ref _bank, value); }
@@ -175,6 +187,7 @@ namespace Amica.Models
         /// <value>
         /// The fee.
         /// </value>
+        [Display(Name = nameof(Properties.Fee), ResourceType =typeof(Properties))]
         public Fee Fee
         {
             set { SetProperty(ref _fee, value); }
@@ -187,6 +200,7 @@ namespace Amica.Models
         /// <value>
         /// The payment method.
         /// </value>
+        [Display(Name = nameof(Properties.PaymentMethod), ResourceType =typeof(Properties))]
         public PaymentMethod PaymentMethod
         {
             set { SetProperty(ref _paymentMethod, value); }

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Amica.Models.Resources;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
 {
@@ -19,6 +20,7 @@ namespace Amica.Models
         /// <value>
         /// The name.
         /// </value>
+        [Display(Name = nameof(Properties.Name), ResourceType =typeof(Properties))]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -31,6 +33,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is bank receipt; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsBankReceipt), ResourceType =typeof(Properties))]
         public bool IsBankReceipt
         {
             set { SetProperty(ref _IsBankReceipt, value); }
@@ -43,6 +46,7 @@ namespace Amica.Models
         /// <value>
         /// The public administration payment method code.
         /// </value>
+        [Display(Name = nameof(Properties.PublicAdministrationCode), ResourceType =typeof(Properties))]
         public string PublicAdministrationCode
         {
             set { SetProperty(ref _paCode, value); }

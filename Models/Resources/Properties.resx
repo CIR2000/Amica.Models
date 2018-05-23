@@ -336,10 +336,61 @@
   <data name="Amount" xml:space="preserve">
     <value>Importo</value>
   </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Banca</value>
+  </data>
   <data name="BicSwiftCode" xml:space="preserve">
     <value>BIC/SWIFT</value>
   </data>
+  <data name="Discount" xml:space="preserve">
+    <value>Sconto</value>
+  </data>
+  <data name="ExtraDays" xml:space="preserve">
+    <value>Giorni extra aggiunti</value>
+  </data>
+  <data name="ExtraDaysDescription" xml:space="preserve">
+    <value>Giorni extra aggiunti ad ogni scadenza</value>
+  </data>
+  <data name="Fee" xml:space="preserve">
+    <value>Spesa</value>
+  </data>
+  <data name="FirstPaymentDate" xml:space="preserve">
+    <value>Prima scadenza</value>
+  </data>
+  <data name="FirstPaymentDateAdditionalDays" xml:space="preserve">
+    <value>Giorni prima rata</value>
+  </data>
+  <data name="FirstPaymentOption" xml:space="preserve">
+    <value>Opzioni prima scadenza</value>
+  </data>
   <data name="IbanCode" xml:space="preserve">
     <value>IBAN</value>
+  </data>
+  <data name="Installments" xml:space="preserve">
+    <value>Numero di rate</value>
+  </data>
+  <data name="InstallmentsEveryNumberOfDays" xml:space="preserve">
+    <value>Quindi ogni</value>
+  </data>
+  <data name="IsBankReceipt" xml:space="preserve">
+    <value>Ricevuta bancaria</value>
+  </data>
+  <data name="IsExactDays" xml:space="preserve">
+    <value>Giorni esatti</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>Calcolo giorni a partire da</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Modalita di pagamento</value>
+  </data>
+  <data name="PaymentOption" xml:space="preserve">
+    <value>Prima rata</value>
+  </data>
+  <data name="PublicAdministrationCode" xml:space="preserve">
+    <value>Codice PA</value>
+  </data>
+  <data name="ShouldForceToEndOfMonth" xml:space="preserve">
+    <value>Scadenze a fine mese</value>
   </data>
 </root>

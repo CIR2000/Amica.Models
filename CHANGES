@@ -6,6 +6,7 @@ v0.0.14
 
 Not released.
 
+- Add DisplayAttribute attributes to Payment (and subclasses) properties
 - Add DisplayAttribute attributes to Bank properties
 - Add DisplayAttribute attributes to Fee properties
 - Drop PaymentMethod.PublicAdministrationPaymentMethod property.

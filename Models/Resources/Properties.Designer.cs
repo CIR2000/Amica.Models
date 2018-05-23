@@ -89,6 +89,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Banca.
+        /// </summary>
+        public static string Bank {
+            get {
+                return ResourceManager.GetString("Bank", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BIC/SWIFT.
         /// </summary>
         public static string BicSwiftCode {
@@ -170,6 +179,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sconto.
+        /// </summary>
+        public static string Discount {
+            get {
+                return ResourceManager.GetString("Discount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Importo ENASARCO.
         /// </summary>
         public static string EnasarcoFund {
@@ -179,11 +197,65 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Giorni extra aggiunti.
+        /// </summary>
+        public static string ExtraDays {
+            get {
+                return ResourceManager.GetString("ExtraDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giorni extra aggiunti ad ogni scadenza.
+        /// </summary>
+        public static string ExtraDaysDescription {
+            get {
+                return ResourceManager.GetString("ExtraDaysDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fax.
         /// </summary>
         public static string Fax {
             get {
                 return ResourceManager.GetString("Fax", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spesa.
+        /// </summary>
+        public static string Fee {
+            get {
+                return ResourceManager.GetString("Fee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prima scadenza.
+        /// </summary>
+        public static string FirstPaymentDate {
+            get {
+                return ResourceManager.GetString("FirstPaymentDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giorni prima rata.
+        /// </summary>
+        public static string FirstPaymentDateAdditionalDays {
+            get {
+                return ResourceManager.GetString("FirstPaymentDateAdditionalDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opzioni prima scadenza.
+        /// </summary>
+        public static string FirstPaymentOption {
+            get {
+                return ResourceManager.GetString("FirstPaymentOption", resourceCulture);
             }
         }
         
@@ -233,11 +305,47 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Numero di rate.
+        /// </summary>
+        public static string Installments {
+            get {
+                return ResourceManager.GetString("Installments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quindi ogni.
+        /// </summary>
+        public static string InstallmentsEveryNumberOfDays {
+            get {
+                return ResourceManager.GetString("InstallmentsEveryNumberOfDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Account amministrativo.
         /// </summary>
         public static string IsAdministrativeAccount {
             get {
                 return ResourceManager.GetString("IsAdministrativeAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ricevuta bancaria.
+        /// </summary>
+        public static string IsBankReceipt {
+            get {
+                return ResourceManager.GetString("IsBankReceipt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giorni esatti.
+        /// </summary>
+        public static string IsExactDays {
+            get {
+                return ResourceManager.GetString("IsExactDays", resourceCulture);
             }
         }
         
@@ -422,6 +530,33 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Calcolo giorni a partire da.
+        /// </summary>
+        public static string PaymentDate {
+            get {
+                return ResourceManager.GetString("PaymentDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modalita di pagamento.
+        /// </summary>
+        public static string PaymentMethod {
+            get {
+                return ResourceManager.GetString("PaymentMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prima rata.
+        /// </summary>
+        public static string PaymentOption {
+            get {
+                return ResourceManager.GetString("PaymentOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PEC.
         /// </summary>
         public static string PecMail {
@@ -485,6 +620,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Codice PA.
+        /// </summary>
+        public static string PublicAdministrationCode {
+            get {
+                return ResourceManager.GetString("PublicAdministrationCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Aliquota.
         /// </summary>
         public static string Rate {
@@ -499,6 +643,15 @@ namespace Amica.Models.Resources {
         public static string REACode {
             get {
                 return ResourceManager.GetString("REACode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scadenze a fine mese.
+        /// </summary>
+        public static string ShouldForceToEndOfMonth {
+            get {
+                return ResourceManager.GetString("ShouldForceToEndOfMonth", resourceCulture);
             }
         }
         

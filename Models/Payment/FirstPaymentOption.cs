@@ -1,4 +1,7 @@
-﻿namespace Amica.Models
+﻿using Amica.Models.Resources;
+using System.ComponentModel.DataAnnotations;
+
+namespace Amica.Models
 {
     /// <summary>
     /// Payment option.
@@ -15,6 +18,7 @@
         /// <value>
         /// The payment option.
         /// </value>
+        [Display(Name = nameof(Properties.PaymentOption), ResourceType =typeof(Properties))]
         public PaymentOption Option
         {
             set { SetProperty(ref _code, value); }
@@ -27,6 +31,7 @@
         /// <value>
         /// The description.
         /// </value>
+        [Display(Name = nameof(Properties.Description), ResourceType =typeof(Properties))]
         public string Description
         {
             set { SetProperty(ref _description, value); }
