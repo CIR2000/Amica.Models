@@ -333,4 +333,7 @@
   <data name="VatNameDescription" xml:space="preserve">
     <value>Nome esteso della causale IVA (es: IVA al 22%)</value>
   </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Importo</value>
+  </data>
 </root>
