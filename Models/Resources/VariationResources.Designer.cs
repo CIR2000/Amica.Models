@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Amica.Models {
+namespace Amica.Models.Resources {
     using System;
     using System.Reflection;
     
@@ -23,14 +23,14 @@ namespace Amica.Models {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class PaymentResources {
+    public class VariationResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PaymentResources() {
+        internal VariationResources() {
         }
         
         /// <summary>
@@ -40,7 +40,7 @@ namespace Amica.Models {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.PaymentResources", typeof(PaymentResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Resources.VariationResources", typeof(VariationResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,65 +62,29 @@ namespace Amica.Models {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data documento.
+        ///   Looks up a localized string similar to Sconto.
         /// </summary>
-        public static string AtDocumentDate {
+        public static string Discount {
             get {
-                return ResourceManager.GetString("AtDocumentDate", resourceCulture);
+                return ResourceManager.GetString("Discount", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fine mese.
+        ///   Looks up a localized string similar to Sconto pagamento.
         /// </summary>
-        public static string AtEndOfMonth {
+        public static string PaymentDiscount {
             get {
-                return ResourceManager.GetString("AtEndOfMonth", resourceCulture);
+                return ResourceManager.GetString("PaymentDiscount", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data indicata.
+        ///   Looks up a localized string similar to Aumento.
         /// </summary>
-        public static string AtExplicitDate {
+        public static string Raise {
             get {
-                return ResourceManager.GetString("AtExplicitDate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Con spese.
-        /// </summary>
-        public static string FeesIncluded {
-            get {
-                return ResourceManager.GetString("FeesIncluded", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Normale.
-        /// </summary>
-        public static string Normal {
-            get {
-                return ResourceManager.GetString("Normal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Con IVA.
-        /// </summary>
-        public static string VatIncluded {
-            get {
-                return ResourceManager.GetString("VatIncluded", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Solo IVA.
-        /// </summary>
-        public static string VatOnly {
-            get {
-                return ResourceManager.GetString("VatOnly", resourceCulture);
+                return ResourceManager.GetString("Raise", resourceCulture);
             }
         }
     }

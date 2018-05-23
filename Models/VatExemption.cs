@@ -1,9 +1,9 @@
-﻿namespace Amica.Models.ItalianPA
+﻿namespace Amica.Models
 {
     /// <summary>
     /// VAT exemption details.
     /// </summary>
-    /// <seealso cref="Amica.Models.ItalianPA.VatExemptionItem" />
+    /// <seealso cref="Amica.Models.VatExemptionItem" />
     public class VatExemption : VatExemptionItem
     {
     }

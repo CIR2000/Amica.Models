@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Amica.Models.Resources;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Amica.Models.Documents

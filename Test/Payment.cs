@@ -15,6 +15,7 @@ namespace Amica.Models.Tests
             Assert.AreEqual(1, p.Installments);
             Assert.AreEqual(30, p.InstallmentsEveryNumberOfDays);
             Assert.IsTrue(p.ShouldForceToEndOfMonth);
+            Assert.AreEqual(PaymentHelpers.PaymentMethods[0].PublicAdministrationCode, p.PaymentMethod.PublicAdministrationCode);
 		}
 
 	}

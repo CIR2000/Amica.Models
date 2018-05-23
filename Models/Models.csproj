@@ -31,17 +31,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ItalianPAResources.Designer.cs">
+    <Compile Update="Resources\ItalianPA.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>ItalianPAResources.resx</DependentUpon>
+      <DependentUpon>ItalianPA.resx</DependentUpon>
     </Compile>
-    <Compile Update="PaymentResources.Designer.cs">
+    <Compile Update="Resources\PaymentResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>PaymentResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="DocumentResources.Designer.cs">
+    <Compile Update="Resources\DocumentResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>DocumentResources.resx</DependentUpon>
@@ -51,22 +51,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Properties.resx</DependentUpon>
     </Compile>
-    <Compile Update="ShippingTermsResources.Designer.cs">
+    <Compile Update="Resources\ShippingTermsResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ShippingTermsResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="SocialSecurityResources.Designer.cs">
+    <Compile Update="Resources\SocialSecurityResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>SocialSecurityResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="TransportModeResources.Designer.cs">
+    <Compile Update="Resources\TransportModeResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>TransportModeResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="VariationResources.Designer.cs">
+    <Compile Update="Resources\VariationResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>VariationResources.resx</DependentUpon>
@@ -74,15 +74,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="ItalianPAResources.resx">
+    <EmbeddedResource Update="Resources\ItalianPA.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ItalianPAResources.Designer.cs</LastGenOutput>
+      <LastGenOutput>ItalianPA.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="PaymentResources.resx">
+    <EmbeddedResource Update="Resources\PaymentResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>PaymentResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="DocumentResources.resx">
+    <EmbeddedResource Update="Resources\DocumentResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DocumentResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -93,19 +93,19 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Properties.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="ShippingTermsResources.resx">
+    <EmbeddedResource Update="Resources\ShippingTermsResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ShippingTermsResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="SocialSecurityResources.resx">
+    <EmbeddedResource Update="Resources\SocialSecurityResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SocialSecurityResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="TransportModeResources.resx">
+    <EmbeddedResource Update="Resources\TransportModeResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>TransportModeResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="VariationResources.resx">
+    <EmbeddedResource Update="Resources\VariationResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>VariationResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>

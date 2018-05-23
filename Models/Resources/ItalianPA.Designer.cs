@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Amica.Models {
+namespace Amica.Models.Resources {
     using System;
     using System.Reflection;
     
@@ -23,14 +23,14 @@ namespace Amica.Models {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ItalianPAResources {
+    public class ItalianPA {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ItalianPAResources() {
+        internal ItalianPA() {
         }
         
         /// <summary>
@@ -40,7 +40,7 @@ namespace Amica.Models {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.ItalianPAResources", typeof(ItalianPAResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Resources.ItalianPA", typeof(ItalianPA).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -247,6 +247,15 @@ namespace Amica.Models {
         public static string MP21 {
             get {
                 return ResourceManager.GetString("MP21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to trattenuta su somme gia riscosse.
+        /// </summary>
+        public static string MP22 {
+            get {
+                return ResourceManager.GetString("MP22", resourceCulture);
             }
         }
         

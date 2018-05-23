@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Amica.Models {
+namespace Amica.Models.Resources {
     using System;
     using System.Reflection;
     
@@ -40,7 +40,7 @@ namespace Amica.Models {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.DocumentResources", typeof(DocumentResources).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Amica.Models.Resources.DocumentResources", typeof(DocumentResources).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Amica.Models.ItalianPA
+namespace Amica.Models
 {
     /// <summary>
     /// VAT exception item.

@@ -1,6 +1,17 @@
 Changelog
 =========
 
+v0.0.14
+=======
+
+Not released.
+
+- Drop PaymentMethod.PublicAdministrationPaymentMethod property.
+- Add PaymentMethod.PublicAdministrationCode property.
+- Add static PaymentHelpers.PaymentMethods read-only collection.
+- Payment.PaymentMethod defaults to MP01/contanti.
+- Refactor all resx files by moving them to the Resources folder.
+
 v0.0.13
 =======
 

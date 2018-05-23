@@ -11,7 +11,7 @@ namespace Amica.Models
     {
         private string _name;
         private bool _IsBankReceipt;
-        private ItalianPA.PaymentMethod _paPaymentMethod;
+        private string _paCode;
 
         /// <summary>
         /// Gets or sets the name.
@@ -38,15 +38,15 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the public administration payment method.
+        /// Gets or sets the public administration payment method code.
         /// </summary>
         /// <value>
-        /// The public administration payment method.
+        /// The public administration payment method code.
         /// </value>
-        public ItalianPA.PaymentMethod PublicAdministrationPaymentMethod
+        public string PublicAdministrationCode
         {
-            set { SetProperty(ref _paPaymentMethod, value); }
-            get { return _paPaymentMethod; }
+            set { SetProperty(ref _paCode, value); }
+            get { return _paCode; }
         }
     }
 }

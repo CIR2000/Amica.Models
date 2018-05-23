@@ -180,6 +180,9 @@
   <data name="MP21" xml:space="preserve">
     <value>SEPA Direct Debit B2B</value>
   </data>
+  <data name="MP22" xml:space="preserve">
+    <value>trattenuta su somme gia riscosse</value>
+  </data>
   <data name="N1" xml:space="preserve">
     <value>escluse ex art. 15</value>
   </data>

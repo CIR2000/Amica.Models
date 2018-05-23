@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Amica.Models.ItalianPA;
 using Amica.Models.Resources;
 using System.ComponentModel.DataAnnotations;
 
