@@ -336,4 +336,10 @@
   <data name="Amount" xml:space="preserve">
     <value>Importo</value>
   </data>
+  <data name="BicSwiftCode" xml:space="preserve">
+    <value>BIC/SWIFT</value>
+  </data>
+  <data name="IbanCode" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
 </root>

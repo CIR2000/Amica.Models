@@ -89,6 +89,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BIC/SWIFT.
+        /// </summary>
+        public static string BicSwiftCode {
+            get {
+                return ResourceManager.GetString("BicSwiftCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Codice.
         /// </summary>
         public static string Code {
@@ -202,6 +211,15 @@ namespace Amica.Models.Resources {
         public static string FreelanceFund {
             get {
                 return ResourceManager.GetString("FreelanceFund", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IBAN.
+        /// </summary>
+        public static string IbanCode {
+            get {
+                return ResourceManager.GetString("IbanCode", resourceCulture);
             }
         }
         

@@ -1,5 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using Amica.Models.Resources;
+using Newtonsoft.Json;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
 {
@@ -19,6 +21,7 @@ namespace Amica.Models
         /// <value>
         /// The name.
         /// </value>
+        [Display(Name = nameof(Properties.Name), ResourceType =typeof(Properties))]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -31,6 +34,7 @@ namespace Amica.Models
         /// <value>
         /// The IBAN code.
         /// </value>
+        [Display(Name = nameof(Properties.IbanCode), ResourceType =typeof(Properties))]
         public string IbanCode
         {
             set { SetProperty(ref _ibanCode, value); }
@@ -43,6 +47,7 @@ namespace Amica.Models
         /// <value>
         /// The BIC/SWIFT code.
         /// </value>
+        [Display(Name = nameof(Properties.BicSwiftCode), ResourceType =typeof(Properties))]
         public string BicSwiftCode
         {
             set { SetProperty(ref _bicSwiftCode, value); }
