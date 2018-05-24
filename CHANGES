@@ -4,8 +4,9 @@ Changelog
 v0.0.14
 =======
 
-Not released.
-
+- Add IBank interface from which both the new Bank and the now renamed BankAsProperty classes inherit.
+- Rename current Bank class as BankAsProperty, intended to be used when a Bank is a property.
+- Add Bank class which inherits from BaseModelWithCompanyId and is intended to be used for the remote Bank endpoint.
 - Add DisplayAttribute attributes to Payment (and subclasses) properties
 - Add DisplayAttribute attributes to Bank properties
 - Add DisplayAttribute attributes to Fee properties

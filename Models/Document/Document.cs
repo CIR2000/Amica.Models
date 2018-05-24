@@ -24,7 +24,7 @@ namespace Amica.Models.Documents
         private ContactDetailsEx _agent;
         private WithholdingTax _withholdingTax;
         private Shipping _shipping;
-        private Bank _bank;
+        private BankAsProperty _bank;
 
         private List<SocialSecurity> _socialSecurityCollection;
         private List<Variation> _variationCollection;
@@ -121,7 +121,7 @@ namespace Amica.Models.Documents
             get { return _shipping; }
         }
 
-        public Bank Bank
+        public BankAsProperty Bank
         {
             set { SetProperty(ref _bank, value); }
             get { return _bank; }

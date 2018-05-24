@@ -1,4 +1,6 @@
 ﻿using Amica.Models.Resources;
+using Newtonsoft.Json;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
@@ -6,8 +8,8 @@ namespace Amica.Models
     /// <summary>
     /// Bank information.
     /// </summary>
-    /// <seealso cref="Amica.Models.BaseModelWithCompanyId" />
-    public class Bank : BaseModelWithCompanyId, IBank
+    /// <seealso cref="Amica.Models.ObservableObject" />
+    public class BankAsProperty : ObservableObject, IBank
     {
         private string _name;
         private string _ibanCode;

@@ -20,7 +20,7 @@ namespace Amica.Models
 
         private FirstPaymentDate _firstPaymentDate;
         private FirstPaymentOption _firstPaymentOption;
-        private Bank _bank;
+        private BankAsProperty _bank;
         private Fee _fee;
         private PaymentMethod _paymentMethod;
 
@@ -175,7 +175,7 @@ namespace Amica.Models
         /// The bank.
         /// </value>
         [Display(Name = nameof(Properties.Bank), ResourceType =typeof(Properties))]
-        public Bank Bank
+        public BankAsProperty Bank
         {
             set { SetProperty(ref _bank, value); }
             get { return _bank; }
