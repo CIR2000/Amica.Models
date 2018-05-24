@@ -4,6 +4,8 @@ Changelog
 v0.0.14
 =======
 
+Released on May 25, 2018.
+
 - Add IBank interface from which both the new Bank and the now renamed BankAsProperty classes inherit.
 - Rename current Bank class as BankAsProperty, intended to be used when a Bank is a property.
 - Add Bank class which inherits from BaseModelWithCompanyId and is intended to be used for the remote Bank endpoint.
