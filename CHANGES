@@ -4,6 +4,8 @@ Changelog
 v0.0.15
 =======
 
+Released on May 30th, 2018.
+
 - Remove Company.FiscalProfile.Vat property.
 - Remove Fee.Vat property.
 - Remove Payment.Bank property.
