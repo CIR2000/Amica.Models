@@ -1,6 +1,4 @@
 ﻿using Amica.Models.Resources;
-using Newtonsoft.Json;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models

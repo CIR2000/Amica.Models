@@ -1,6 +1,18 @@
 Changelog
 =========
 
+v0.0.15
+=======
+
+- Remove Company.FiscalProfile.Vat property.
+- Remove Fee.Vat property.
+- Remove Payment.Bank property.
+- Remove Payment.Fee property.
+- Add Company.FiscalProfile.VatId property.
+- Add Fee.VatId property.
+- Add Payment.BankId property.
+- Add Payment.FeeId property.
+
 v0.0.14
 =======
 

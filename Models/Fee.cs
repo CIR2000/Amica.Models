@@ -12,7 +12,7 @@ namespace Amica.Models
     {
         private string _name;
         private decimal _amount;
-        private PropertyModels.Vat _vat;
+        private string _vatId;
 
         /// <summary>
         /// Gets or sets the name.
@@ -47,10 +47,10 @@ namespace Amica.Models
         /// The VAT.
         /// </value>
         [Display(Name = nameof(Properties.Vat), ResourceType =typeof(Properties))]
-        public PropertyModels.Vat Vat
+        public string VatId
         {
-            set { SetProperty(ref _vat, value); }
-            get { return _vat; }
+            set { SetProperty(ref _vatId, value); }
+            get { return _vatId; }
         }
     }
 }

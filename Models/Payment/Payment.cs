@@ -10,6 +10,8 @@ namespace Amica.Models
     public class Payment : BaseModelWithCompanyId
     {
         private string _name;
+        private string _feeId;
+        private string _bankId;
         private float _discount;
         private int _firstPaymentDateAdditionalDays;
         private int _installmentsEveryNumberOfDays;
@@ -20,8 +22,6 @@ namespace Amica.Models
 
         private FirstPaymentDate _firstPaymentDate;
         private FirstPaymentOption _firstPaymentOption;
-        private BankAsProperty _bank;
-        private Fee _fee;
         private PaymentMethod _paymentMethod;
 
         /// <summary>
@@ -175,10 +175,10 @@ namespace Amica.Models
         /// The bank.
         /// </value>
         [Display(Name = nameof(Properties.Bank), ResourceType =typeof(Properties))]
-        public BankAsProperty Bank
+        public string BankId
         {
-            set { SetProperty(ref _bank, value); }
-            get { return _bank; }
+            set { SetProperty(ref _bankId, value); }
+            get { return _bankId; }
         }
 
         /// <summary>
@@ -188,10 +188,10 @@ namespace Amica.Models
         /// The fee.
         /// </value>
         [Display(Name = nameof(Properties.Fee), ResourceType =typeof(Properties))]
-        public Fee Fee
+        public string FeeId
         {
-            set { SetProperty(ref _fee, value); }
-            get { return _fee; }
+            set { SetProperty(ref _feeId, value); }
+            get { return _feeId; }
         }
 
         /// <summary>

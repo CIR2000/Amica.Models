@@ -10,7 +10,7 @@ namespace Amica.Models.Company
     {
         bool _legalEntity, _isVatExcluded, _isFreelance, _isExclusiveAgent;
         float _enasarco;
-        string _vatIdNumber, _taxIdNumber, _siaCode, _reaCode;
+        string _vatId, _vatIdNumber, _taxIdNumber, _siaCode, _reaCode;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FiscalProfile"/> class.
@@ -20,7 +20,6 @@ namespace Amica.Models.Company
             InpsReimbursement = new InpsReimbursement();
             FreelanceFund = new FreelanceFund();
             Deduction = new Deduction();
-            Vat = new PropertyModels.Vat();
 
             IsVatExcluded = true;
             IsLegalEntity = true;
@@ -159,6 +158,10 @@ namespace Amica.Models.Company
         /// The VAT.
         /// </value>
         [Display(Name = nameof(Resources.Properties.Vat), ResourceType = typeof(Resources.Properties))]
-        public PropertyModels.Vat Vat { get; }
+        public string VatId
+        { 
+            set { SetProperty(ref _vatId, value); }
+            get { return _vatId; }
+        }
     }
 }
