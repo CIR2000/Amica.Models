@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v0.0.15.1
+=========
+
+- Vat.Name and Vat.Code now carry the Required attribute.
+
 v0.0.15
 =======
 

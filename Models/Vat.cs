@@ -23,6 +23,7 @@ namespace Amica.Models
         /// Gets or sets the VAT name.
         /// </summary>
         /// <value>The VAT name.</value>
+        [Required]
         [Display(Name = nameof(Properties.Name), Description = nameof(Properties.VatNameDescription), ResourceType = typeof(Properties))]
         public string Name
         {
@@ -34,6 +35,7 @@ namespace Amica.Models
         /// Gets or sets the VAT code.
         /// </summary>
         /// <value>The VAT code.</value>
+        [Required]
         [Display(Name = nameof(Properties.Code), Description = nameof(Properties.VatCodeDescription), ResourceType = typeof(Properties))]
         public string Code
         {
