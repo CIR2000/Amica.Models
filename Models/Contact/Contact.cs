@@ -19,7 +19,7 @@ namespace Amica.Models
         private AddressEx _address;
         private Currency _currency;
         private Relationship _relationship = new Relationship();
-        private BankAsProperty _bank = new BankAsProperty();
+        private string _bankId;
 
         private List<ShippingAddress> _otherAddresses = new List<ShippingAddress>();
 
@@ -129,15 +129,15 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the bank.
+        /// Gets or sets the bank identifier.
         /// </summary>
         /// <value>
         /// The bank.
         /// </value>
-        public BankAsProperty Bank
+        public string BankId
         {
-            set { SetProperty(ref _bank, value); }
-            get { return _bank; }
+            set { SetProperty(ref _bankId, value); }
+            get { return _bankId; }
         }
 
         /// <summary>

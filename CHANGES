@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v0.0.15.2
+=========
+
+- Contact.Bank refactored in to Bank.Id. Closes adam/#7.
+
 v0.0.15.1
 =========
 
