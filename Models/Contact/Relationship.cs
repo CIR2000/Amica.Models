@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Amica.Models.Resources;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
 {
@@ -22,6 +23,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is active; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsActive), ResourceType = typeof(Properties))]
         public bool IsActive
         {
             set { SetProperty(ref _active, value); }
@@ -33,6 +35,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is company; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsCompany), ResourceType = typeof(Properties))]
         public bool IsCompany
         {
             set { SetProperty(ref _company, value); }
@@ -45,6 +48,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is client; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsClient), ResourceType = typeof(Properties))]
         public bool IsClient
         {
             set { SetProperty(ref _client, value); }
@@ -57,6 +61,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is vendor; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsVendor), ResourceType = typeof(Properties))]
         public bool IsVendor
         {
             set { SetProperty(ref _vendor, value); }
@@ -69,6 +74,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is courier; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsCourier), ResourceType = typeof(Properties))]
         public bool IsCourier
         {
             set { SetProperty(ref _courier, value); }
@@ -81,6 +87,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is agent; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsAgent), ResourceType = typeof(Properties))]
         public bool IsAgent
         {
             set { SetProperty(ref _agent, value); }
@@ -93,6 +100,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is area manager; otherwise, <c>false</c>.
         /// </value>
+        [Display(Name = nameof(Properties.IsAreaManager), ResourceType = typeof(Properties))]
         public bool IsAreaManager
         {
             set { SetProperty(ref _areaManager, value); }

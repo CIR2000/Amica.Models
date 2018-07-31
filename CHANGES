@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v0.0.15.3
+=========
+
+- DisplayAttributes for Contact, Currency, and Relationship properties.
+
 v0.0.15.2
 =========
 

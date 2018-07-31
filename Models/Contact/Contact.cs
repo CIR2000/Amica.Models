@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
+using Amica.Models.Resources;
 
 namespace Amica.Models
 {
@@ -29,6 +30,7 @@ namespace Amica.Models
         /// <value>
         /// The name.
         /// </value>
+        [Display(Name = nameof(Properties.Name), ResourceType = typeof(Properties))]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -41,6 +43,7 @@ namespace Amica.Models
         /// <value>
         /// The identifier code.
         /// </value>
+        [Display(Name = nameof(Properties.IdCode), ResourceType = typeof(Properties))]
         public string IdCode
         {
             set { SetProperty(ref _idCode, value); }
@@ -53,6 +56,7 @@ namespace Amica.Models
         /// <value>
         /// The tax identification number.
         /// </value>
+        [Display(Name = nameof(Properties.TaxIdentificationNumber), ResourceType = typeof(Properties))]
         public string TaxIdentificationNumber
         {
             set { SetProperty(ref _taxIdNumber, value); }
@@ -65,6 +69,7 @@ namespace Amica.Models
         /// <value>
         /// The index of the public administration.
         /// </value>
+        [Display(Name = nameof(Properties.PublicAdministrationCode), ResourceType = typeof(Properties))]
         public string PublicAdministrationIndex
         {
             set { SetProperty(ref _paIndex, value); }
@@ -76,6 +81,7 @@ namespace Amica.Models
         /// <value>
         /// The vat identification number.
         /// </value>
+        [Display(Name = nameof(Properties.VatIdentificationNumber), Prompt = nameof(Properties.VatIdentificationNumberPrompt), ResourceType = typeof(Resources.Properties))]
         public string VatIdentificationNumber
         {
             set { SetProperty(ref _vatIdNumber, value); }
@@ -88,6 +94,7 @@ namespace Amica.Models
         /// <value>
         /// The market area.
         /// </value>
+        [Display(Name = nameof(Properties.MarketArea), ResourceType = typeof(Properties))]
         public string MarketArea
         {
             set { SetProperty(ref _marketArea, value); }
@@ -100,6 +107,7 @@ namespace Amica.Models
         /// <value>
         /// The currency.
         /// </value>
+        [Display(Name = nameof(Properties.Currency), ResourceType = typeof(Properties))]
         public Currency Currency
         {
             set { SetProperty(ref _currency, value); }
@@ -107,11 +115,12 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the is.
+        /// Gets or sets the kind of relationship we have with the contact.
         /// </summary>
         /// <value>
         /// The is.
         /// </value>
+        [Display(Name = nameof(Properties.Relationship), Description = nameof(Properties.RelationshipDescription), ResourceType = typeof(Properties))]
         public Relationship Relationship
         {
             set { SetProperty(ref _relationship, value); }
@@ -122,6 +131,7 @@ namespace Amica.Models
         /// Gets or sets the address.
         /// </summary>
         /// <value>The address.</value>
+        [Display(Name = nameof(Properties.Address), Description = nameof(Properties.AddressDescription), ResourceType = typeof(Properties))]
         public AddressEx Address
         {
             set { SetProperty(ref _address, value); }
@@ -146,6 +156,7 @@ namespace Amica.Models
         /// <value>
         /// The other addresses.
         /// </value>
+        [Display(Name = nameof(Properties.OtherAddresses), ResourceType = typeof(Properties))]
         public List<ShippingAddress> OtherAddresses
         {
             set { SetProperty(ref _otherAddresses, value); }

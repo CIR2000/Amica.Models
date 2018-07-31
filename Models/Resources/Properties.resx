@@ -393,4 +393,46 @@
   <data name="ShouldForceToEndOfMonth" xml:space="preserve">
     <value>Scadenze a fine mese</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="IdCode" xml:space="preserve">
+    <value>Codice univoco</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>Attivo</value>
+  </data>
+  <data name="IsAgent" xml:space="preserve">
+    <value>Agente</value>
+  </data>
+  <data name="IsAreaManager" xml:space="preserve">
+    <value>Capo area</value>
+  </data>
+  <data name="IsClient" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="IsCompany" xml:space="preserve">
+    <value>Persona giuridica</value>
+  </data>
+  <data name="IsCourier" xml:space="preserve">
+    <value>Corriere</value>
+  </data>
+  <data name="IsVendor" xml:space="preserve">
+    <value>Fornitore</value>
+  </data>
+  <data name="MarketArea" xml:space="preserve">
+    <value>Categoria merceologica</value>
+  </data>
+  <data name="OtherAddresses" xml:space="preserve">
+    <value>Altri indirizzi</value>
+  </data>
+  <data name="Relationship" xml:space="preserve">
+    <value>Relazione</value>
+  </data>
+  <data name="RelationshipDescription" xml:space="preserve">
+    <value>Tipo di relazione intrattenuta col contatto</value>
+  </data>
+  <data name="Symbol" xml:space="preserve">
+    <value>Simbolo</value>
+  </data>
 </root>

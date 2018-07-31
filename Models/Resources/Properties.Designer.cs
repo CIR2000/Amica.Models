@@ -152,6 +152,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Valuta.
+        /// </summary>
+        public static string Currency {
+            get {
+                return ResourceManager.GetString("Currency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ritenuta di acconto.
         /// </summary>
         public static string Deduction {
@@ -296,6 +305,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Codice univoco.
+        /// </summary>
+        public static string IdCode {
+            get {
+                return ResourceManager.GetString("IdCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rivalsa INPS.
         /// </summary>
         public static string InpsReimbursement {
@@ -323,6 +341,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attivo.
+        /// </summary>
+        public static string IsActive {
+            get {
+                return ResourceManager.GetString("IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Account amministrativo.
         /// </summary>
         public static string IsAdministrativeAccount {
@@ -332,11 +359,56 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Agente.
+        /// </summary>
+        public static string IsAgent {
+            get {
+                return ResourceManager.GetString("IsAgent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Capo area.
+        /// </summary>
+        public static string IsAreaManager {
+            get {
+                return ResourceManager.GetString("IsAreaManager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ricevuta bancaria.
         /// </summary>
         public static string IsBankReceipt {
             get {
                 return ResourceManager.GetString("IsBankReceipt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cliente.
+        /// </summary>
+        public static string IsClient {
+            get {
+                return ResourceManager.GetString("IsClient", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Persona giuridica.
+        /// </summary>
+        public static string IsCompany {
+            get {
+                return ResourceManager.GetString("IsCompany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Corriere.
+        /// </summary>
+        public static string IsCourier {
+            get {
+                return ResourceManager.GetString("IsCourier", resourceCulture);
             }
         }
         
@@ -422,6 +494,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fornitore.
+        /// </summary>
+        public static string IsVendor {
+            get {
+                return ResourceManager.GetString("IsVendor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cassa previdenziale inclusa.
         /// </summary>
         public static string IsWelfareIncluded {
@@ -454,6 +535,15 @@ namespace Amica.Models.Resources {
         public static string MailSettings {
             get {
                 return ResourceManager.GetString("MailSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categoria merceologica.
+        /// </summary>
+        public static string MarketArea {
+            get {
+                return ResourceManager.GetString("MarketArea", resourceCulture);
             }
         }
         
@@ -508,6 +598,15 @@ namespace Amica.Models.Resources {
         public static string Notes {
             get {
                 return ResourceManager.GetString("Notes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Altri indirizzi.
+        /// </summary>
+        public static string OtherAddresses {
+            get {
+                return ResourceManager.GetString("OtherAddresses", resourceCulture);
             }
         }
         
@@ -647,6 +746,24 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Relazione.
+        /// </summary>
+        public static string Relationship {
+            get {
+                return ResourceManager.GetString("Relationship", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tipo di relazione intrattenuta col contatto.
+        /// </summary>
+        public static string RelationshipDescription {
+            get {
+                return ResourceManager.GetString("RelationshipDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Scadenze a fine mese.
         /// </summary>
         public static string ShouldForceToEndOfMonth {
@@ -688,6 +805,15 @@ namespace Amica.Models.Resources {
         public static string Street {
             get {
                 return ResourceManager.GetString("Street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Simbolo.
+        /// </summary>
+        public static string Symbol {
+            get {
+                return ResourceManager.GetString("Symbol", resourceCulture);
             }
         }
         
