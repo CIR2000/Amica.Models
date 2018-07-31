@@ -4,11 +4,15 @@ Changelog
 v0.0.15.3
 =========
 
+Released on July 30, 2018
+
 - Rename Contact.PublicAdministrationIndex to PublicAdministrationCode.
 - DisplayAttributes for Contact, Currency, and Relationship properties.
 
 v0.0.15.2
 =========
+
+Released on July 20, 2018
 
 - Contact.Bank refactored in to Bank.Id. Closes adam/#7.
 
