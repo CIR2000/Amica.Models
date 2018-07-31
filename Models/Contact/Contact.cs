@@ -25,6 +25,14 @@ namespace Amica.Models
         private List<ShippingAddress> _otherAddresses = new List<ShippingAddress>();
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="Contact"/> class.
+        /// </summary>
+        public Contact()
+        {
+            Currency = CurrencyHelpers.Currencies["EUR"];
+        }
+
+        /// <summary>
         /// Gets or sets the name.
         /// </summary>
         /// <value>

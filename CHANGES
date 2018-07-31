@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.0.15.4
+=========
+
+- Add static CurrencyHelpers.Currencies as a Dictionary<string, Currency>.
+- Contact.Currency default value is now set to CurrencyHelpers.Currencies["EUR"]
+- TODO: add missing currencies other than EUR and USD.
+
 v0.0.15.3
 =========
 

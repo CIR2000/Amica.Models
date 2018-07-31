@@ -27,7 +27,7 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the code.
+        /// Gets or sets the currency code.
         /// </summary>
         /// <value>
         /// The code.
@@ -40,7 +40,7 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the symbol.
+        /// Gets or sets the currency symbol.
         /// </summary>
         /// <value>
         /// The symbol.
