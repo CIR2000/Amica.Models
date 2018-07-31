@@ -4,6 +4,7 @@ Changelog
 v0.0.15.3
 =========
 
+- Rename Contact.PublicAdministrationIndex to PublicAdministrationCode.
 - DisplayAttributes for Contact, Currency, and Relationship properties.
 
 v0.0.15.2

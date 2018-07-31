@@ -64,13 +64,13 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the index of the public administration.
+        /// Gets or sets the code of the public administration.
         /// </summary>
         /// <value>
         /// The index of the public administration.
         /// </value>
         [Display(Name = nameof(Properties.PublicAdministrationCode), ResourceType = typeof(Properties))]
-        public string PublicAdministrationIndex
+        public string PublicAdministrationCode
         {
             set { SetProperty(ref _paIndex, value); }
             get { return _paIndex; }
