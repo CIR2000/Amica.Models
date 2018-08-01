@@ -11,7 +11,7 @@ namespace Amica.Models
     {
         private bool _active = true;
         private bool _company = true;
-        private bool _client;
+        private bool _client = true;
         private bool _vendor;
         private bool _courier;
         private bool _agent;
