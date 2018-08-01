@@ -1,8 +1,10 @@
 Changelog
 =========
 
-Development
-===========
+v0.0.15.5
+=========
+
+Released on July 30, 2018.
 
 - Fix: Contact.Currency defaults to a CurrencyHelpers.Currencies reference.
 - Contact.Relationship.IsClient is true by default.
