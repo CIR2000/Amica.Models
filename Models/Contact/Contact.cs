@@ -29,7 +29,13 @@ namespace Amica.Models
         /// </summary>
         public Contact()
         {
-            Currency = CurrencyHelpers.Currencies["EUR"];
+            var defaultCurrency = CurrencyHelpers.Currencies["EUR"];
+            Currency = new Currency
+            {
+                Code = defaultCurrency.Code,
+                Name = defaultCurrency.Name,
+                Symbol = defaultCurrency.Symbol
+            };
         }
 
         /// <summary>

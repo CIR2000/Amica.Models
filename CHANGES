@@ -4,6 +4,7 @@ Changelog
 Development
 ===========
 
+- Fix: Contact.Currency defaults to a CurrencyHelpers.Currencies reference.
 - Contact.Relationship.IsClient is true by default.
 
 v0.0.15.4

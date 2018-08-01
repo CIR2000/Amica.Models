@@ -8,11 +8,14 @@ namespace Amica.Models.Tests
         [TestMethod]
         public void DefaultValues()
         {
-            var c = new Models.Contact();
-            Assert.AreEqual(CurrencyHelpers.Currencies["EUR"], c.Currency);
-            Assert.AreEqual(true, c.Relationship.IsActive);
-            Assert.AreEqual(true, c.Relationship.IsClient);
-            Assert.AreEqual(true, c.Relationship.IsCompany);
+            var contact = new Models.Contact();
+            var currency = CurrencyHelpers.Currencies["EUR"];
+            Assert.AreEqual(currency.Name, contact.Currency.Name);
+            Assert.AreEqual(currency.Symbol, contact.Currency.Symbol);
+            Assert.AreEqual(currency.Code, contact.Currency.Code);
+            Assert.AreEqual(true, contact.Relationship.IsActive);
+            Assert.AreEqual(true, contact.Relationship.IsClient);
+            Assert.AreEqual(true, contact.Relationship.IsCompany);
         }
 
     }
