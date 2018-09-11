@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v0.0.15.6
+=========
+
+Released on September 11, 2018.
+
+- Fix: MailSettings inherits from BaseModelWithCompanyId.
+- Remove Preferences.MailSettings property.
+
 v0.0.15.5
 =========
 

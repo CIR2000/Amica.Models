@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Amica.Models.Company
+namespace Amica.Models
 {
     /// <summary>
     /// Company's mail settings.
     /// </summary>
     /// <seealso cref="Amica.Models.ObservableObject" />
-    public class MailSettings : ObservableObject
+    public class MailSettings : BaseModelWithCompanyId
     {
         string _smpt, _protocol;
         int _port;
@@ -60,6 +60,7 @@ namespace Amica.Models.Company
         /// The email templates.
         /// </value>
         [Display(Name = nameof(Resources.Properties.Templates), ResourceType = typeof(Resources.Properties))]
+        [JsonProperty("templates")]
         public List<MailTemplate> Template { get; } 
     }
 }
