@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.0.15.7
+=========
+
+Released on September 12, 2018.
+
+- Add MailSettings.Id property.
+
 v0.0.15.6
 =========
 
