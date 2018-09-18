@@ -15,7 +15,7 @@ namespace Amica.Models
         private string _marketArea;
         private string _idCode;
         private string _taxIdNumber;
-        private string _paIndex;
+        private string _einvoiceId;
 
         private AddressEx _address;
         private Currency _currency;
@@ -80,16 +80,16 @@ namespace Amica.Models
         }
 
         /// <summary>
-        /// Gets or sets the code of the public administration.
+        /// Gets or sets the electronic invoice id.
         /// </summary>
         /// <value>
-        /// The index of the public administration.
+        /// The unique electronic invoice id for the contact.
         /// </value>
-        [Display(Name = nameof(Properties.PublicAdministrationCode), ResourceType = typeof(Properties))]
-        public string PublicAdministrationCode
+        [Display(Name = nameof(Properties.EinvoiceId), Description =  nameof(Properties.eInvoiceIdDescription), ResourceType = typeof(Properties))]
+        public string EinvoiceId
         {
-            set { SetProperty(ref _paIndex, value); }
-            get { return _paIndex; }
+            set { SetProperty(ref _einvoiceId, value); }
+            get { return _einvoiceId; }
         }
         /// <summary>
         /// Gets or sets the vat identification number.

@@ -206,6 +206,24 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fattura elettronica.
+        /// </summary>
+        public static string EinvoiceId {
+            get {
+                return ResourceManager.GetString("eInvoiceId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Codice destinatario fatturazione elettronica.
+        /// </summary>
+        public static string eInvoiceIdDescription {
+            get {
+                return ResourceManager.GetString("eInvoiceIdDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Importo ENASARCO.
         /// </summary>
         public static string EnasarcoFund {
@@ -742,15 +760,6 @@ namespace Amica.Models.Resources {
         public static string Protocol {
             get {
                 return ResourceManager.GetString("Protocol", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Codice PA.
-        /// </summary>
-        public static string PublicAdministrationCode {
-            get {
-                return ResourceManager.GetString("PublicAdministrationCode", resourceCulture);
             }
         }
         

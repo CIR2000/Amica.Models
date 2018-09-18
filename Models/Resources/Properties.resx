@@ -387,8 +387,8 @@
   <data name="PaymentOption" xml:space="preserve">
     <value>Prima rata</value>
   </data>
-  <data name="PublicAdministrationCode" xml:space="preserve">
-    <value>Codice PA</value>
+  <data name="eInvoiceId" xml:space="preserve">
+    <value>Fattura elettronica</value>
   </data>
   <data name="ShouldForceToEndOfMonth" xml:space="preserve">
     <value>Scadenze a fine mese</value>
@@ -455,5 +455,8 @@
   </data>
   <data name="PurchaseSettingsDescription" xml:space="preserve">
     <value>Impostazioni di acquisto</value>
+  </data>
+  <data name="eInvoiceIdDescription" xml:space="preserve">
+    <value>Codice destinatario fatturazione elettronica</value>
   </data>
 </root>
