@@ -20,6 +20,8 @@ namespace Amica.Models
         private AddressEx _address;
         private Currency _currency;
         private Relationship _relationship = new Relationship();
+        private SalesSettings _salesSettings = new SalesSettings();
+        private PurchaseSettings _purchaseSettings = new PurchaseSettings();
         private string _bankId;
 
         private List<ShippingAddress> _otherAddresses = new List<ShippingAddress>();
@@ -175,6 +177,28 @@ namespace Amica.Models
         {
             set { SetProperty(ref _otherAddresses, value); }
             get { return _otherAddresses; }
+        }
+
+        /// <summary>
+        /// Gets or sets the sales settings for the contact.
+        /// </summary>
+        /// <value>The sales settings.</value>
+        [Display(Name = nameof(Properties.SalesSettings), Description = nameof(Properties.SalesSettingsDescription), ResourceType = typeof(Properties))]
+        public SalesSettings SalesSettings
+        {
+            set { SetProperty(ref _salesSettings, value); }
+            get { return _salesSettings; }
+        }
+
+        /// <summary>
+        /// Gets or sets the purchase settings for the contact.
+        /// </summary>
+        /// <value>The purchase settings.</value>
+        [Display(Name = nameof(Properties.PurchaseSettings), Description = nameof(Properties.PurchaseSettingsDescription), ResourceType = typeof(Properties))]
+        public PurchaseSettings PurchaseSettings
+        {
+            set { SetProperty(ref _purchaseSettings, value); }
+            get { return _purchaseSettings; }
         }
     }
 }

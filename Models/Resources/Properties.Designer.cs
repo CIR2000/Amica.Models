@@ -80,6 +80,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Agente.
+        /// </summary>
+        public static string Agent {
+            get {
+                return ResourceManager.GetString("Agent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Importo.
         /// </summary>
         public static string Amount {
@@ -629,6 +638,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pagamento.
+        /// </summary>
+        public static string Payment {
+            get {
+                return ResourceManager.GetString("Payment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Calcolo giorni a partire da.
         /// </summary>
         public static string PaymentDate {
@@ -710,6 +728,15 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Listino.
+        /// </summary>
+        public static string Pricelist {
+            get {
+                return ResourceManager.GetString("Pricelist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Protocollo.
         /// </summary>
         public static string Protocol {
@@ -724,6 +751,24 @@ namespace Amica.Models.Resources {
         public static string PublicAdministrationCode {
             get {
                 return ResourceManager.GetString("PublicAdministrationCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Acquisti.
+        /// </summary>
+        public static string PurchaseSettings {
+            get {
+                return ResourceManager.GetString("PurchaseSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Impostazioni di acquisto.
+        /// </summary>
+        public static string PurchaseSettingsDescription {
+            get {
+                return ResourceManager.GetString("PurchaseSettingsDescription", resourceCulture);
             }
         }
         
@@ -760,6 +805,24 @@ namespace Amica.Models.Resources {
         public static string RelationshipDescription {
             get {
                 return ResourceManager.GetString("RelationshipDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vendite.
+        /// </summary>
+        public static string SalesSettings {
+            get {
+                return ResourceManager.GetString("SalesSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Impostaizoni di vendita.
+        /// </summary>
+        public static string SalesSettingsDescription {
+            get {
+                return ResourceManager.GetString("SalesSettingsDescription", resourceCulture);
             }
         }
         

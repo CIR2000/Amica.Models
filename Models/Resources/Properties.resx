@@ -435,4 +435,25 @@
   <data name="Symbol" xml:space="preserve">
     <value>Simbolo</value>
   </data>
+  <data name="Agent" xml:space="preserve">
+    <value>Agente</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>Pagamento</value>
+  </data>
+  <data name="Pricelist" xml:space="preserve">
+    <value>Listino</value>
+  </data>
+  <data name="SalesSettings" xml:space="preserve">
+    <value>Vendite</value>
+  </data>
+  <data name="SalesSettingsDescription" xml:space="preserve">
+    <value>Impostaizoni di vendita</value>
+  </data>
+  <data name="PurchaseSettings" xml:space="preserve">
+    <value>Acquisti</value>
+  </data>
+  <data name="PurchaseSettingsDescription" xml:space="preserve">
+    <value>Impostazioni di acquisto</value>
+  </data>
 </root>
