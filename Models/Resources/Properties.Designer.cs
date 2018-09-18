@@ -784,9 +784,9 @@ namespace Amica.Models.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Server SMPT.
         /// </summary>
-        public static string SmptAddress {
+        public static string SmtpAddress {
             get {
-                return ResourceManager.GetString("SmptAddress", resourceCulture);
+                return ResourceManager.GetString("SmtpAddress", resourceCulture);
             }
         }
         

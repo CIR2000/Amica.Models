@@ -26,7 +26,7 @@ namespace Amica.Models
         /// <value>
         /// The SMPT address.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.SmptAddress), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Resources.Properties.SmtpAddress), ResourceType = typeof(Resources.Properties))]
         public string SmtpAddress {
 			set { SetProperty (ref _smpt, value); }
 			get { return _smpt; } 

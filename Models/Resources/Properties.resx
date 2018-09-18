@@ -222,7 +222,7 @@
   <data name="Protocol" xml:space="preserve">
     <value>Protocollo</value>
   </data>
-  <data name="SmptAddress" xml:space="preserve">
+  <data name="SmtpAddress" xml:space="preserve">
     <value>Server SMPT</value>
   </data>
   <data name="UnitOfMeasure" xml:space="preserve">
