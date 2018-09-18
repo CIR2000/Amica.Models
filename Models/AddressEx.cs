@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
@@ -77,6 +76,7 @@ namespace Amica.Models
         /// The mail.
         /// </value>
         [Display(Name = nameof(Resources.Properties.Mail), ResourceType = typeof(Resources.Properties))]
+        [EmailAddress()]
         public string Mail
         {
             get { return _contactDetails.Mail; }
@@ -89,6 +89,7 @@ namespace Amica.Models
         /// The PEC mail.
         /// </value>
         [Display(Name = nameof(Resources.Properties.PecMail), ResourceType = typeof(Resources.Properties))]
+        [EmailAddress()]
         public string PecMail
         {
             get { return _contactDetails.PecMail; }

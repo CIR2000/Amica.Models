@@ -78,6 +78,7 @@ namespace Amica.Models
         /// From address.
         /// </value>
         [Display(Name = nameof(Resources.Properties.TemplateFromAddress), ResourceType = typeof(Resources.Properties))]
+        [EmailAddress()]
         public string FromAddress
         {
             set { SetProperty(ref _fromAddress, value); }

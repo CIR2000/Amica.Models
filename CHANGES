@@ -6,6 +6,9 @@ v0.0.15.9
 
 Released on September 18, 2018.
 
+- Switch to NetStandard 1.3.
+- Add EmailAddressAttribute to MailTemplate.FromAddressa.
+- Add EmailAddressAttribute to AddressEx.Mail and AddessEx.PecMail.
 - Fix MailSettings.SmtpAddress Display Name attribute.
 
 v0.0.15.8
