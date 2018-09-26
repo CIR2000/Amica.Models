@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
 {
@@ -9,7 +10,7 @@ namespace Amica.Models
     public class MailTemplate : ObservableObject
     {
         string _name, _username, _password, _subject, _body, _fromName, _fromAddress;
-        int _id;
+        Guid _id;
 
         /// <summary>
         /// Gets or sets the unique id.
@@ -17,7 +18,7 @@ namespace Amica.Models
         /// <value>
         /// The unique id.
         /// </value>
-        public int Id
+        public Guid Id
         {
             set { SetProperty(ref _id, value); }
             get { return _id; }

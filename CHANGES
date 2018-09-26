@@ -1,6 +1,14 @@
 Changelog
 =========
 
+
+v0.0.15.10
+=========
+
+Released on September 26, 2018.
+
+- MailTemplate.Id is now of Guid type.
+
 v0.0.15.9
 =========
 
