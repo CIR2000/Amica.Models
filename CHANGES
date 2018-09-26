@@ -5,6 +5,8 @@ Changelog
 v0.0.15.11
 ==========
 
+Released on September 26, 2018.
+
 - Properties decorated with EmailAdress attribute now also use custom error messages.
 
 v0.0.15.10
