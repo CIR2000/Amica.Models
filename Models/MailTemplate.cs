@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Amica.Models.Resources;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
@@ -30,7 +31,7 @@ namespace Amica.Models
         /// <value>
         /// The template name.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.TemplateName), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.TemplateName), ResourceType = typeof(Properties))]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -42,7 +43,7 @@ namespace Amica.Models
         /// <value>
         /// The username.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.TemplateSmptUsername), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.TemplateSmptUsername), ResourceType = typeof(Properties))]
         public string SmtpUsername
         {
             set { SetProperty(ref _username, value); }
@@ -54,7 +55,7 @@ namespace Amica.Models
         /// <value>
         /// The password.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.TemplateSmptPassword), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.TemplateSmptPassword), ResourceType = typeof(Properties))]
         public string SmtpPassword
         {
             set { SetProperty(ref _password, value); }
@@ -66,7 +67,7 @@ namespace Amica.Models
         /// <value>
         /// From name.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.TemplateFromName), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.TemplateFromName), ResourceType = typeof(Properties))]
         public string FromName
         {
             set { SetProperty(ref _fromName, value); }
@@ -78,8 +79,8 @@ namespace Amica.Models
         /// <value>
         /// From address.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.TemplateFromAddress), ResourceType = typeof(Resources.Properties))]
-        [EmailAddress()]
+        [Display(Name = nameof(Properties.TemplateFromAddress), ResourceType = typeof(Properties))]
+        [EmailAddress(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = nameof(ErrorMessages.EmailFormatError))]
         public string FromAddress
         {
             set { SetProperty(ref _fromAddress, value); }
@@ -91,7 +92,7 @@ namespace Amica.Models
         /// <value>
         /// The subject.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.TemplateMessageSubject), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.TemplateMessageSubject), ResourceType = typeof(Properties))]
         public string MessageSubject
         {
             set { SetProperty(ref _subject, value); }
@@ -103,7 +104,7 @@ namespace Amica.Models
         /// <value>
         /// The message body.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.TemplateMessageBody), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.TemplateMessageBody), ResourceType = typeof(Properties))]
         public string MessageBody
         {
             set { SetProperty(ref _body, value); }

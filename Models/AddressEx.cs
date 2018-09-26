@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Amica.Models.Resources;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Amica.Models
@@ -39,7 +40,7 @@ namespace Amica.Models
         /// <value>
         /// The phone.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Phone), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Phone), ResourceType = typeof(Properties))]
         public string Phone
         {
             get { return _contactDetails.Phone; }
@@ -51,7 +52,7 @@ namespace Amica.Models
         /// <value>
         /// The mobile.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Mobile), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Mobile), ResourceType = typeof(Properties))]
         public string Mobile
         {
             get { return _contactDetails.Mobile; }
@@ -63,7 +64,7 @@ namespace Amica.Models
         /// <value>
         /// The fax.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Fax), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Fax), ResourceType = typeof(Properties))]
         public string Fax
         {
             get { return _contactDetails.Fax; }
@@ -75,8 +76,8 @@ namespace Amica.Models
         /// <value>
         /// The mail.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Mail), ResourceType = typeof(Resources.Properties))]
-        [EmailAddress()]
+        [Display(Name = nameof(Properties.Mail), ResourceType = typeof(Properties))]
+        [EmailAddress(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = nameof(ErrorMessages.EmailFormatError))]
         public string Mail
         {
             get { return _contactDetails.Mail; }
@@ -88,8 +89,8 @@ namespace Amica.Models
         /// <value>
         /// The PEC mail.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.PecMail), ResourceType = typeof(Resources.Properties))]
-        [EmailAddress()]
+        [Display(Name = nameof(Properties.PecMail), ResourceType = typeof(Properties))]
+        [EmailAddress(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = nameof(ErrorMessages.EmailFormatError))]
         public string PecMail
         {
             get { return _contactDetails.PecMail; }
@@ -101,7 +102,7 @@ namespace Amica.Models
         /// <value>
         /// The web site.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.WebSite), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.WebSite), ResourceType = typeof(Properties))]
         public string WebSite
         {
             get { return _contactDetails.WebSite; }
@@ -114,7 +115,7 @@ namespace Amica.Models
         /// <value>
         /// The street.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Street), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Street), ResourceType = typeof(Properties))]
         public string Street
         {
             get { return _address.Street; }
@@ -127,7 +128,7 @@ namespace Amica.Models
         /// <value>
         /// The town.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Town), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Town), ResourceType = typeof(Properties))]
         public string Town
         {
             get { return _address.Town; }
@@ -140,7 +141,7 @@ namespace Amica.Models
         /// <value>
         /// The postal code.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.PostalCode), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.PostalCode), ResourceType = typeof(Properties))]
         public string PostalCode
         {
             get { return _address.PostalCode; }
@@ -153,7 +154,7 @@ namespace Amica.Models
         /// <value>
         /// The state or province.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.StateOrProvince), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.StateOrProvince), ResourceType = typeof(Properties))]
         public string StateOrProvince
         {
             get { return _address.StateOrProvince; }
@@ -166,7 +167,7 @@ namespace Amica.Models
         /// <value>
         /// The country.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Country), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Country), ResourceType = typeof(Properties))]
         public string Country
         {
             get { return _address.Country; }
@@ -178,7 +179,7 @@ namespace Amica.Models
         /// <value>
         /// The notes.
         /// </value>
-        [Display(Name = nameof(Resources.Properties.Notes), ResourceType = typeof(Resources.Properties))]
+        [Display(Name = nameof(Properties.Notes), ResourceType = typeof(Properties))]
         public string Notes
         {
             get { return _address.Notes; }
