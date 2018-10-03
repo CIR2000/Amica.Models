@@ -80,7 +80,6 @@ namespace Amica.Models
         /// From address.
         /// </value>
         [Display(Name = nameof(Properties.TemplateFromAddress), ResourceType = typeof(Properties))]
-        [EmailAddress(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = nameof(ErrorMessages.EmailFormatError))]
         public string FromAddress
         {
             set { SetProperty(ref _fromAddress, value); }

@@ -77,7 +77,6 @@ namespace Amica.Models
         /// The mail.
         /// </value>
         [Display(Name = nameof(Properties.Mail), ResourceType = typeof(Properties))]
-        [EmailAddress(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = nameof(ErrorMessages.EmailFormatError))]
         public string Mail
         {
             get { return _contactDetails.Mail; }
@@ -90,7 +89,6 @@ namespace Amica.Models
         /// The PEC mail.
         /// </value>
         [Display(Name = nameof(Properties.PecMail), ResourceType = typeof(Properties))]
-        [EmailAddress(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = nameof(ErrorMessages.EmailFormatError))]
         public string PecMail
         {
             get { return _contactDetails.PecMail; }

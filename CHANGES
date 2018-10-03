@@ -7,6 +7,7 @@ v0.0.15.12
 
 Released on September 26, 2018.
 
+- Remove EmailAddress attributes.
 - Remove Required attributes.
 
 v0.0.15.11
