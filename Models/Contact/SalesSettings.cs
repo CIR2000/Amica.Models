@@ -14,6 +14,7 @@ namespace Amica.Models
         private string _pricelistId;
         private string _paymentId;
         private float _discount;
+        private string _einvoiceId;
 
         /// <summary>
         /// Gets or sets the VAT Id for the contact.
@@ -77,6 +78,19 @@ namespace Amica.Models
         {
             set { SetProperty(ref _discount, value); }
             get { return _discount; }
+        }
+
+        /// <summary>
+        /// Gets or sets the electronic invoice id.
+        /// </summary>
+        /// <value>
+        /// The unique electronic invoice id for the contact.
+        /// </value>
+        [Display(Name = nameof(Properties.eInvoiceId), Description =  nameof(Properties.eInvoiceIdDescription), ResourceType = typeof(Properties))]
+        public string EinvoiceId
+        {
+            set { SetProperty(ref _einvoiceId, value); }
+            get { return _einvoiceId; }
         }
     }
 }

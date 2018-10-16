@@ -206,16 +206,16 @@ namespace Amica.Models.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fattura elettronica.
+        ///   Looks up a localized string similar to Codice univoco F.E..
         /// </summary>
-        public static string EinvoiceId {
+        public static string eInvoiceId {
             get {
                 return ResourceManager.GetString("eInvoiceId", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Codice destinatario fatturazione elettronica.
+        ///   Looks up a localized string similar to Codice destinatario per fatturazione elettronica.
         /// </summary>
         public static string eInvoiceIdDescription {
             get {

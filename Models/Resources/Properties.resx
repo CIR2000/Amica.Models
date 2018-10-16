@@ -388,7 +388,7 @@
     <value>Prima rata</value>
   </data>
   <data name="eInvoiceId" xml:space="preserve">
-    <value>Fattura elettronica</value>
+    <value>Codice univoco F.E.</value>
   </data>
   <data name="ShouldForceToEndOfMonth" xml:space="preserve">
     <value>Scadenze a fine mese</value>
@@ -457,6 +457,6 @@
     <value>Impostazioni di acquisto</value>
   </data>
   <data name="eInvoiceIdDescription" xml:space="preserve">
-    <value>Codice destinatario fatturazione elettronica</value>
+    <value>Codice destinatario per fatturazione elettronica</value>
   </data>
 </root>

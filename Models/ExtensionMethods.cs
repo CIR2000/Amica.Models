@@ -46,8 +46,7 @@ namespace Amica.Models
         /// <returns></returns>
         public static V GetValueOrDefault<K, V>(this IDictionary<K, V> dict, K key, Func<V> defValSelector)
 		{
-			V value;
-			return dict.TryGetValue(key, out value) ? value : defValSelector();
-		}
+            return dict.TryGetValue(key, out V value) ? value : defValSelector();
+        }
     }
 }

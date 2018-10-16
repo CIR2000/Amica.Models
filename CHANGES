@@ -2,6 +2,13 @@ Changelog
 =========
 
 
+v0.0.15.13
+==========
+
+Released on October 16, 2018.
+
+- Move Contact.EInvoiceId to Contact.SalesSettings.
+
 v0.0.15.12
 ==========
 
