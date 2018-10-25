@@ -33,9 +33,28 @@ namespace Amica.Models
             ShouldForceToEndOfMonth = true;
             FirstPaymentDateAdditionalDays = 30;
             InstallmentsEveryNumberOfDays = 30;
-			FirstPaymentDate= PaymentHelpers.FirstPaymentDates[PaymentDate.DocumentDate];
-			FirstPaymentOption = PaymentHelpers.FirstPaymentOptions[PaymentOption.Normal];
-            PaymentMethod = PaymentHelpers.PaymentMethods[0];
+
+            var defaultFirstPaymentDate = PaymentHelpers.FirstPaymentDates[PaymentDate.DocumentDate];
+            FirstPaymentDate = new FirstPaymentDate
+            {
+                Option = defaultFirstPaymentDate.Option,
+                Description = defaultFirstPaymentDate.Description,
+            };
+
+            var defaultPaymentOption = PaymentHelpers.FirstPaymentOptions[PaymentOption.Normal];
+            FirstPaymentOption = new FirstPaymentOption
+            {
+                Option = defaultPaymentOption.Option,
+                Description = defaultPaymentOption.Description
+            };
+
+            var defaultPayment = PaymentHelpers.PaymentMethods[0];
+            PaymentMethod = new PaymentMethod()
+            {
+                Code = defaultPayment.Code,
+                Name = defaultPayment.Name,
+                IsBankReceipt = defaultPayment.IsBankReceipt
+            };
         }
 
         /// <summary>
