@@ -34,14 +34,14 @@ namespace Amica.Models
             FirstPaymentDateAdditionalDays = 30;
             InstallmentsEveryNumberOfDays = 30;
 
-            var defaultFirstPaymentDate = PaymentHelpers.FirstPaymentDates[PaymentDate.DocumentDate];
+            var defaultFirstPaymentDate = PaymentHelpers.FirstPaymentDates[0];
             FirstPaymentDate = new FirstPaymentDate
             {
                 Option = defaultFirstPaymentDate.Option,
                 Description = defaultFirstPaymentDate.Description,
             };
 
-            var defaultPaymentOption = PaymentHelpers.FirstPaymentOptions[PaymentOption.Normal];
+            var defaultPaymentOption = PaymentHelpers.FirstPaymentOptions[0];
             FirstPaymentOption = new FirstPaymentOption
             {
                 Option = defaultPaymentOption.Option,

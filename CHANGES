@@ -10,6 +10,8 @@ Released on October 25, 2018.
 - Fix: Payment.PaymentMethod defaults to a PaymentHelpers.PaymentMethods reference.
 - Fix: Payment.FirstPaymentDate defaults to a PaymentHelpers.FirstPaymentDates reference.
 - Fix: Payment.FirstPaymentOption defaults to a PaymentHelpers.FirstPaymentOptions reference.
+- Fix: PaymentHelpers.FirstPaymentDates is not a ReadOnlyCollection. Addresses #9.
+- Fix: PaymentHelpers.FirstPaymentOptions is not a ReadOnlyCollection. Addresses #9.
 
 v0.0.15.13
 ==========

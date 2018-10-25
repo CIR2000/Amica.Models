@@ -14,26 +14,26 @@ namespace Amica.Models
         /// <summary>
         /// The first payment options
         /// </summary>
-        public static readonly ReadOnlyDictionary<PaymentOption, FirstPaymentOption> FirstPaymentOptions = 
-			new ReadOnlyDictionary<PaymentOption, FirstPaymentOption>(
-				new Dictionary<PaymentOption, FirstPaymentOption>
+        public static readonly ReadOnlyCollection<FirstPaymentOption> FirstPaymentOptions = 
+			new ReadOnlyCollection<FirstPaymentOption>(
+				new List<FirstPaymentOption>
 				{
-                    { PaymentOption.Normal, new FirstPaymentOption { Option = PaymentOption.Normal, Description = PaymentResources.Normal }},
-					{ PaymentOption.VatIncluded, new FirstPaymentOption { Option = PaymentOption.VatIncluded, Description =  PaymentResources.VatIncluded }},
-					{ PaymentOption.VatOnly, new FirstPaymentOption { Option = PaymentOption.VatOnly, Description = PaymentResources.VatOnly }},
-					{ PaymentOption.FeesIncluded, new FirstPaymentOption { Option = PaymentOption.FeesIncluded, Description = PaymentResources.FeesIncluded }},
+                    new FirstPaymentOption { Option = PaymentOption.Normal, Description = PaymentResources.Normal },
+					new FirstPaymentOption { Option = PaymentOption.VatIncluded, Description =  PaymentResources.VatIncluded },
+					new FirstPaymentOption { Option = PaymentOption.VatOnly, Description = PaymentResources.VatOnly },
+					new FirstPaymentOption { Option = PaymentOption.FeesIncluded, Description = PaymentResources.FeesIncluded },
 				});
 
         /// <summary>
         /// The first payment date options
         /// </summary>
-        public static readonly ReadOnlyDictionary<PaymentDate, FirstPaymentDate> FirstPaymentDates = 
-			new ReadOnlyDictionary<PaymentDate,  FirstPaymentDate>(
-                new Dictionary<PaymentDate,  FirstPaymentDate>
+        public static readonly ReadOnlyCollection<FirstPaymentDate> FirstPaymentDates = 
+			new ReadOnlyCollection<FirstPaymentDate>(
+                new List<FirstPaymentDate>
                 {
-					{ PaymentDate.DocumentDate, new FirstPaymentDate { Option = PaymentDate.DocumentDate, Description = PaymentResources.AtDocumentDate }},
-					{ PaymentDate.EndOfMonth, new FirstPaymentDate { Option = PaymentDate.EndOfMonth, Description = PaymentResources.AtEndOfMonth }},
-					{ PaymentDate.Explicit, new FirstPaymentDate { Option = PaymentDate.Explicit, Description = PaymentResources.AtExplicitDate }},
+					new FirstPaymentDate { Option = PaymentDate.DocumentDate, Description = PaymentResources.AtDocumentDate },
+					new FirstPaymentDate { Option = PaymentDate.EndOfMonth, Description = PaymentResources.AtEndOfMonth },
+					new FirstPaymentDate { Option = PaymentDate.Explicit, Description = PaymentResources.AtExplicitDate },
                 });
 
         /// <summary>

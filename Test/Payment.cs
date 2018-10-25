@@ -10,11 +10,11 @@ namespace Amica.Models.Tests
 		{
             var p = new Models.Payment();
 
-            var defaultPaymentOption = PaymentHelpers.FirstPaymentOptions[PaymentOption.Normal];
+            var defaultPaymentOption = PaymentHelpers.FirstPaymentOptions[0];
             Assert.AreEqual(defaultPaymentOption.Option, p.FirstPaymentOption.Option);
             Assert.AreEqual(defaultPaymentOption.Description, p.FirstPaymentOption.Description);
 
-            var defaultPaymentDate = PaymentHelpers.FirstPaymentDates[PaymentDate.DocumentDate];
+            var defaultPaymentDate = PaymentHelpers.FirstPaymentDates[0];
             Assert.AreEqual(defaultPaymentDate.Option, p.FirstPaymentDate.Option);
             Assert.AreEqual(defaultPaymentDate.Description, p.FirstPaymentDate.Description);
 
