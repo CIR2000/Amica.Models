@@ -459,4 +459,25 @@
   <data name="eInvoiceIdDescription" xml:space="preserve">
     <value>Codice destinatario per fatturazione elettronica</value>
   </data>
+  <data name="BarCode" xml:space="preserve">
+    <value>Codice a barre</value>
+  </data>
+  <data name="ProductDescription" xml:space="preserve">
+    <value>Descrizione in fattura</value>
+  </data>
+  <data name="VendorCode" xml:space="preserve">
+    <value>Codice fornitore</value>
+  </data>
+  <data name="ProductCategory" xml:space="preserve">
+    <value>Categoria di prodotto</value>
+  </data>
+  <data name="IsProduct" xml:space="preserve">
+    <value>È un prodotto</value>
+  </data>
+  <data name="MostRecentCost" xml:space="preserve">
+    <value>Costo ultimo</value>
+  </data>
+  <data name="AverageCost" xml:space="preserve">
+    <value>Costo medio</value>
+  </data>
 </root>
