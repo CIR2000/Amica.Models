@@ -5,7 +5,8 @@ Changelog
 v0.0.16.1
 =========
 
-- New: UnitOfMeasureHelpers.UnitOfMeasures (ReadOnlyCollection<string>)
+- Fix: Warehouse now only has a Name property.
+- New: UnitOfMeasureHelpers.UnitOfMeasures (ReadOnlyCollection<string>).
 
 v0.0.16.0
 =========
