@@ -5,6 +5,8 @@ Changelog
 v0.0.16.1
 =========
 
+Released on October 30, 2018.
+
 - Fix: Warehouse now only has a Name property.
 - New: UnitOfMeasureHelpers.UnitOfMeasures (ReadOnlyCollection<string>).
 
