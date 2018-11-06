@@ -5,6 +5,7 @@ Changelog
 v0.0.16.2
 =========
 
+- New: ProductCategory class. Closes #14.
 - New: Product.AvailableStock. Closes #13.
 - New: Product.CurrentStock. Closes #13.
 - New: UnitOfMeasureHelpers.DefaultValue (defaults to "nr"). Closes #11.
