@@ -7,7 +7,8 @@ v0.0.16.2
 
 - New: Product.AvailableStock. Closes #13.
 - New: Product.CurrentStock. Closes #13.
-- New: UnitOfMeasureHelpers.DefaultValue (defaults to "n"). Closes #11.
+- New: UnitOfMeasureHelpers.DefaultValue (defaults to "nr"). Closes #11.
+- Fix: UnitOfMeasureHelpers.UnitOfMeasures lacks commonly used measures.
 - Fix: Product.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue. Addresses #11.
 - Fix: Preferences.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue. Addresses #11.
 - Fix: Product.Vat changed to Product.VatId. Closes #12.

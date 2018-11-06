@@ -12,7 +12,7 @@ namespace Amica.Models
         /// Known unit of measures
         ///
         public static readonly ReadOnlyCollection<string> UnitOfMeasures =
-            new ReadOnlyCollection<string>(new List<string> { "n", "m", "kg", "l", "g", "cm" });
-        public static string DefaultValue => "n";
+            new ReadOnlyCollection<string>(new List<string> { "nr", "m", "m2", "m3", "dz", "gg", "kg", "lt", "gr", "km", "min", "h", "cm" });
+        public static string DefaultValue => "nr";
     }
 }
