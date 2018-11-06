@@ -15,7 +15,7 @@ namespace Amica.Models.Company
         /// </summary>
         public Preferences()
         {
-            UnitOfMeasure = "N.";
+            UnitOfMeasure = UnitOfMeasureHelper.DefaultValue;
         }
         /// <summary>
         /// Gets or sets the unit of measure.
@@ -30,9 +30,10 @@ namespace Amica.Models.Company
             get { return _unitOfMeasure; }
         }
         [Display(Name = nameof(Resources.Properties.Logo), ResourceType = typeof(Resources.Properties))]
-        public string Logo {
-			set { SetProperty (ref _logo, value); }
-			get { return _logo; } 
-		}
+        public string Logo
+        {
+            set { SetProperty(ref _logo, value); }
+            get { return _logo; }
+        }
     }
 }

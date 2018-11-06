@@ -1,18 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Amica.Models.Resources;
 
-namespace Amica.Models {
+namespace Amica.Models
+{
     /// <summary>
     /// Product information.
     /// </summary>
     /// <seealso cref="Amica.Models.BaseModelWithCompanyId" />
-    public class Product : BaseModelWithCompanyId {
+    public class Product : BaseModelWithCompanyId
+    {
         private string _code;
         private string _barCode;
         private string _vendorCode;
         private string _name;
         private string _description;
-        private string _unitOfMeasure = "n.";
+        private string _unitOfMeasure = UnitOfMeasureHelper.DefaultValue;
         private string _notes;
         private string _productCategory;
         private bool _is_product = true;
@@ -24,9 +26,10 @@ namespace Amica.Models {
         /// Gets or sets the product code.
         /// </summary>
         /// <value>The product code.</value>
-        [Display (Name = nameof (Properties.Code), ResourceType = typeof (Properties))]
-        public string Code {
-            set { SetProperty (ref _code, value); }
+        [Display(Name = nameof(Properties.Code), ResourceType = typeof(Properties))]
+        public string Code
+        {
+            set { SetProperty(ref _code, value); }
             get { return _code; }
         }
         /// <summary>
@@ -35,9 +38,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.Name), ResourceType = typeof (Properties))]
-        public string Name {
-            set { SetProperty (ref _name, value); }
+        [Display(Name = nameof(Properties.Name), ResourceType = typeof(Properties))]
+        public string Name
+        {
+            set { SetProperty(ref _name, value); }
             get { return _name; }
         }
 
@@ -47,9 +51,10 @@ namespace Amica.Models {
         /// <value>
         /// The IBAN code.
         /// </value>
-        [Display (Name = nameof (Properties.BarCode), ResourceType = typeof (Properties))]
-        public string BarCode {
-            set { SetProperty (ref _barCode, value); }
+        [Display(Name = nameof(Properties.BarCode), ResourceType = typeof(Properties))]
+        public string BarCode
+        {
+            set { SetProperty(ref _barCode, value); }
             get { return _barCode; }
         }
 
@@ -59,9 +64,10 @@ namespace Amica.Models {
         /// <value>
         /// The BIC/SWIFT code.
         /// </value>
-        [Display (Name = nameof (Properties.VendorCode), ResourceType = typeof (Properties))]
-        public string VendorCode {
-            set { SetProperty (ref _vendorCode, value); }
+        [Display(Name = nameof(Properties.VendorCode), ResourceType = typeof(Properties))]
+        public string VendorCode
+        {
+            set { SetProperty(ref _vendorCode, value); }
             get { return _vendorCode; }
         }
         /// <summary>
@@ -70,9 +76,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.ProductDescription), ResourceType = typeof (Properties))]
-        public string Description {
-            set { SetProperty (ref _description, value); }
+        [Display(Name = nameof(Properties.ProductDescription), ResourceType = typeof(Properties))]
+        public string Description
+        {
+            set { SetProperty(ref _description, value); }
             get { return _description; }
         }
         /// <summary>
@@ -81,9 +88,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.UnitOfMeasure), ResourceType = typeof (Properties))]
-        public string UnitOfMeasure {
-            set { SetProperty (ref _unitOfMeasure, value); }
+        [Display(Name = nameof(Properties.UnitOfMeasure), ResourceType = typeof(Properties))]
+        public string UnitOfMeasure
+        {
+            set { SetProperty(ref _unitOfMeasure, value); }
             get { return _unitOfMeasure; }
         }
         /// <summary>
@@ -92,9 +100,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.Notes), ResourceType = typeof (Properties))]
-        public string Notes {
-            set { SetProperty (ref _notes, value); }
+        [Display(Name = nameof(Properties.Notes), ResourceType = typeof(Properties))]
+        public string Notes
+        {
+            set { SetProperty(ref _notes, value); }
             get { return _notes; }
         }
         /// <summary>
@@ -103,9 +112,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.ProductCategory), ResourceType = typeof (Properties))]
-        public string ProductCategory {
-            set { SetProperty (ref _productCategory, value); }
+        [Display(Name = nameof(Properties.ProductCategory), ResourceType = typeof(Properties))]
+        public string ProductCategory
+        {
+            set { SetProperty(ref _productCategory, value); }
             get { return _productCategory; }
         }
         /// <summary>
@@ -114,9 +124,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.IsProduct), ResourceType = typeof (Properties))]
-        public bool IsProduct {
-            set { SetProperty (ref _is_product, value); }
+        [Display(Name = nameof(Properties.IsProduct), ResourceType = typeof(Properties))]
+        public bool IsProduct
+        {
+            set { SetProperty(ref _is_product, value); }
             get { return _is_product; }
         }
         /// <summary>
@@ -125,9 +136,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.MostRecentCost), ResourceType = typeof (Properties))]
-        public decimal MostRecentCost {
-            set { SetProperty (ref _most_recent_cost, value); }
+        [Display(Name = nameof(Properties.MostRecentCost), ResourceType = typeof(Properties))]
+        public decimal MostRecentCost
+        {
+            set { SetProperty(ref _most_recent_cost, value); }
             get { return _most_recent_cost; }
         }
         /// <summary>
@@ -136,9 +148,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.AverageCost), ResourceType = typeof (Properties))]
-        public decimal AverageCost {
-            set { SetProperty (ref _average_cost, value); }
+        [Display(Name = nameof(Properties.AverageCost), ResourceType = typeof(Properties))]
+        public decimal AverageCost
+        {
+            set { SetProperty(ref _average_cost, value); }
             get { return _average_cost; }
         }
         /// <summary>
@@ -147,9 +160,10 @@ namespace Amica.Models {
         /// <value>
         /// The name.
         /// </value>
-        [Display (Name = nameof (Properties.Vat), ResourceType = typeof (Properties))]
-        public Vat Vat {
-            set { SetProperty (ref _vat, value); }
+        [Display(Name = nameof(Properties.Vat), ResourceType = typeof(Properties))]
+        public Vat Vat
+        {
+            set { SetProperty(ref _vat, value); }
             get { return _vat; }
         }
     }

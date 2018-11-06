@@ -13,5 +13,6 @@ namespace Amica.Models
         ///
         public static readonly ReadOnlyCollection<string> UnitOfMeasures =
             new ReadOnlyCollection<string>(new List<string> { "n", "m", "kg", "l", "g", "cm" });
+        public static string DefaultValue => "n";
     }
 }

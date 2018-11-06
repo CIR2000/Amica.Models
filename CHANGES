@@ -2,6 +2,13 @@ Changelog
 =========
 
 
+v0.0.16.2
+=========
+
+- New: UnitOfMeasureHelpers.DefaultValue (defaults to "n").
+- Fix: Product.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue.
+- Fix: Preferences.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue.
+
 v0.0.16.1
 =========
 
