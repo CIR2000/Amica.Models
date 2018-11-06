@@ -21,6 +21,8 @@ namespace Amica.Models
         private decimal _most_recent_cost;
         private decimal _average_cost;
         private string _vatId;
+        private float _currentStock;
+        private float _availableStock;
 
         /// <summary>
         /// Gets or sets the product code.
@@ -165,6 +167,30 @@ namespace Amica.Models
         {
             set { SetProperty(ref _vatId, value); }
             get { return _vatId; }
+        }
+        /// <summary>
+        /// Gets or sets the current stock for the product.
+        /// </summary>
+        /// <value>
+        /// The stock.
+        /// </value>
+        [Display(Name = nameof(Properties.CurrentStock), ResourceType = typeof(Properties))]
+        public float CurrentStock
+        {
+            set { SetProperty(ref _currentStock, value); }
+            get { return _currentStock; }
+        }
+        /// <summary>
+        /// Gets or sets the available stock for the product.
+        /// </summary>
+        /// <value>
+        /// The stock.
+        /// </value>
+        [Display(Name = nameof(Properties.AvailableStock), ResourceType = typeof(Properties))]
+        public float AvailableStock
+        {
+            set { SetProperty(ref _availableStock, value); }
+            get { return _availableStock; }
         }
     }
 }

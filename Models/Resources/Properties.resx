@@ -480,4 +480,10 @@
   <data name="AverageCost" xml:space="preserve">
     <value>Costo medio</value>
   </data>
+  <data name="CurrentStock" xml:space="preserve">
+    <value>Giacenza</value>
+  </data>
+  <data name="AvailableStock" xml:space="preserve">
+    <value>Disponibilità</value>
+  </data>
 </root>
