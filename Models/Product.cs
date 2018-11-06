@@ -20,7 +20,7 @@ namespace Amica.Models
         private bool _is_product = true;
         private decimal _most_recent_cost;
         private decimal _average_cost;
-        private Vat _vat;
+        private string _vatId;
 
         /// <summary>
         /// Gets or sets the product code.
@@ -155,16 +155,16 @@ namespace Amica.Models
             get { return _average_cost; }
         }
         /// <summary>
-        /// Gets or sets the Vat.
+        /// Gets or sets the Vat Id for the product.
         /// </summary>
         /// <value>
-        /// The name.
+        /// The Vat Id.
         /// </value>
         [Display(Name = nameof(Properties.Vat), ResourceType = typeof(Properties))]
-        public Vat Vat
+        public string PricelistId
         {
-            set { SetProperty(ref _vat, value); }
-            get { return _vat; }
+            set { SetProperty(ref _vatId, value); }
+            get { return _vatId; }
         }
     }
 }

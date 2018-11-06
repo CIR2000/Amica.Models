@@ -5,9 +5,10 @@ Changelog
 v0.0.16.2
 =========
 
-- New: UnitOfMeasureHelpers.DefaultValue (defaults to "n").
-- Fix: Product.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue.
-- Fix: Preferences.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue.
+- New: UnitOfMeasureHelpers.DefaultValue (defaults to "n"). Closes #11.
+- Fix: Product.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue. Addresses #11.
+- Fix: Preferences.UnitOfMeasure defaults to UnitOfMeasureHelpers.DefaultValue. Addresses #11.
+- Fix: Product.Vat changed to Product.VatId. Closes #12.
 
 v0.0.16.1
 =========
