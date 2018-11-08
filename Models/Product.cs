@@ -14,7 +14,7 @@ namespace Amica.Models
         private string _vendorCode;
         private string _name;
         private string _description;
-        private string _unitOfMeasure = UnitOfMeasureHelper.DefaultValue;
+        private string _unitOfMeasure;
         private string _notes;
         private string _productCategory;
         private bool _is_product = true;
@@ -163,7 +163,7 @@ namespace Amica.Models
         /// The Vat Id.
         /// </value>
         [Display(Name = nameof(Properties.Vat), ResourceType = typeof(Properties))]
-        public string PricelistId
+        public string VatId
         {
             set { SetProperty(ref _vatId, value); }
             get { return _vatId; }
