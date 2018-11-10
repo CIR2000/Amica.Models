@@ -486,4 +486,13 @@
   <data name="AvailableStock" xml:space="preserve">
     <value>Disponibilità</value>
   </data>
+  <data name="PriceListType" xml:space="preserve">
+    <value>Tipo listino</value>
+  </data>
+  <data name="Markup" xml:space="preserve">
+    <value>Ricarico</value>
+  </data>
+  <data name="PriceListPricesAreSet" xml:space="preserve">
+    <value>Computo prezzi</value>
+  </data>
 </root>
