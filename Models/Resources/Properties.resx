@@ -495,4 +495,10 @@
   <data name="PriceListPricesAreSet" xml:space="preserve">
     <value>Computo prezzi</value>
   </data>
+  <data name="ProductPrice" xml:space="preserve">
+    <value>Prezzo</value>
+  </data>
+  <data name="ProductPrices" xml:space="preserve">
+    <value>Prezzi di vendita</value>
+  </data>
 </root>

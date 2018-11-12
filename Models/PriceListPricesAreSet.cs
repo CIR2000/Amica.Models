@@ -11,5 +11,4 @@ namespace Amica.Models
         MarkupOnAverageCost,
         GlobalMarkupOnAverageCost,
     }
-
 }

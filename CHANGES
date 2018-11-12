@@ -5,7 +5,8 @@ Changelog
 v0.0.17
 =======
 
-- New: PriceListId model.
+- New: PriceList model.
+- New: Product.Prices property.
 
 v0.0.16.3
 =========

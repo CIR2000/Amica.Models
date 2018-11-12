@@ -1430,5 +1430,25 @@ namespace Amica.Models.Resources
                 return ResourceManager.GetString("PriceListPricesAreSet", resourceCulture);
             }
         }
+        /// <summary>
+        ///   Looks up a localized string similar to Prezzo.
+        /// </summary>
+        public static string Price
+        {
+            get
+            {
+                return ResourceManager.GetString("Price", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Prezzi di vendita.
+        /// </summary>
+        public static string ProductPrices
+        {
+            get
+            {
+                return ResourceManager.GetString("ProductPrices", resourceCulture);
+            }
+        }
     }
 }

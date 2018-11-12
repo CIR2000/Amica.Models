@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Amica.Models.Resources;
 
 namespace Amica.Models
@@ -23,6 +24,7 @@ namespace Amica.Models
         private string _vatId;
         private float _currentStock;
         private float _availableStock;
+        private List<ProductPrice> _prices = new List<ProductPrice>();
 
         /// <summary>
         /// Gets or sets the product code.
@@ -191,6 +193,18 @@ namespace Amica.Models
         {
             set { SetProperty(ref _availableStock, value); }
             get { return _availableStock; }
+        }
+        /// <summary>
+        /// Gets or sets the prices available for the product
+        /// </summary>
+        /// <value>
+        /// The prices for the product.
+        /// </value>
+        [Display(Name = nameof(Properties.ProductPrices), ResourceType = typeof(Properties))]
+        public List<ProductPrice> Prices
+        {
+            set { SetProperty(ref _prices, value); }
+            get { return _prices; }
         }
     }
 }
