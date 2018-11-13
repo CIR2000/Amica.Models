@@ -2,6 +2,14 @@ Changelog
 =========
 
 
+v0.0.17.1
+=========
+
+Released on November 13, 2018.
+
+- New: Add DisplayAttributes to PriceListType enum elements.
+- New: Add DisplayAttributes to PriceListPricesAreSet enum elements.
+
 v0.0.17
 =======
 

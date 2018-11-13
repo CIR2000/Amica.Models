@@ -1450,5 +1450,75 @@ namespace Amica.Models.Resources
                 return ResourceManager.GetString("ProductPrices", resourceCulture);
             }
         }
+        /// <summary>
+        ///   Looks up a localized string similar to Manualmente.
+        /// </summary>
+        public static string PriceListPricesAreSetManually
+        {
+            get
+            {
+                return ResourceManager.GetString("PriceListPricesAreSetManually", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Ricarico su costo ultimo, per articolo.
+        /// </summary>
+        public static string PriceListPricesAreSetMarkupOnRecentCost
+        {
+            get
+            {
+                return ResourceManager.GetString("PriceListPricesAreSetMarkupOnRecentCost", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Ricarico su costo ultimo, per listino.
+        /// </summary>
+        public static string PriceListPricesAreSetGlobalMarkupOnRecentCost
+        {
+            get
+            {
+                return ResourceManager.GetString("PriceListPricesAreSetGlobalMarkupOnRecentCost", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Ricarico su costo medio, per listino.
+        /// </summary>
+        public static string PriceListPricesAreSetGlobalMarkupOnAverageCost
+        {
+            get
+            {
+                return ResourceManager.GetString("PriceListPricesAreSetGlobalMarkupOnAverageCost", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Ricarico su costo medio, per articolo.
+        /// </summary>
+        public static string PriceListPricesAreSetMarkupOnAverageCost
+        {
+            get
+            {
+                return ResourceManager.GetString("PriceListPricesAreSetMarkupOnAverageCost", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Acquisto.
+        /// </summary>
+        public static string PriceListTypeBuy
+        {
+            get
+            {
+                return ResourceManager.GetString("PriceListTypeBuy", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Ricarico su costo medio, per articolo.
+        /// </summary>
+        public static string PriceListTypeSell
+        {
+            get
+            {
+                return ResourceManager.GetString("PriceListTypeSell", resourceCulture);
+            }
+        }
     }
 }

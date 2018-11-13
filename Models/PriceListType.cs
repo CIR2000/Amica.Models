@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using Amica.Models.Resources;
+
 namespace Amica.Models
 {
     /// <summary>
@@ -5,7 +8,9 @@ namespace Amica.Models
     /// </summary>
     public enum PriceListType
     {
+        [Display(Name = nameof(Properties.PriceListTypeBuy), ResourceType = typeof(Properties))]
         Buy,
+        [Display(Name = nameof(Properties.PriceListTypeSell), ResourceType = typeof(Properties))]
         Sell
     }
 

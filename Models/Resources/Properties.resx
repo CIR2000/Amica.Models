@@ -501,4 +501,25 @@
   <data name="ProductPrices" xml:space="preserve">
     <value>Prezzi di vendita</value>
   </data>
+  <data name="PiceListPricesAreSetManually" xml:space="preserve">
+    <value>Manualmente</value>
+  </data>
+  <data name="PiceListPricesAreSetMarkupOnRecentCost" xml:space="preserve">
+    <value>Ricarco su costo ultimo, per articolo</value>
+  </data>
+  <data name="PiceListPricesAreSetGlobalMarkupOnRecentCost" xml:space="preserve">
+    <value>Ricarco su costo ultimo, per listino</value>
+  </data>
+  <data name="PiceListPricesAreSetGlobalMarkupOnAverageCost" xml:space="preserve">
+    <value>Ricarco su costo medio, per listino</value>
+  </data>
+  <data name="PiceListPricesAreSetMarkupOnAverageCost" xml:space="preserve">
+    <value>Ricarco su costo medio, per articolo</value>
+  </data>
+  <data name="PriceListTypeBuy" xml:space="preserve">
+    <value>Acquisto</value>
+  </data>
+  <data name="PriceListTypeSell" xml:space="preserve">
+    <value>Vendita</value>
+  </data>
 </root>
