@@ -2,6 +2,14 @@ Changelog
 =========
 
 
+v0.0.17.2
+=========
+
+Released on November 16, 2018.
+
+- Fix: Add RequiredAttribute to PaymentMethod.Code.
+- Fix: Add RequiredAttribute to PaymentMethod.Name.
+
 v0.0.17.1
 =========
 

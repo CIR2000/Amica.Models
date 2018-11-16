@@ -1,5 +1,5 @@
-﻿using Amica.Models.Resources;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using Amica.Models.Resources;
 
 namespace Amica.Models
 {
@@ -20,7 +20,8 @@ namespace Amica.Models
         /// <value>
         /// The name.
         /// </value>
-        [Display(Name = nameof(Properties.Name), ResourceType =typeof(Properties))]
+        [Display(Name = nameof(Properties.Name), ResourceType = typeof(Properties))]
+        [Required]
         public string Name
         {
             set { SetProperty(ref _name, value); }
@@ -33,7 +34,7 @@ namespace Amica.Models
         /// <value>
         ///   <c>true</c> if this instance is bank receipt; otherwise, <c>false</c>.
         /// </value>
-        [Display(Name = nameof(Properties.IsBankReceipt), ResourceType =typeof(Properties))]
+        [Display(Name = nameof(Properties.IsBankReceipt), ResourceType = typeof(Properties))]
         public bool IsBankReceipt
         {
             set { SetProperty(ref _IsBankReceipt, value); }
@@ -46,7 +47,8 @@ namespace Amica.Models
         /// <value>
         /// The payment method code.
         /// </value>
-        [Display(Name = nameof(Properties.Code), ResourceType =typeof(Properties))]
+        [Display(Name = nameof(Properties.Code), ResourceType = typeof(Properties))]
+        [Required]
         public string Code
         {
             set { SetProperty(ref _code, value); }
