@@ -31,7 +31,7 @@ namespace Amica.Models.Resources
         private static global::System.Globalization.CultureInfo resourceCulture;
 
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Properties() { }
+        internal Properties() {}
 
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
@@ -1518,6 +1518,96 @@ namespace Amica.Models.Resources
             get
             {
                 return ResourceManager.GetString("PriceListTypeSell", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Prenotati.
+        /// </summary>
+        public static string Reserved
+        {
+            get
+            {
+                return ResourceManager.GetString("Reserved", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to In ordine.
+        /// </summary>
+        public static string Ordered
+        {
+            get
+            {
+                return ResourceManager.GetString("Ordered", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Scorta minima.
+        /// </summary>
+        public static string MinimumStock
+        {
+            get
+            {
+                return ResourceManager.GetString("MinimumStock", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Ultimo acquisto.
+        /// </summary>
+        public static string LastPurchase
+        {
+            get
+            {
+                return ResourceManager.GetString("LastPurchase", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Ultima vendita.
+        /// </summary>
+        public static string LastSale
+        {
+            get
+            {
+                return ResourceManager.GetString("LastSale", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Totale acquisti.
+        /// </summary>
+        public static string TotalSpent
+        {
+            get
+            {
+                return ResourceManager.GetString("TotalSpent", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Totale vendite.
+        /// </summary>
+        public static string TotalSold
+        {
+            get
+            {
+                return ResourceManager.GetString("TotalSold", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Quantità venduta.
+        /// </summary>
+        public static string ItemsSold
+        {
+            get
+            {
+                return ResourceManager.GetString("ItemsSold", resourceCulture);
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized string similar to Quantità acquistata.
+        /// </summary>
+        public static string ItemsPurchased
+        {
+            get
+            {
+                return ResourceManager.GetString("ItemsPurchased", resourceCulture);
             }
         }
     }

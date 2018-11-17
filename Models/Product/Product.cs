@@ -25,6 +25,7 @@ namespace Amica.Models
         private float _currentStock;
         private float _availableStock;
         private List<ProductPrice> _prices = new List<ProductPrice>();
+        private List<ProductInventory> _inventory = new List<ProductInventory>();
 
         /// <summary>
         /// Gets or sets the product code.
@@ -205,6 +206,18 @@ namespace Amica.Models
         {
             set { SetProperty(ref _prices, value); }
             get { return _prices; }
+        }
+        /// <summary>
+        /// Gets or sets the inventory available for the product, per warehouse.
+        /// </summary>
+        /// <value>
+        /// The inventory available for the product, per warehouse.
+        /// </value>
+        [Display(Name = nameof(Properties.ProductPrices), ResourceType = typeof(Properties))]
+        public List<ProductInventory> Inventory
+        {
+            set { SetProperty(ref _inventory, value); }
+            get { return _inventory; }
         }
     }
 }

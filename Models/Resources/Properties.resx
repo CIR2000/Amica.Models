@@ -522,4 +522,31 @@
   <data name="PriceListTypeSell" xml:space="preserve">
     <value>Vendita</value>
   </data>
+  <data name="Reserved" xml:space="preserve">
+    <value>Prenotati</value>
+  </data>
+  <data name="Ordered" xml:space="preserve">
+    <value>In ordine</value>
+  </data>
+  <data name="MinimumStock" xml:space="preserve">
+    <value>Scorta minima</value>
+  </data>
+  <data name="LastPurchase" xml:space="preserve">
+    <value>Ultimo acquisto</value>
+  </data>
+  <data name="LastSale" xml:space="preserve">
+    <value>Ultima vendita</value>
+  </data>
+  <data name="TotalSpent" xml:space="preserve">
+    <value>Totale acquisti</value>
+  </data>
+  <data name="TotalSold" xml:space="preserve">
+    <value>Totale vendite</value>
+  </data>
+  <data name="ItemsSold" xml:space="preserve">
+    <value>Quantità venduta</value>
+  </data>
+  <data name="ItemsPurchased" xml:space="preserve">
+    <value>Quantità acquistata</value>
+  </data>
 </root>

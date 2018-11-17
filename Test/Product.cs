@@ -12,7 +12,9 @@ namespace Amica.Models.Tests
 
             Assert.IsTrue(x.IsProduct);
             Assert.IsNotNull(x.Prices);
+            Assert.IsNotNull(x.Inventory);
             Assert.AreEqual(0, x.Prices.Count);
+            Assert.AreEqual(0, x.Inventory.Count);
         }
 
     }
