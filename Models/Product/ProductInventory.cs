@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Amica.Models.Resources;
+using Newtonsoft.Json;
 
 namespace Amica.Models
 {
@@ -161,6 +162,7 @@ namespace Amica.Models
         /// The number of available items
         /// </value>
         [Display(Name = nameof(Properties.AvailableStock), ResourceType = typeof(Properties))]
+        [JsonIgnore]
         public float AvailableStock => CurrentStock - Reserved;
     }
 }
