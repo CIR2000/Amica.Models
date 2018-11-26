@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>Amica.Models</PackageId>
-    <Version>0.0.18</Version>
+    <Version>0.0.18.1</Version>
     <Authors>Nicola Iarocci</Authors>
     <Company>CIR 2000</Company>
     <Product>Amica.Models</Product>
